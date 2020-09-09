@@ -1,0 +1,748 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 1.1 Transitional//EN">
+<html lang="en" dir="ltr">
+<head>
+<title>Papa Birl's Guide to Rune Factory 4</title>
+<meta name="robots"             content="Follow, Index, NoArchive">
+<meta name="keywords"           content="Rune Factory 4, Birl">
+<meta name="generator"          content="My two hands and years of experience with HTML and CSS">
+<meta name="description"        content="Papa Birl's Guide to Rune Factory 4 -- 3DS version.  2018-Jul-26. .................................................................................................">
+<meta http-equiv="refresh"      content="43200">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- Just messin with this, but I dont think it works -->
+<link rel="canonical" href="https://astro.temple.edu/~sbirl/3DS/Rune_Factory_%54.html">
+
+<style>
+li,p { font-size:10pt !important;}
+th   { font-size:11pt; vertical-align:middle; }
+td   { font-size:09pt; vertical-align:middle; }
+@media(max-width: 992px)
+{
+ body,li,p { font-size:05pt !important; }
+}
+
+/* a:hover { background:linear-gradient(to right,#FAA,#FA5,#FFA,#AFA,#AAF,#FAF); } */
+
+/* http://ilikepixels.co.uk/drop/bubbler/ */
+.bubble         { position:relative; width:250px; height:55px; padding:3px; background:#DDD; -webkit-border-radius:10px; border-radius:10px; border:#555 solid 3px; }
+.bubbleT        { position:relative; width:250px; height:55px; padding:3px; background:#DDD; -webkit-border-radius:10px; border-radius:10px; border:#555 solid 3px; }
+.bubbleT:after  { content:''; position:absolute; border-style:solid; border-width:0 20px 15px; border-color:#DDD transparent; display:block; width:0; z-index:1; top:-15px; left:31px; }
+.bubbleT:before { content:''; position:absolute; border-style:solid; border-width:0 22px 17px; border-color:#555 transparent; display:block; width:0; z-index:0; top:-20px; left:29px; }
+
+.bubbleL        { position:absolute; width:350px; height:55px; padding:1px; background:#DDD; -webkit-border-radius:10px; border-radius:10px; z-index:2; border:#555 solid 3px; }
+.bubbleL:after  { position:absolute; width:000px; border-style:solid; border-width:15px 30px 15px 0; border-color:transparent #DDD; display:block; z-index:1; left:-30px; top:12px; content:''; }
+.bubbleL:before { position:absolute; width:000px; border-style:solid; border-width:17px 32px 17px 0; border-color:transparent #555; display:block; z-index:0; left:-35px; top:10px; content:''; }
+/* .bubbleL:before { content:''; position:absolute; border-style:solid; border-width:17px 32px 17px 0; border-color:transparent #555; display:block; width:0; z-index:0; left:-35px; top:-4px; } */
+
+.bubbleR        { position:relative; width:300px; height:55px; padding:0px; background:#DDD; -webkit-border-radius:10px; border-radius:10px; border:#555 solid 3px; }
+.bubbleR:after  { content:''; position:absolute; border-style:solid; border-width:15px 0 15px 30px; border-color:transparent #DDD; display:block; width:0; z-index:1; right:-30px; top:12px; }
+.bubbleR:before { content:''; position:absolute; border-style:solid; border-width:17px 0 17px 32px; border-color:transparent #555; display:block; width:0; z-index:0; right:-35px; top:10px; }
+.bubbleB        { position:relative; width:250px; height:55px; padding:0px; background:#DDD; -webkit-border-radius:10px; border-radius:10px; border:#555 solid 3px; }
+.bubbleB:after  { content:''; position:relative; border-style:solid; border-width:15px 15px 0; border-color:#DDD transparent; display:block; width:0; z-index:1; bottom:5px; left:41px; }
+.bubbleB:before { content:''; position:relative; border-style:solid; border-width:17px 17px 0; border-color:#555 transparent; display:block; width:0; z-index:0; bottom:0px; left:39px; }
+
+.add      { background-color:#FF0; }
+.cent     { text-align:center; }
+.feed     { color:#F00; }
+.footer   { font-size:7pt !important; }
+.formerly { font-size:7pt !important; color:#AAA; }
+.n        { background-color:#FCC; }
+.req      { background-color:#FAA; }
+.y        { background-color:#CFC; }
+.reminder { font-size:7pt !important; color:#AAA; }
+
+#forging tr:hover             { background-color:#DDD; color:#00F; animation: test2 5s infinite; }
+#forging th                   { font-size:10pt; vertical-align:middle; }
+#forging tr:nth-child(3) th   { border-bottom:solid 1px #000; }
+#forging th:nth-child(1)      { text-decoration:underline; cursor:pointer; }
+#forging th:nth-child(2)      { text-decoration:underline; cursor:pointer; }
+#forging th:nth-child(3)      { text-decoration:underline; cursor:pointer; width:70px; }
+#forging td:nth-child(3)      { text-align:center; }
+#forging td:nth-child(9)      { border-right:solid 1px #000; }
+#forging tr:nth-child(10n) td { border-bottom:solid 1px #000; }
+
+#cooking tr:hover             { background-color:#FEE; animation: test 10s infinite; }
+#cooking th:nth-child(1)      { text-decoration:underline; cursor:pointer; }
+#cooking th:nth-child(2)      { text-decoration:underline; cursor:pointer; }
+#cooking th:nth-child(3)      { text-decoration:underline; cursor:pointer; border-right:solid 1px #000; }
+#cooking th:nth-child(9)      { border-right:solid 1px #000; }
+#cooking td:nth-child(1)      { border-right:dashed 1px #DDD; }
+#cooking td:nth-child(2)      { border-right:dashed 1px #DDD; text-align:center; }
+#cooking td:nth-child(3)      { border-right:solid 1px #000; text-align:center; padding-left:5px; padding-right:5px;  }
+#cooking td:nth-child(9)      { border-right:solid 1px #000; }
+#cooking tr:nth-child(10n) td { border-bottom:solid 1px #000; }
+
+#comment01 { position:relative; left:50px; top:0; }
+
+#controls tr:hover { background-color:#FFC; }
+#controls td       { border-bottom:solid 1px #000; }
+#controls th       { border-bottom:solid 1px #000; }
+
+#order tr:hover                         { background:linear-gradient(to right,#FAA,#FA5,#FFA,#AFA,#AAF,#FAF); }
+#order td:hover                         { border:solid 1px #999; }
+#order td:nth-child(n+2):nth-child(-n+5){ text-align:center; }
+
+#barn                 { border:solid 2px #000; }
+#barn tr:hover        { background-color:#DDF; }
+#barn th              { border-style:solid; border-width:1px; border-color:#000 #EEE #000 #DDD; font-size:11pt;}
+#barn th:nth-child(1) { text-decoration:underline; cursor:pointer; }
+#barn th:nth-child(2) { text-decoration:underline; cursor:pointer; }
+#barn th:nth-child(3) { text-decoration:underline; cursor:pointer; }
+#barn td              { border:solid 1px #EEE; font-size:10pt;}
+#barn td:nth-child(3) { text-align:center; }
+#barn td:nth-child(7) { text-align:center; }
+
+@keyframes test  { from{background-color:#FEE;} to {background-color:#FCC;} }
+@keyframes test2 { from{color:#00F;} to {color:#000;} }
+
+</style>
+
+<script type="text/javascript">
+function sort(thisTable, thisColumn) {
+        // https://www.w3schools.com/howto/howto_js_sort_table.asp
+        var table, rows, switching, i, x, y, shouldSwitch;
+//      table = document.getElementById("cooking");
+        table = document.getElementById(thisTable);
+        switching = true;
+
+        document.getElementById("body").style.cursor="progress";
+
+        while (switching) {
+                switching = false;
+                // Make sure there's no extra <tr> tags (ie: <tr><tr>)
+                // or sorting will break
+                rows = table.getElementsByTagName("TR");
+
+                for (i = 3; i < (rows.length - 1); i++) {
+                        shouldSwitch = false;
+                        x = rows[i].getElementsByTagName("TD")[thisColumn];
+                        y = rows[i + 1].getElementsByTagName("TD")[thisColumn];
+
+                        /* If sorting breaks because of extra <tr>
+                           then x is (declared, but) undefined.
+                        */
+                        if (x === undefined)
+                        {
+                                x = rows[i-1].getElementsByTagName("TD")[thisColumn];
+                                x.style.border="solid 1px #F00";
+                                continue;
+                        //        break;
+                        }
+
+                        /* If sorting breaks because of extra <tr>
+                           then y is (declared, but) undefined.
+                        */
+                        if (y === undefined)
+                        {
+                                x.style.backgroundColor="#900";
+                                x.style.color="#FFF";
+                                continue;
+                        }
+
+                        if ( Number(x.innerHTML) )
+                        {
+                                if (Number(x.innerHTML) > Number(y.innerHTML) )
+                                {
+                                        shouldSwitch= true;
+                                        document.getElementById("body").style.cursor="default";
+                                        break;
+                                }
+                        }
+                        /* This code alone isnt working well with integers */
+                        else if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                                shouldSwitch= true;
+                                document.getElementById("body").style.cursor="default";
+                                break;
+                        }
+                }
+                if (shouldSwitch) {
+                        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                        switching = true;
+                }
+        }
+        document.getElementById("body").style.cursor="default";
+}
+</script>
+
+</head>
+<body id="body">
+<!-- <a href=".">.</a><br/> -->
+<h1 id="Title">Papa Birl's Guide to Rune Factory 4 -- 3DS version.</h1>
+<h2 id="Overview">Overview</h2>
+<ul>
+<li>This is a real-time action game, not turn-based. The faster you smash that attack button, the faster your opponet dies.
+<li>While in-game, there is no manual option to load a saved game, but there is a soft-reset: L+R+Start
+<li>Too many soft-resets can cause problems with the game.
+<li>A new day starts at 6:00a, and the clock moves fast (approximately 1-minute in-game time, per second).
+        <ul>
+        <li>If you're waking up in your bed (at the castle), head for the farm straight away.
+        <li>Items in the shipment box are collected at 8:00a.
+        <li>The sky changes to dusk at 19:00 hours (7:00p).
+        <li>The owl starts howling at 21:00 hours (9:00p).
+        </ul>
+<li>Once you're done farming, check on the monsters in your Barn.
+<li>Then check in with Eliza, the talking Request Box, for any requests to complete.
+        <ul>
+        <li>You can get free items to help you complete requests (ie: cheap axe/sickle, brush)
+        </ul>
+</ul>
+<table border="0" cellpadding="0" cellspacing="5" style="border:solid 1px #000;" id="controls">
+<th>Button</th> <th>Standing</th>                                                               <th>Running</th>                <th>Talking</th><tr/>
+<td>L</td>      <td colspan="2">Open/Close quick Inventory (follow-up attack if running)</td>                                   <td>nothing</td> <tr/>
+<td>R</td>      <td>(double-click) dash</td>                                                    <td>walk</td>                   <td>nothing</td> <tr/>
+<td>A</td>      <td>Pick-up item (up to 9 identical items)</td>                                 <td>Throw item</td>             <td>Slow-complete dialouge</td> <tr/>
+<td>B</td>      <td colspan="2">Use equipped item * (weapon,tool,seeds,etc); eat</td>                                           <td>Fast-complete dialouge</td> <tr/>
+<td>Y</td>      <td>Keep: pack away held item; Use equipped rune skill</td>                     <td>Use equipped rune skill</td><td>Skip dialouge</td> <tr/>
+<td>X</td>      <td>Keep: pack away held item; Use equipped rune skill</td>                     <td>Use equipped rune skill</td><td>Hide/Show dialouge</td> <tr/>
+<td>start</td>  <td colspan="2">Character details; backpack</td>                                                                <td>nothing</td> <tr/>
+<td>select</td> <td colspan="2">Character details; backpack</td>                                                                <td>nothing</td> <tr/>
+</table>
+<span class="footer">* Holding B with certain items will "charge" them.  Releasing that charge will affect a larger area.</span>
+<br/><br/>
+<table border="0" cellpadding="2" cellspacing="0" style="border:solid 1px #000;">
+<td>HP</td><td style="background:linear-gradient(to top,#AFA,#FFF);">Hit Points (life points)</td><tr/>
+<td>RP</td><td style="background:linear-gradient(to top,#AAF,#FFF);">Rune Points</td><td>Recover by eating, bathing or sleeping</td><tr/>
+</table>
+<p>"If you're tired, hold still and replenish your RP.  That's a little something you learn, being a traveler." -- Wise Conner</p>
+
+<br/>
+
+<h2 id="Farming">Farming</h2>
+<ul>
+        <li>"You can till elegantly" - Clorica
+        <li>"Farming can also strengthen you both physically and mentally "- Vishnal
+        <li>"Some crops can be used as weapons ... or grow into dungeons. "- Vishnal
+        <li>If you dont have a sickle, you can use a hoe (or swords) to dig up bamboo shoots
+        <li>"The higher the speed level of the field, the faster the crops you plant in it will grow" -- Dirty Scott
+        <li>Save time: instead of walking over to your shipping box, throw items into it.  And ship lots of items to make some quick cash.
+        <li>Instead of harvesting plants, use the sickle to yield higher-level seeds of that plant.
+        <li>One you complete the Request for shipping a Level 2 turnip (available from Eliza),
+        be sure to put at least one of the higher-level seeds in the Shipping Box.
+        It will make its seeds available to purchase at the new level.<br/>
+        (Similarly when shipping higher-level plants; they will be availible for purchase later)
+        <li>"A single Fertilizer Bin will cover all of the fields." - Vishnal
+</ul>
+<table border="1" cellpadding="2" cellspacing="0" id="Magnifying_Glass">
+<tr><th colspan="2">Magnifying Glass (on crops)</th></tr>
+<tr><td>[Crop Lv.] 5 &nbsp; [No.] 4</td>           <td><b>Crop Level:</b> if blue, could harvest a higher/lower level then when planted.  <b>Number:</b> how many crops to be harvested.</tr>
+<tr><td>[Grw.] 100% &nbsp; [HP] 112</td>           <td><b>Growth:</b> percentage completed.  <b>HP</b> Crop's health: 0 to </tr>
+<tr><td>[Overall] 4 &nbsp; [Spd.] 1</td>           <td><b>Overall:</b> ?? <b>Speed:</b> How fast the crop will reach 100%.</tr>
+<tr><td>[Ql.] 2 &nbsp; [No.] 2 &nbsp; [Sz.] 1</td> <td><b>??.</b> <b>Number:</b> Additional crops that can be harvested?.  <b>Size:</b> </tr>
+<tr><td>[Grw.] 1.0x &nbsp; [Ql.] +0.02</td>        <td><b>Growth</b> speed multiplier for the crops: 0.1x to 5.0x.  <b>Quality:</b> +2.00</tr>
+<tr><td>[Health] 96 &nbsp; [Def.] 4</td>           <td><b>Health</b> for field: 0 to 255.  <b>Defense</b> (against Typhoons):</b> 0 to 63.</tr>
+</table>
+<p>
+If you add a magnifying glass to the initial/build materials of a waterpot, you'll see the field stats as you water your fields.
+<br/>
+Same concept applies if added to hoes, sickles, axes, hammers, poles.  Even armor and weapons -- but why would you want to do that?
+<br/><br/>
+
+There are a handful of farms in the game, four of which are specific to a season.</p>
+
+<table border="1" cellpadding="2" cellspacing="0">
+<th>Always</th>            <th>Area</th>                         <th>Fishing</th>                       <th>Fairy</th>                <th>Tree</th><tr/>
+<td rowspan="3">Spring</td><td rowspan="3">Sercerezo Hill</td>   <td rowspan="3">Sercerezo Lake</td>    <td>Spring Spring</td>        <td rowspan="3">Cherry Tree<br/>Blue, Green, Red, White Crystal Seeds<br/>(one kind per calendar month)</td><tr/>
+                                                                                                        <td>Yellow</td><tr/>
+                                                                                                        <td>giant produce</td><tr/>
+<td rowspan="3">Summer</td><td rowspan="3">Selphia Plains</td>   <td rowspan="3">Keeno Lake</td>        <td>Summer Spring</td>        <td rowspan="3">Cedar Tree<br/>Apple, Orange, Grape, or Shining Seeds</td><tr/>
+                                                                                                        <td>Red</td><tr/>
+                                                                                                        <td>Fish</td><tr/>
+<td rowspan="3">Autumn</td><td rowspan="2">Autumn Road</td>      <td rowspan="3">Autumn River</td>      <td>Autumn Spring</td>        <td rowspan="3">Autumn Bridge?</td><tr/>
+                                                                                                        <td>Green</td><tr/>
+                                <td>Maya Road Entrance</td>                                             <td>Gems</td><tr/>
+<td rowspan="3">Winter</td><td rowspan="3">Silver</td>           <td rowspan="3">Silver Lake</td>       <td>Winter Spring</td>        <td rowspan="3"><i>un-named</i><br/>Sechs Territory</td><tr/>
+                                                                                                        <td>Blue</td><tr/>
+                                                                                                        <td>Flower</td><tr/>
+</table>
+<p>I like to put a Fertilizer Bin, a Lumber Box, and a Shipping Box on each of the Fields.
+<br/>
+* Fun fact: Cerezo is Spanish for Cherry tree.
+</p>
+
+<h2 id="Orders">Orders</h2>
+<p>Not all Orders are availiable straight away.</p>
+<ul>
+<li>Some are time-dependant (ie: Festivals)
+<li>Others have prerequisite Orders that need to be completed first (ie: Storage and Fridges)
+<li>Some depend on your Royal Title (ie: Struggling Prince, Respected Princess, etc)
+<li>How well you get to know the NPCs.
+<li>Finally, if you have previously beaten the story line.
+</ul>
+<table border="0" cellpadding="2" cellspacing="0" style="border:solid 1px #000;" id="Order">
+<tr><th>Order (licenses)</th>                           <th>Gold</th> <th>Stone</th>  <th>Lumber</th> <th>Points</th> <th>Effect(s)</th></tr>
+<tr><td>Business License</td>                           <td>none</td> <td>none</td>   <td>none</td>   <td>1000</td>   <td>Allows to open and operate your own shop.</td></tr>
+<tr><td>Airship License</td>                            <td>none</td> <td>none</td>   <td>none</td>   <td>300</td>    <td>Use the airship for easier travel</td></tr>
+<tr><td>EZ Cooking License</td>                         <td>none</td> <td>none</td>   <td>none</td>   <td>100</td>    <td>Allows cooking with simple tools</td></tr>
+<tr><td>Pro Cooking License</td>                        <td>none</td> <td>none</td>   <td>none</td>   <td>500</td>    <td>Allows cooking with professional tools</td></tr>
+<tr><td>Chemistry License</td>                          <td>none</td> <td>none</td>   <td>none</td>   <td>100</td>    <td>Allows mixing medicine with a set.</td></tr>
+<tr><td>Crafting License</td>                           <td>none</td> <td>none</td>   <td>none</td>   <td>200</td>    <td>Allows constructing accessories with a Crafting Table.</td></tr>
+<tr><td>Forging License</td>                            <td>none</td> <td>none</td>   <td>none</td>   <td>200</td>    <td>Create and upgrade weapons with a Forge.</td></tr>
+<!-- Festival Orders -->
+<tr><th>Order (festivals)</th>                          <th>Gold</th> <th>Stone</th>  <th>Lumber</th> <th>Points</th> <th>Effect(s)</th></tr>
+<tr><td class="fest">Cooking Contest</td>               <td>none</td> <td>none</td>   <td>none</td>   <td>1000</td>   <td>Spring 6 Festival</td></tr>
+<tr><td class="fest">Bean Toss Contest</td>             <td>none</td> <td>none</td>   <td>none</td>   <td>1000</td>   <td>Spring 10 Festival</td></tr>
+<tr><td class="fest">De-Fluffing Festival</td>          <td>none</td> <td>none</td>   <td>none</td>   <td>1000</td>   <td>Spring 19 Festival</td></tr>
+<tr><td class="fest">Turnip Festival</td>               <td>none</td> <td>none</td>   <td>none</td>   <td>1000</td>   <td>Summer 11 Festival</td></tr>
+<tr><td>Big Catch Contest</td>                          <td>none</td> <td>none</td>   <td>none</td>   <td>1000</td>   <td>Summer 15 Festival</td></tr>
+<tr><td>Buddy Battle</td>                               <td>none</td> <td>none</td>   <td>none</td>   <td>1000</td>   <td>Summer 24 Festival</td></tr>
+<tr><td>Eating Contest</td>                             <td>none</td> <td>none</td>   <td>none</td>   <td>1000</td>   <td>Autumn 4 Festival</td></tr>
+<tr><td>Fish Variety Contest</td>                       <td>none</td> <td>none</td>   <td>none</td>   <td>1000</td>   <td>Autumn 15 Festival</td></tr>
+<tr><td>Handicraft Contest</td>                         <td>none</td> <td>none</td>   <td>none</td>   <td>1000</td>   <td>Autumn 19 Festival</td></tr>
+<tr><td>Turnip Flurry</td>                              <td>none</td> <td>none</td>   <td>none</td>   <td>1000</td>   <td>Winter 5 Festival</td></tr>
+<tr><td>Quiz Contest</td>                               <td>none</td> <td>none</td>   <td>none</td>   <td>1000</td>   <td>Winter 13 Festival</td></tr>
+<tr><td>Squid Catch Contest</td>                        <td>none</td> <td>none</td>   <td>none</td>   <td>1000</td>   <td>Winter 15 Festival</td></tr>
+<tr><th>Order (cancel festival)</th>                    <th>Gold</th> <th>Stone</th>  <th>Lumber</th> <th>Points</th> <th>Effect(s)</th></tr>
+<tr><td>Cancel festival</td>                            <td>none</td> <td>none</td>   <td>none</td>   <td>1000</td>   <td>Cancel any of the above festivals, or holidays</td></tr>
+<!-- Orders for Shops -->
+<tr><th>Order (shops)</th>                              <th>Gold</th> <th>Stone</th>  <th>Lumber</th> <th>Points</th> <th>Effect(s)</th></tr>
+<tr><td>Blossom's Furniture</td>                        <td>none</td> <td>none</td>   <td>none</td>   <td>800</td>    <td>Blossom will sell useful furniture: double bed, bookshelf, closet, bins.</td></tr>
+<tr><td>Lumie's Flowershop</td>                         <td>none</td> <td>none</td>   <td>none</td>   <td>500</td>    <td>Illuminata will sell previously shipped flowers.</td></tr>
+<tr><td>Blossom's Groceries</td>                        <td>none</td> <td>none</td>   <td>none</td>   <td>500</td>    <td>Blossom will sell previously shipped crops.</td></tr>
+<tr><td>More Cooking Bread!</td>                        <td>none</td> <td>none</td>   <td>none</td>   <td>750</td>    <td>Porcoline will bake more Cooking Bread each day</td></tr>
+<tr><td>Bado's Accessories</td>                         <td>none</td> <td>none</td>   <td>none</td>   <td>500</td>    <td>Bado will sell accessories.</td></tr>
+<tr><td>Bado's Bargain Sale</td>                        <td>none</td> <td>none</td>   <td>none</td>   <td>2000</td>   <td>Bado will sell bargain items.</td></tr>
+<tr><td>Jewelry Shop</td>                               <td>none</td> <td>none</td>   <td>none</td>   <td>2000</td>   <td>Invite a gem-selling merchant to the town.</td></tr>
+<tr><td>Clothing Shop</td>                              <td>none</td> <td>none</td>   <td>none</td>   <td>800</td>    <td>Invite a merchant who sells clothes to the town.</td></tr>
+<tr><td>Fish Market</td>                                <td>none</td> <td>none</td>   <td>none</td>   <td>2000</td>   <td>Invite a merchant who sells fish to the town.</td></tr>
+<tr><td>Furniture Shop</td>                             <td>none</td> <td>none</td>   <td>none</td>   <td>1000</td>   <td>Invite a merchant who sells furniture to the town.</td></tr>
+<tr><td>Magic Shop</td>                                 <td>none</td> <td>none</td>   <td>none</td>   <td>2500</td>   <td>Invite a merchant who sells magic to the town.</td></tr>
+<tr><td>Ability Shop</td>                               <td>none</td> <td>none</td>   <td>none</td>   <td>2500</td>   <td>Invite a merchant who sells Rune Abilities to the town.</td></tr>
+<tr><td>Nationalize Baths</td>                          <td>none</td> <td>none</td>   <td>none</td>   <td>35000</td>  <td>Open up the Bell Hotel to the general public.</td></tr>
+<!-- Development Orders -->
+<tr><th>Order (development)</th>                        <th>Gold</th> <th>Stone</th>  <th>Lumber</th> <th>Points</th> <th>Effect(s)</th></tr>
+<tr><td>New Backpack</td>                               <td>none</td> <td>none</td>   <td>none</td>   <td>50</td>     <td>Increase backpack from 15 to 30 items.</td></tr>
+<tr><td>New Backpack</td>                               <td>none</td> <td>none</td>   <td>none</td>   <td>500</td>    <td>Increase backpack from 30 to 45 items.</td></tr>
+<tr><td>New Backpack</td>                               <td>none</td> <td>none</td>   <td>none</td>   <td>1000</td>   <td>Increase backpack from 45 to 60 items.</td></tr>
+<tr><td>New Fridge (1st upgrade)</td>                   <td>none</td> <td>20</td>     <td>none</td>   <td>50</td>     <td>Increase storage from 90 to 150 items.</td></tr>
+<tr><td>New Fridge (2nd upgrade)</td>                   <td>none</td> <td>50</td>     <td>none</td>   <td>300</td>    <td>Increase storage from 150 to 240 items.</td></tr>
+<tr><td>New Fridge (3rd upgrade)</td>                   <td>none</td> <td>100</td>    <td>none</td>   <td>500</td>    <td>Increase storage from 240 to 330 items.</td></tr>
+<tr><td>New Fridge (4th upgrade)</td>                   <td>none</td> <td>250</td>    <td>none</td>   <td>1000</td>   <td>Increase storage from 330 to 450 items.</td></tr>
+<tr><td>New Storage Box (1st upgrade)</td>              <td>none</td> <td>none</td>   <td>20</td>     <td>50</td>     <td>Increase storage from 90 to 150 items.</td></tr>
+<tr><td>New Storage Box (2nd upgrade)</td>              <td>none</td> <td>50</td>     <td>none</td>   <td>300</td>    <td>Increase storage from 150 to 240 items.</td></tr>
+<tr><td>New Storage Box (3rd upgrade)</td>              <td>none</td> <td>none</td>   <td>100</td>    <td>500</td>    <td>Increase storage from 240 to 330 items.</td></tr>
+<tr><td>New Storage Box (4th upgrade)</td>              <td>none</td> <td>none</td>   <td>250</td>    <td>1000</td>   <td>Increase storage from 330 to 450 items.</td></tr>
+<tr><td>New Storage Box (5th upgrade)</td>              <td>none</td> <td>none</td>   <td>500</td>    <td>1500</td>   <td>Increase storage from 450 to 570 items.</td></tr>
+<tr><td>New Bookshelf (1st upgrade)</td>                <td>none</td> <td>none</td>   <td>100</td>    <td>200</td>    <td>Increase bookshelf from 15 to 45 items.</td></tr>
+<tr><td>New Safe (1st upgrade)</td>                     <td>none</td> <td>100</td>    <td>100</td>    <td>200</td>    <td>Increase safe size from 30 to 60 items.</td></tr>
+<tr><td>New Wardrobe (1st upgrade)</td>                 <td>none</td> <td>none</td>   <td>100</td>    <td>200</td>    <td>Increase wardrobe from 30 to 60 items.</td></tr>
+<tr><td>New Shipping Box (1st upgrade)</td>             <td>none</td> <td>none</td>   <td>50</td>     <td>150</td>    <td>Increase shipping box size from 60 to 90 items.</td></tr>
+<tr><td>Expand Room (1st upgrade)</td>                  <td>10000</td><td>50</td>     <td>75</td>     <td>1000</td>   <td>Expand your room.</td></tr>
+<tr><td>Expand Room (2nd upgrade)</td>                  <td>50000</td><td>200</td>    <td>300</td>    <td>1500</td>   <td>Expand your room again.</td></tr>
+<tr><td>Expand Farm (1st upgrade)</td>                  <td>10000</td><td>30</td>     <td>50</td>     <td>500</td>    <td>Adds another 12x08 plot to your main farm</td></tr>
+<tr><td>Expand Farm (2nd upgrade)</td>                  <td>50000</td><td>200</td>    <td>250</td>    <td>1000</td>   <td>Adds another 12x08 plot to your main farm</td></tr>
+<tr><td>Build Monster Barn (new in farm)</td>           <td>none</td> <td>30</td>     <td>50</td>     <td>100</td>    <td>A home for monsters you befriend. Located in your main farm (left of the water well).</td></tr>
+<tr><td>Build Monster Barn (new in field)</td>          <td>none</td> <td>60</td>     <td>80</td>     <td>200</td>    <td>A home for monsters you befriend. Located in the extended farm.</td></tr>
+<tr><td>Expand Monster Barn (1st expansion)</td>        <td>none</td> <td>80</td>     <td>100</td>    <td>200</td>    <td>Add 2nd room (up to 5) to an existing monster barn.</td></tr>
+<tr><td>Expand Monster Barn (2nd expansion)</td>        <td>none</td> <td>150</td>    <td>200</td>    <td>400</td>    <td>Add 3rd room (up to 5) to an existing monster barn.</td></tr>
+<tr><td>Expand Monster Barn (3rd expansion)</td>        <td>none</td> <td>200</td>    <td>300</td>    <td>800</td>    <td>Add 4th room (up to 5) to an existing monster barn.</td></tr>
+<tr><td>Expand Monster Barn (Final expansion)</td>      <td>none</td> <td>400</td>    <td>500</td>    <td>1500</td>   <td>Add 5th, final room to an existing monster barn.</td></tr>
+<tr><td>Unify Cooking Tools</td>                        <td>none</td> <td>none</td>   <td>none</td>   <td>5000</td>   <td>Going to any one of your cooking tools gives you all cooking options.</td></tr>
+<!-- Other Orders -->
+<tr><th>Order (others)</th>                             <th>Gold</th> <th>Stone</th>  <th>Lumber</th> <th>Points</th> <th>Effect(s)</th></tr>
+<tr><td>Advertise Selphia</a>                           <td>none</td> <td>none</td>   <td>none</td>   <td>1500</td>   <td>Attract more tourists to Selphia</td></tr>
+<tr><td>Wood to Your Farm</a>                           <td>none</td> <td>none</td>   <td>none</td>   <td>500</td>    <td>Add branches and stumps to my farm (if I have the space). Not on a daily basis.</td></tr>
+<tr><td>Stone to Your Farm</a>                          <td>none</td> <td>none</td>   <td>none</td>   <td>500</td>    <td>Add stones and rocks to my farm (if I have the space). Not on a daily basis.</td></tr>
+<tr><td>Add Ability Slots</td>                          <td>none</td> <td>none</td>   <td>none</td>   <td>1000</td>   <td>Increase the number of slots for Rune Abilities (30 to )</td></tr>
+<tr><td>BGM: Rune Factory 1</td>                        <td>none</td> <td>none</td>   <td>none</td>   <td>50</td>     <td>Change the town's background music.</td></tr>
+<tr><td>BGM: Rune Factory 2</td>                        <td>none</td> <td>none</td>   <td>none</td>   <td>50</td>     <td>Change the town's background music.</td></tr>
+<tr><td>BGM: Rune Factory 3</td>                        <td>none</td> <td>none</td>   <td>none</td>   <td>50</td>     <td>Change the town's background music.</td></tr>
+<tr><td>BGM: Frontier</td>                              <td>none</td> <td>none</td>   <td>none</td>   <td>50</td>     <td>Change the town's background music.</td></tr>
+<tr><td>BGM: Tides/Destiny</td>                         <td>none</td> <td>none</td>   <td>none</td>   <td>50</td>     <td>Change the town's background music.</td></tr>
+<tr><td>Barrett Comes Daily</td>                        <td>none</td> <td>none</td>   <td>none</td>   <td>300</td>    <td>Ask Barrett to come into town every day.</td></tr>
+<tr><td>Cancel Barrett Visit</td>                       <td>none</td> <td>none</td>   <td>none</td>   <td>300</td>    <td>Tell Barrett it's okay to stay home.</td></tr>
+<tr><td>Raven Comes Daily</td>                          <td>none</td> <td>none</td>   <td>none</td>   <td>300</td>    <td>Ask Barrett to come into town every day.</td></tr>
+<tr><td>Cancel Raven Visit</td>                         <td>none</td> <td>none</td>   <td>none</td>   <td>300</td>    <td>Tell Raven it's okay to stay home. She wants to anyway.</td></tr>
+<tr><td>Wake-up: Clorica</td>                           <td>none</td> <td>none</td>   <td>none</td>   <td>10</td>     <td>Clorica will wake up your character</td></tr>
+<tr><td>Wake-up: Vishnal</td>                           <td>none</td> <td>none</td>   <td>none</td>   <td>10</td>     <td>Vishnal will wake up your character</td></tr>
+<tr><td>Wake-up: Pico</td>                              <td>none</td> <td>none</td>   <td>none</td>   <td>8000</td>   <td>Pico will wake up your character</td></tr>
+<tr><td>Cancel Wake-up Call</td>                        <td>none</td> <td>none</td>   <td>none</td>   <td>10</td>     <td>No one will wake up your character</td></tr>
+<tr><td>Take Back Hats</td>                             <td>none</td> <td>none</td>   <td>none</td>   <td>500</td>    <td>Erase all history of gifting hats</td></tr>
+<tr><td>Break All Furniture</td>                        <td>none</td> <td>none</td>   <td>none</td>   <td>500</td>    <td>Go buck-wild and smash everything to bits</td></tr>
+<!-- Extra Orders -->
+<tr><th>Order (extra orders)</th>                       <th>Gold</th> <th>Stone</th>  <th>Lumber</th> <th>Points</th> <th>Effect(s)</th></tr>
+<tr><td>Show/Hide Enemies' Levels</td>                  <td>none</td> <td>none</td>   <td>none</td>   <td>200</td>    <td>Show/Hide anyone's level on screen, yes, even the NPCs.</td></tr>
+<tr><td>Show/Hide Enemies' HP</td>                      <td>none</td> <td>none</td>   <td>none</td>   <td>200</td>    <td>Show/Hide monsters' HP on screen</td></tr>
+<tr><td>Disable Exp Gain</td>                           <td>none</td> <td>none</td>   <td>none</td>   <td>10</td>     <td>Set Exp gain to zer0.  Can re-enable.</td></tr>
+<tr><td>Disable Skill Gain</td>                         <td>none</td> <td>none</td>   <td>none</td>   <td>10</td>     <td>Set Skill gain to zer0.  Can re-enable.</td></tr>
+<tr><td>Sharance Maze</td>                              <td>none</td> <td>none</td>   <td>none</td>   <td>3000</td>   <td>Import a branch from Sharance, allowing access to the maze.</td></tr>
+<tr><td>Change appearance</td>                          <td>none</td> <td>none</td>   <td>none</td>   <td>50</td>     <td>Change appearance to look like anyone, and change back any time.</td></tr>
+<tr><td>10000 Prince pts -> 100000 G</td>               <td>none</td> <td>none</td>   <td>none</td>   <td>10000</td>  <td>Exchange Prince(ss) points for money</td></tr>
+<tr><td>Summon typhoon</td>                             <td>none</td> <td>none</td>   <td>none</td>   <td>1000</td>   <td>"Danger" is their middle name.</td></tr>
+<tr><td>Push away typhoon</td>                          <td>none</td> <td>none</td>   <td>none</td>   <td>1000</td>   <td>Physically push away a typhoon.</td></tr>
+</table>
+
+<p>Too many Rune Abilities?  Buy a bookshelf and store the extras in there.
+<br/>
+Dont forget Leon can upgrade magic.
+</p>
+<br/>
+
+<h2 id="Forging">Forging</h2>
+<p>When it comes to forging, level 10 is the highest any item can go.
+<br/><br/>
+Once you can obtain a forge, spend some quality time with it.  The Broadsword (found under "Short Sword") is the easiest
+item to craft in the entire game.  It requires one piece of ore to make, and Iron can found just outside the castle.
+<br/>
+Now that you have your first Broadsword, go find yourself nine Green Grass (it might be in your unkempt farm!).  Go back to the forge
+and upgrade that Broadsword with one of the nine Green Grass.  Repeat the upgrade process, using one grass per upgrade, until
+the sword is a Level 10.  Then sell it.  You'll get some needed gold plus some needed experience with the forge.
+<br/><br/>
+When you have obtained a Crafting Table, a Small Shield (using one piece of Iron ore), will be your starting item.
+Again, use Green Grass for upgrading the Shield to a Level 10, and then sell it.
+<br/><br/>
+Eat more Recipe Bread to learn how to make more items.  So long as the Difficulty level for the item you want to make
+remains <b>at or below</b> your Skill level, you'll gain experience better.
+<br/>
+<i style="margin-left:30px;">That is, if your Forging Skill Level is a 5, do not bother to forge a Level 7 Cutlass.</i>
+<br/>
+Instead, upgrade a weapon to level 10.  In fact, if it's an unshipped weapon, forge it, level it up and sell it.
+<br/>
+As your skill level increases, switch out the Grass you use: from Green Grass to Purple Grass level 5.
+At level 8, move on to Antidote Grass.  At level 11, Blue Grass.
+<ul>
+<li>Level 23 for Black Grass <span class="reminder">[Obsidian Mansion]</span>
+<li>Level 29 for Indigo <span class="reminder">[Maya Road]</span>
+<li>Level 39 for Yellow <span class="reminder">[Autumn Road]</span> (or Level 40 for Red <span class="reminder">[Delirium Lava Ruins]</span>)
+<li>Level 48 for Orange <span class="reminder">[Sercerezo Hill]</span>
+<li>Level 65 for White <span class="reminder">[Sechs Territory]</span>
+</ul>
+<p>
+Dont waste time and RP using Grass that has a higher Difficulty than  your skill level.  You will not gain any additional
+experience using the better Grass.
+<br/>
+If you have extra Grass left over, ship it.  Then, if you need to, you can buy that Grass from Nancy or Jones at their Clinic.
+<br/>
+<b>Remember:</b> Your STR has a chance to increase every time your Forging Skill increases, and that extra STR increases your ATK.
+<br/>
+If you have one or more cooking tables, and a steady source of eggs and milk, cook up items to restore your RP.
+In fact, cook first thing in the morning, so it is ready when you need it most.
+<br/>
+<br/><br/>
+Traveler quotes about forging:
+</p>
+<ul>
+<li>"Rare Can looks like nothing but trash. But if you use it to strengthen a weapon, it'll make monsters drop rare items more often." -- Mystic Deon
+<li>"The other day, I was going to make Broadsword.  I added Cutlass to the mix.  What I got resembled a Broadsword but had the abilities of Cutlass." -- Clumsy Kojiro
+<li>"When I was making a Broadsword, I added Light Ore and Battle Hammer.  You wont believe what I got.  See? It looks like Broadsword but it's as powerful as a hammer!" -- Expert Ken
+<li>"Rumor has it that using a fish to strengthen your fishing pole will make that fish easier to catch." -- Unique Don Juan
+</ul>
+
+<p>
+<table border="0" cellpadding="3" cellspacing="0" style="border:solid 3px #000;" id="forging">
+<tr><td colspan="10" class="cent">Interesting forging combinations.  Not the best combinations, but weaker combinations for weaker-level characters.</td></tr>
+<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>       <th colspan="3" class="req">Required material</th><th colspan="3" class="add">Added material</th><td>&nbsp;</td></tr>
+<tr><th onclick="sort('forging',0)">Item</th>           <th onlick="sort('forging',1)">Item Type</th>   <th onclick="sort('forging',2)">Maximum Forging Level</th><th>Material 1</th>                     <th>Material 2</th>                     <th>Material 3</th>             <th>Material 4</th>             <th>Material 5</th>                     <th>Material 6</th>             <th>Notes</th></tr>
+<tr><td>Small Shield</td>                               <td>Shield</td>                                 <td>2</td>                                              <td class="req">Minerals</td>           <td class="add">Fur (S)</td>            <td class="add">Fur (S)</td>    <td class="add">Fur (S)</td>    <td>&nbsp;</td>                         <td>&nbsp;</td>                 <td>A beginner's shield with VIT +3 and Diz Res 3%.</td></tr>
+<tr><td>Chaos Shield</td>                               <td>Shield</td>                                 <td><i class="formerly">25</i> 35</td>                  <td class="req">Silver</td>             <td class="req">Pretty Carapace</td>    <td class="add">Ghost Hood</td> <td class="add">Insect Carapace</td><td class="add">Insect Carapace</td><td class="add">Pretty Carapace</td><td>Poison Res 100%, Par Res 85%, Seal Res 100%</td></tr>
+<tr><td>Shield Ring</td>                                <td>Accessory</td>                              <td><i class="formerly">44</i> 65</td>                  <td class="req">Blk. Tortise Shell</td> <td class="req">Turtle Shell</td>       <td class="req">Minerals</td>   <td class="add">Fur (L)</td>    <td class="add">Big Bird's Comb</td>    <td class="add">Cursed Doll</td><td>Diz Res 25%, Seal Res 15%, Par Res 15%, Faint Res 50%, Drain Res 20%</td></tr>
+</table>
+
+<p><a href="http://therunefactory.wikia.com/wiki/Other_Items_%28RF4%29" target="_blank">locations for Foraging and Item Drops</a></p>
+<br/>
+
+
+<h2 id="Food">Food</h2>
+<a href="http://therunefactory.wikia.com/wiki/Consumables_%28RF4%29" target="_blank">Consumables</a>
+<br/><br/>
+
+<div>Dreamy Karen says:
+<span class="bubble">Eating food gives you various benefits, but they go away with time. Or when you eat a different dish.</span>
+</div>
+<br/>
+<p>
+Upon a first request for a cooking item, Porcoline will provide you with a Cooking Table that can make only "Simple Dishes"
+This will get you on your way to getting a cooking license (via an Order), and more cooking tools.
+Porcoline will also give you your first recipe: Onigiri Recipe.
+By eating Recipe Bread, you'll learn more (1-3) recipes.  Porcoline sells one to four loaves of Recipe Bread of different kinds per day:
+<ul>
+<li>Accessory Bread for 150G
+<li>Cooking Bread for 100G
+<li>Farming Bread for 250G
+<li>Medicine Bread for 120G
+<li>Weapon Bread for 180G
+</ul>
+</p><p>
+Bread can sometimes be found in treasure chests, or winning contests.  If you cannot learn a new recipe after eating it, you will regurgitate it.  Good for saving it later.
+</p>
+<br/>
+
+<table border="0" cellpadding="2" cellspacing="0" style="border:solid 3px #000;" id="cooking">
+<td colspan="10" class="cent">Foods that Restore or Boost stats.</td><tr/>
+<td colspan="10" class="cent" style="background-color:#FFA;">These effects are not permanent</td><tr/>
+<th onclick="sort('cooking',0)">Food Name</th><th onclick="sort('cooking',1)">Food Level</th> <th onclick="sort('cooking',2)">Cook Item</th>    <th>Item 1</th>         <th>Item 2</th>         <th>Item 3</th>         <th>Item 4</th>         <th>Item 5</th>         <th>Item 6</th><th>24 Hr Effect(s)<br/>(as Level 1 dish)</th>
+<!-- Cooking Table -->
+<tr>                    <td>Onigiri</td>                                <td>2</td>                              <td>Cooking Table</td>          <td>Rice</td>           <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +220, RP +30, STR +1, VIT +1, INT +1</td>
+<tr>                    <td>Pickled Turnip</td>                         <td>4</td>                              <td>Cooking Table</td>          <td>Turnip</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +250, RP +100, STR +5, VIT +3, INT +5</td>
+<tr>                    <td>Bamboo Rice</td>                            <td>7</td>                              <td>Cooking Table</td>          <td>Rice</td>           <td>Bamboo Sprout</td>  <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +300, RP +80, STR +2, VIT +2, INT +2</td>
+<tr>                    <td>Pickles</td>                                <td>10</td>                             <td>Cooking Table</td>          <td>Cucumber</td>       <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +400, RP +100, STR +4, VIT +3, INT +2</td>
+<tr>                    <td>Pickled Turnip</td>                         <td>12</td>                             <td>Cooking Table</td>          <td>Pink Turnip</td>    <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +250, RP +100, STR +5, VIT +3, INT +5</td>
+<tr>                    <td>Salmon Onigiri</td>                         <td>20</td>                             <td>Cooking Table</td>          <td>Salted Salmon</td>  <td>Rice</td>           <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +2700, RP +220, STR +10, VIT +6, INT +9</td>
+<tr>                    <td>Cheese</td>                                 <td>22</td>                             <td>Cooking Table</td>          <td>Sour Drop</td>      <td>Milk</td>           <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>RP +30</td>
+<tr>                    <td>Sandwich</td>                               <td>34</td>                             <td>Cooking Table</td>          <td>Bread</td>          <td>Egg</td>            <td>Cucumber</td>       <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +4000, RP +840, STR +23, VIT +12, INT +17</td></tr>
+<tr>                    <td>Fruit Sandwich</td>                         <td>35</td>                             <td>Cooking Table</td>          <td>Bread</td>          <td>Strawberry</td>     <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +4080, RP +1000, STR +30, VIT +15, INT +20</td></tr>
+<tr><td>Pickle Mix</td>         <td>48</td><td>Cooking Table</td><td>Turnip</td><td>Pink Turnip</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td></tr>
+<tr><td>Relax Tea Leaves</td><td>50</td><td>Cooking Table</td><td>White Grass</td><td>Orange Grass</td><td>Green Grass</td><td>Yellow Grass</td><td>Blue Grass</td><td>Purple Grass</td><td>-</td></tr>
+<tr><td>Salad</td>                 <td>67</td><td>Cooking Table</td><td>Mayonnaise</td><td>Cucumber</td><td>Tomato</td><td>Cabbage</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td></tr>
+<tr><td>Turnip Heaven</td>          <td>96</td>             <td>Cooking Table</td>                  <td>Turnip</td>         <td>Pink Turnip</td>    <td>Golden Turnip</td>  <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>-</td>
+<!-- Knife -->
+<tr>                    <td>Pike Sashimi</td>                           <td>1</td>                              <td>Knife</td>                  <td>Pike</td>           <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +120, RP +30, STR +1</td></tr>
+<tr>                    <td>Trout Sashimi</td>                          <td>2</td>                              <td>Knife</td>                  <td>Masu Trout</td>     <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +150, RP +50, STR +3</td></tr>
+<tr>                    <td>Cherry Sashimi</td>                         <td>3</td>                              <td>Knife</td>                  <td>Cherry Salmon</td>  <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +200, RP +50, STR +5</td></tr>
+<tr>                    <td>Needlefish Sashimi</td>                     <td>4</td>                              <td>Knife</td>                  <td>Needlefish</td>     <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +200, RP +70, STR +7</td></tr>
+<tr>                    <td>Squid Sashimi</td>                          <td>4</td>                              <td>Knife</td>                  <td>Squid</td>          <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +200, RP +80, STR +10</td></tr>
+<tr>                    <td>Girella Sashimi</td>                        <td>6</td>                              <td>Knife</td>                  <td>Girella</td>        <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +220, RP +100, STR +12</td></tr>
+<tr>                    <td>Sardine Sashimi</td>                        <td>8</td>                              <td>Knife</td>                  <td>Sardine</td>        <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +350, RP +100, STR +15</td></tr>
+<tr>                    <td>Salmon Sashimi</td>                         <td>12</td>                             <td>Knife</td>                  <td>Salmon</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +600, RP +150, STR +18</td></tr>
+<tr>                    <td>Shrimp Sashimi</td>                         <td>14</td>                             <td>Knife</td>                  <td>Shrimp</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +1000, RP +240, STR +20</td></tr>
+<tr>                    <td>Char Sashimi</td>                           <td>15</td>                             <td>Knife</td>                  <td>Char</td>           <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +1000, RP +400, STR +22</td></tr>
+<tr>                    <td>Turbot Sashimi</td>                         <td>21</td>                             <td>Knife</td>                  <td>Turbot</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +1900, RP +700, STR +25</td>
+<tr>                    <td>Rainbow Sashimi</td>                        <td>26</td>                             <td>Knife</td>                  <td>Rainbow Trout</td>  <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +2860, RP +700, Poison Resist 100%</td>
+<tr>                    <td>Flounder Sashimi</td>                       <td>30</td>                             <td>Knife</td>                  <td>Flounder</td>       <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +3240, RP +800, STR +28</td>
+<tr>                    <td>Skipjack Sashimi</td>                       <td>37</td>                             <td>Knife</td>                  <td>Skipjack</td>       <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +4520, RP +800, STR +30</td>
+<tr>                    <td>Lobster Sashimi</td>                        <td>40</td>                             <td>Knife</td>                  <td>Lobster</td>        <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +5000, RP +800, STR +35</td>
+<tr><td>Snapper Sashimi</td><td>50</td><td>Knife</td><td>Snapper</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Lamp Squid Sashimi</td><td>53</td><td>Knife</td><td>Lamp Squid</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Fall Sashimi</td><td>58</td><td>Knife</td><td>Fall Flounder</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Lover Sashimi</td><td>63</td><td>Knife</td><td>Throbby Snapper</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Yellowtail Sashimi</td><td>68</td><td>Knife</td><td>Yellowtail</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Blowfish Sashimi</td><td>71</td><td>Knife</td><td>Blowfish</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Tuna Sashimi</td><td>74</td><td>Knife</td><td>Tuna</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Sunsquid Sashimi</td><td>77</td><td>Knife</td><td>Sunsquid</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Taimen Sashimi</td><td>79</td><td>Knife</td><td>Taimen</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Glitter Sashimi</td><td>92</td><td>Knife</td><td>Glitter Snapper</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<!-- Frying Pan -->
+<tr>                    <td>Salted Pond Smelt</td>                      <td>6</td>                              <td>Frying Pan</td>             <td>Pond Smelt</td>     <td>Sour Drop</td>      <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +350, RP max +3, INT +1</td>
+<tr>                    <td>Salted Pike</td>                            <td>8</td>                              <td>Frying Pan</td>             <td>Pike</td>           <td>Sour Drop</td>      <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +480, RP max +5, INT +2</td></tr>
+<tr>                    <td>Baked Apple</td>                            <td>9</td>                              <td>Frying Pan</td>             <td>Apple</td>          <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +550, HP max +10, STR +1, VIT +1, INT +1</td></tr>
+<tr>                    <td>Salted Masu Trout</td>                      <td>9</td>                              <td>Frying Pan</td>             <td>Masu Trout</td>     <td>Sour Drop</td>      <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +600, RP max +7, INT +3</td></tr>
+<tr>                    <td>Salted C. Salmon</td>                       <td>12</td>                             <td>Frying Pan</td>             <td>Cherry Salmon</td>  <td>Sour Drop</td>      <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +780, RP max +8, INT +4</td></tr>
+<tr>                    <td>Grilled Needlefish</td>                     <td>12</td>                             <td>Frying Pan</td>             <td>Needlefish</td>     <td>Sour Drop</td>      <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +800, RP max +10, INT +5</td></tr>
+<tr>                    <td>Grilled Squid</td>                          <td>13</td>                             <td>Frying Pan</td>             <td>Squid</td>          <td>Sour Drop</td>      <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +1080, RP max +15, INT +8</td></tr>
+<tr>                    <td>Grilled C. Carp</td>                        <td>14</td>                             <td>Frying Pan</td>             <td>Crucian Carp</td>   <td>Sour Drop</td>      <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +1320, RP max +20, INT +10</td></tr>
+<tr>                    <td>Grilled S. Flounder</td>                    <td>15</td>                             <td>Frying Pan</td>             <td>Sand Flounder</td>  <td>Sour Drop</td>      <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +1480, RP max +25, INT +12, Poison Atk +1%, Paralysis Atk +1%</td>
+<tr>                    <td>Grilled Girella</td>                        <td>16</td>                             <td>Frying Pan</td>             <td>Girella</td>        <td>Sour Drop</td>      <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +1640, RP max +30, INT +15</td>
+<tr>                    <td>Grilled Mackerel</td>                       <td>16</td>                             <td>Frying Pan</td>             <td>Mackerel</td>       <td>Sour Drop</td>      <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +1720, RP max +35, INT +16</td>
+<tr>                    <td>Salted Salmon</td>                          <td>17</td>                             <td>Frying Pan</td>             <td>Salmon</td>         <td>Sour Drop</td>      <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +1800, RP max +40, INT +18</td>
+<tr>                    <td>Grilled Shrimp</td>                         <td>18</td>                             <td>Frying Pan</td>             <td>Shrimp</td>         <td>Sour Drop</td>      <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +1960, RP max +45, INT +20</td>
+<tr>                    <td>Salted Char</td>                            <td>19</td>                             <td>Frying Pan</td>             <td>Char</td>           <td>Sour Drop</td>      <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +2200, RP max +50, INT +22</td>
+<tr>                    <td>Grilled Gibelio</td>                        <td>19</td>                             <td>Frying Pan</td>             <td>Gibelio</td>        <td>Sour Drop</td>      <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +2280, RP max +55, INT +23</td>
+<tr>                    <td>Fried Eggs</td>                             <td>20</td>                             <td>Frying Pan</td>             <td>Egg</td>            <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +2360, HP max +50, STR +5, VIT +5, INT +5</td>
+<tr>                    <td>Grilled Turbot</td>                         <td>21</td>                             <td>Frying Pan</td>             <td>Turbot</td>         <td>Sour Drop</td>      <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +2680, RP max +60, INT +25</td>
+<tr>                    <td>Salted Chub</td>                            <td>23</td>                             <td>Frying Pan</td>             <td>Chub</td>           <td>Sour Drop</td>      <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +3000, RP max +65, INT +28</td>
+<tr>                    <td>French Fries</td>                           <td>24</td>                             <td>Frying Pan</td>             <td>Oil</td>            <td>Potato</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +3160, HP max +80, STR +7, VIT +7, INT +7</td>
+<tr>                    <td>Dried Sardines</td>                         <td>24</td>                             <td>Frying Pan</td>             <td>Sardine</td>        <td>Sardine</td>        <td>Sardine</td>        <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +3240, RP max +70, INT +30</td>
+<tr>                    <td>Salted R. Trout</td>                        <td>27</td>                             <td>Frying Pan</td>             <td>Rainbow Trout</td>  <td>Sour Drop</td>      <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +3640, RP max +80, INT +32, Poison Resist 100%, Poison Atk 50%</td>
+<tr>                    <td>Omelet</td>                                 <td>28</td>                             <td>Frying Pan</td>             <td>Milk</td>           <td>Egg</td>            <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +3800, HP max +100, STR +10, VIT +10, INT +10</td>
+<tr>                    <td>Fried Rice</td>                             <td>30</td>                             <td>Frying Pan</td>             <td>Rice</td>           <td>Oil</td>            <td>Egg</td>            <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +4120, HP max +150, STR +12, VIT +12, INT +12</td>
+<tr>                    <td>Miso Eggplant</td>                          <td>31</td>                             <td>Frying Pan</td>             <td>Eggplant</td>       <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP+4200, HP max +180m STR +13, VIT +13, INT +13</td>
+<tr>                    <td>French Toast</td>                           <td>31</td>                             <td>Frying Pan</td>             <td>Bread</td>          <td>Egg</td>            <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +4280, HP max +200, STR +15, VIT +15, INT +15</td></tr>
+<tr>                    <td>Grilled Flounder</td>                       <td>31</td>                             <td>Frying Pan</td>             <td>Flounder</td>       <td>Sour Drop</td>      <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +4360, RP max +90, INT +33</td>
+<tr>                    <td>Croquettes</td>                             <td>33</td>                             <td>Frying Pan</td>             <td>Oil</td>            <td>Potato</td>         <td>Egg</td>            <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +4600, HP max +250, STR +17, VIT +17, INT +17</td>
+<tr>                    <td>Tempura</td>                                <td>36</td>                             <td>Frying Pan</td>             <td>Oil</td>            <td>Flour</td>          <td>Shrimp</td>         <td>Egg</td>            <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +5160, HP max +270, STR +20, VIT +20, INT +20</td>
+<tr>                    <td>Grilled Skipjack</td>                       <td>37</td>                             <td>Frying Pan</td>             <td>Skipjack</td>       <td>Sour Drop</td>      <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +5400, RP max +100, INT +35</td>
+<tr>                    <td>Grilled Lobster</td>                        <td>41</td>                             <td>Frying Pan</td>             <td>Lobster</td>        <td>Sour Drop</td>      <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +5880, RP max +105, INT +37</td>
+<tr><td>Donut</td><td>46</td><td>Frying Pan</td><td>Oil</td><td>Flour</td><td>Butter</td><td>Egg (M)</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Risotto</td><td>48</td><td>Frying Pan</td><td>Rice</td><td>Wine</td><td>Butter</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Pancakes</td><td>49</td><td>Frying Pan</td><td>Flour</td><td>Honey</td><td>Milk</td><td>Egg</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Popcorn</td><td>51</td><td>Frying Pan</td><td>Corn</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Grilled Snapper</td><td>51</td><td>Frying Pan</td>                <td>Snapper</td>        <td>Sour Drop</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Corn Cereal</td><td>53</td><td>Frying Pan</td><td>Corn</td><td>Milk</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Grilled Lamp Squid</td><td>54</td><td>Frying Pan</td>                <td>Lamp Squid</td>        <td>Sour Drop</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Grilled F. Flounder</td><td>58</td><td>Frying Pan</td>        <td>Fall Flounder</td>        <td>Sour Drop</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Curry Bread</td><td>59</td><td>Frying Pan</td><td>Oil</td><td>Flour</td><td>Curry</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Omelet Rice</td><td>60</td><td>Frying Pan</td><td>Omelet</td><td>Rice</td><td>Ketchup</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Fried Veggies </td><td>62 </td><td>Frying Pan</td><td>Cabbage </td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr>                <td>Cabbage Cakes</td>                <td>64</td>                <td>Frying Pan</td><td>Flour</td><td>Cabbage</td><td>Egg </td><td>Leek </td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Grilled L. Snapper</td><td>66</td><td>Frying Pan</td>                <td>Throbby Snapper</td><td>Sour Drop</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Griled Yellowtail</td><td>69</td><td>Frying Pan</td>                <td>Yellowtail</td>        <td>Sour Drop</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Grilled Blowfish</td><td>72</td><td>Frying Pan</td>                <td>Blowfish</td>        <td>Sour Drop</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Tuna Teriyaki</td><td>75</td><td>Frying Pan</td>                <td>Tuna</td>                <td>Sour Drop</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Grilled Sunsquid</td><td>78</td><td>Frying Pan</td>                <td>Sunsquid</td>        <td>Sour Drop</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr>                    <td>Salted Taimen</td>                          <td>80</td>                             <td>Frying Pan</td>             <td>Taimen</td>         <td>Sour Drop</td>      <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>HP +5000, HP +100%, RP +1000, RP +25%, RP max +200, RP max +1-%, INT +100, INT +8%</td>
+<tr><td>Dry Curry</td>                <td>86</td>                <td>Frying Pan</td><td>Rice</td>        <td>Curry Powder</td>        <td>Carrot </td><td>Onion</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Gyoza</td>                        <td>88</td>                <td>Frying Pan</td><td>Flour</td>        <td>Onion</td>                <td>Cabbage</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Grilled G. Snapper</td>     <td>93</td>             <td>Frying Pan</td>                     <td>Glitter Snapper</td>        <td>Sour Drop</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Fried Udon</td>                <td>95</td>                <td>Frying Pan</td><td>Flour</td>        <td>Onion</td>                <td>Carrot</td>        <td>Cabbage</td><td></td><td></td><td>-</td>
+<!-- Mixer -->
+<tr>                    <td>Orange Juice</td>                           <td>5</td>                              <td>Mixer</td>                  <td>Orange</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +150, RP +150, INT +2</td>
+<tr>                    <td>Grape Juice</td>                            <td>7</td>                              <td>Mixer</td>                  <td>Grapes</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +220, RP +200, INT +8</td>
+<tr>                    <td>Apple Juice</td>                            <td>11</td>                             <td>Mixer</td>                  <td>Apple</td>          <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +500, RP +230, INT +10</td>
+<tr>                    <td>Butter</td>                                 <td>15</td>                             <td>Mixer</td>                  <td>Milk</td>           <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>-none-</td>
+<tr>                    <td>Fruit Juice</td>                            <td>18</td>                             <td>Mixer</td>                  <td>Apple</td>          <td>Grapes</td>         <td>Orange</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +1620, RP +500, INT +25</td>
+<tr>                    <td>Ice Cream</td>                              <td>25</td>                             <td>Mixer</td>                  <td>Sweet powder</td>   <td>Milk</td>           <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +3000, RP +450, STR +17, VIT +10, INT +15, Fire Resist 30%, Water Resist -30%</td>
+<tr>                    <td>Mayonnaise</td>                             <td>28</td>                             <td>Mixer</td>                  <td>Oil</td>            <td>Egg</td>            <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +5</td>
+<tr>                    <td>Strawberry Milk</td>                        <td>33</td>                             <td>Mixer</td>                  <td>Strawberry</td>     <td>Milk</td>           <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +4000, RP +680, INT +30</td>
+<tr>                    <td>Tomato Juice</td>                           <td>35</td>                             <td>Mixer</td>                  <td>Tomato</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +4000, RP +920, INT +45</td>
+<tr>                    <td>Fruit Smoothie</td>                         <td>37</td>                             <td>Mixer</td>                  <td>Fruit Juice</td>    <td>Milk</td>           <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +4480, RP +1000, INT +65</td>
+<tr>                    <td>Ketchup</td>                                <td>38</td>                             <td>Mixer</td>                  <td>SourDrop</td>       <td>Tomato</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>-none-</td>
+<tr><td>Vegetable Juice</td><td>59</td><td>Mixer</td><td>Pumpkin</td><td>Turnip</td><td>Carrot</td><td>Spinach</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Prelude t oLove</td><td>61</td><td>Mixer</td><td>PinkMelon</td><td>Strawberry</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Veggi Smoothie</td><td>65</td><td>Mixer</td><td>VegetableJuice</td><td>Milk</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Hot Juice</td><td>76</td><td>Mixer</td><td>HeavySpice</td><td>Hot-hotFruit</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Pineapple Juice</td><td>81</td><td>Mixer</td><td>pineapple</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Mixed Juice</td><td>83</td><td>Mixer</td><td>Apple</td><td>Grapes</td><td>Orange</td><td>Pineapple</td><td>Strawberry</td><td>Milk&nbsp;</td><td>-</td>
+<tr><td>Mixed Smoothie</td><td>91</td><td>Mixer</td><td>MixedJuice</td><td>Honey</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Gold Juice</td><td>99</td><td>Mixer</td><td>GoldenPumpkin</td><td>EmeryFlower</td><td>GoldenPotato</td><td>GoldenTurnip</td><td>GoldenCabbage</td><td>&nbsp;</td><td>-</td>
+<!-- Pot -->
+<tr class="feed">       <td>Rice Porridge</td>                  <td>2</td>                                      <td>Pot</td>                    <td>Rice </td>          <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +100, RP +150, RP max+10, Sick Resist 20%</td>
+<tr>                    <td>Marmalade</td>                      <td>5</td>                                      <td>Pot</td>                    <td>Orange</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +30, RP +10</td>
+<tr>                    <td>Udon</td>                           <td>7</td>                                      <td>Pot</td>                    <td>Flour</td>          <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +300, RP +100, HP max +150, Earth Resist 5%</td>
+<tr>                    <td>Grape Jam</td>                      <td>9</td>                                      <td>Pot</td>                    <td>Grapes</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +30, RP +10</td>
+<tr>                    <td>Apple Jam</td>                      <td>10</td>                                     <td>Pot</td>                    <td>Apple</td>          <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +30, RP +10</td>
+<tr>                    <td>Hot Chocolate</td>                  <td>11</td>                                     <td>Pot</td>                    <td>Chocolate</td>      <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +150, RP +500, RP max +50</td>
+<tr>                    <td>Boiled Spinach</td>                 <td>13</td>                                     <td>Pot</td>                    <td>Spinach</td>        <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +800, RP +360, HP max +300</td>
+<tr>                    <td>Hot Milk</td>                       <td>17</td>                                     <td>Pot</td>                    <td>Milk</td>           <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +880, RP +1000, RP max +80, RP max +5%</td>
+<tr>                    <td>Boiled Egg</td>                     <td>18</td>                                     <td>Pot</td>                    <td>Egg</td>            <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +1500, RP +540, HP max +500</td>
+<tr>                    <td>Yogurt</td>                         <td>19</td>                                     <td>Pot</td>                    <td>Sweet Powder</td>   <td>Milk</td>           <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>RP +50</td>
+<tr class="feed">       <td>Milk Porridge</td>                  <td>20</td>                                     <td>Pot</td>                    <td>Rice</td>           <td>Milk</td>           <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +1440, RP +1000, RP max +100, Sick Resist 80%</td>
+<tr>                    <td>Egg Bowl</td>                       <td>21</td>                                     <td>Pot</td>                    <td>Rice</td>           <td>Egg</td>            <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +2000, RP +760, HP max +800</td>
+<tr>                    <td>Boiled Pumpkin</td>                 <td>25</td>                                     <td>Pot</td>                    <td>Pumpkin</td>        <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +2500, RP +820, HP max +1000</td>
+<tr>                    <td>Strawberry Jam</td>                 <td>27</td>                                     <td>Pot</td>                    <td>Strawberry</td>     <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +30, RP +10</td>
+<tr>                    <td>Glazed Yam</td>                     <td>28</td>                                     <td>Pot</td>                    <td>Sweet Powder</td>   <td>Yam</td>            <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +3000, RP +720, HP max +1200</td>
+<tr>                    <td>Grilled Miso</td>                   <td>29</td>                                     <td>Pot</td>                    <td>Radish</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +3000, RP +880, HP max +1500</td>
+<tr>                    <td>Cheese Fondue</td>                  <td>32</td>                                     <td>Pot</td>                    <td>Bread</td>          <td>Cheese</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +3640, RP +800, HP max +1800</td>
+<tr>                    <td>Grape Liqueur</td>                  <td>39</td>                                     <td>Pot</td>                    <td>Grapes</td>         <td>Wine</td>           <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +3640, RP +2000, RP max +120 +10%, Crit +15%, Critical Resist -25%, Status Ailment: Sleep</td>
+<tr><td>RelaxTea</td><td>73</td><td>Pot</td><td>RelaxTeaLeaves</td><td>Honey</td><td>PinkMelon</td><td>Leek</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>RockfishStew</td><td>45</td><td>Pot</td><td>Rockfish</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>CurryUdon</td><td>56</td><td>Pot</td><td>Flour</td><td>CurryRice/DryCurry</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>TempuraUdon</td><td>54</td><td>Pot</td><td>Tempura</td><td>Udon</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>TempuraBowl</td><td>70</td><td>Pot</td><td>Rice</td><td>Tempura</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>Stew</td><td>87</td><td>Pot</td><td>Flour</td><td>Milk(M)</td><td>Potato</td><td>Carrot</td><td>Onion</td><td>&nbsp;</td><td>-</td>
+<tr><td>CurryRice</td><td>55</td><td>Pot</td><td>Rice</td><td>CurryPowder</td><td>Carrot</td><td>Potato</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>UltimateCurry</td><td>97</td><td>Pot</td><td>CurryPowder</td><td>Wine</td><td>DevilBlood</td><td>HeavySpice</td><td>Onion</td><td>GoldenTurnip</td><td>-</td>
+<tr><td>RoyalCurry</td><td>98</td><td>Pot</td><td>CurryPowder</td><td>Apple</td><td>Honey</td><td>MixedHerbs</td><td>Onion</td><td>EmeryFlower</td><td>-</td>
+<tr><td>BoiledGyoza</td><td>89</td><td>Pot</td><td>Flour</td><td>Onion</td><td>Cabbage</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr><td>UnionStew</td><td>94</td><td>Pot</td><td>Radish</td><td>Leek</td><td>BokChoy</td><td>Mushroom</td><td>Hot-hotfruit</td><td>&nbsp;</td><td>-</td>
+<!-- Oven -->
+<tr>                    <td>Bread</td>                          <td>8</td>                                      <td>Oven</td>                   <td>Flour</td>          <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td> <td>HP +400, RP +120, STR +4, VIT +4, INT +4</td>
+<tr>                    <td>Baked Onigiri</td>                  <td>10</td>                                     <td>Oven</td>                   <td>Onigiri</td>        <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td> <td>HP +500, RP +200, VIT +5</td>
+<tr>                    <td>Sweet Potato</td>                   <td>20</td>                                     <td>Oven</td>                   <td>Yam</td>            <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td> <td>HP +2020, RP +500, VIT +10</td>
+<tr>                    <td>Toast</td>                          <td>21</td>                                     <td>Oven</td>                   <td>Bread</td>          <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td> <td>HP +2040, RP +800, VIT +15</td>
+<tr>                    <td>Raisin Bread</td>                   <td>27</td>                                     <td>Oven</td>                   <td>Flour</td>          <td>Grapes</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td> <td>HP +3000, RP +400, STR +15, VIT +8, INT +10</td>
+<tr>                    <td>Jam Roll</td>                       <td>34</td>                                     <td>Oven</td>                   <td>Flour</td>          <td>Jam</td>            <td>Egg</td>            <td>Milk</td>           <td>&nbsp;</td>         <td>&nbsp;</td> <td>HP +3760, RP +1000, VIT +25</td>
+<tr>                    <td>Apple Pie</td>                      <td>36</td>                                     <td>Oven</td>                   <td>Flour</td>          <td>Apple</td>          <td>Butter</td>         <td>Egg</td>            <td>&nbsp;</td>         <td>&nbsp;</td> <td>HP +4240, RP +1000, VIT +30</td>
+<tr>                    <td>Cookie</td>                         <td>38</td>                                     <td>Oven</td>                   <td>Flour</td>          <td>Sweet Powder</td>   <td>Egg</td>            <td>Butter</td>         <td>&nbsp;</td>         <td>&nbsp;</td> <td>HP +4560, RP +1000, VIT +35</td>
+<tr>                    <td>Seafood Doria</td>                  <td>39</td>                                     <td>Oven</td>                   <td>Rice</td>           <td>Shrimp</td>         <td>Cheese</td>         <td>Squid</td>          <td>Milk</td>           <td>&nbsp;</td> <td>HP +4720, RP +1000, VIT +40, Water Resist 5%, Wind Resist 5%</td>
+<tr>                    <td>Seafood Gratin</td>                 <td>42</td>                                     <td>Oven</td>                   <td>Flour</td>          <td>Shrimp</td>         <td>Cheese</td>         <td>Squid</td>          <td>Milk</td>           <td>&nbsp;</td> <td>HP +4960, RP +1000, VIT +60, Water Resist 5%, Wind Resist 5%</td>
+<tr><td>Butter Roll</td>                <td>43</td>             <td>Oven</td>                                <td>Flour</td>                <td>Butter</td>                <td>Egg</td>                <td>Milk</td>                <td>&nbsp;</td>                <td>&nbsp;</td> <td>-</td>
+<tr><td>Choco Cookie</td>                <td>45</td>            <td>Oven</td>                                <td>Flour</td>                <td>Butter</td>                <td>Sweet Powder</td>        <td>Chocolate</td>        <td>Egg</td>                <td>&nbsp;</td> <td>-</td>
+<tr><td>Cheesecake</td>                <td>46</td>              <td>Oven</td>                                <td>Cheese</td>                <td>Egg</td>                <td>Milk</td>                <td>Sweet Powder</td>        <td>&nbsp;</td>                <td>&nbsp;</td> <td>-</td>
+<tr><td>Yam of the Ages</td>        <td>47</td>                <td>Oven</td>                                <td>Sweet Powder</td>        <td>Butter</td>                <td>Milk</td>                <td>Yam</td>                <td>&nbsp;</td>                <td>&nbsp;</td> <td>-</td>
+<tr><td>Chocolate Cake</td>                <td>48</td>          <td>Oven</td>                                <td>Flour</td>                <td>Chocolate</td>        <td>Butter</td>                <td>Sweet Powder</td>        <td>Milk</td>                <td>Egg</td>         <td>-</td>
+<tr><td>Corn on the Cob</td>        <td>52</td>                <td>Oven</td>                                <td>Corn</td>                <td>&nbsp;</td>                <td>&nbsp;</td>                <td>&nbsp;</td>                <td>&nbsp;</td>                <td>&nbsp;</td> <td>-</td>
+<tr><td>Cake</td>                        <td>54</td>            <td>Oven</td>                                <td>Flour</td>                <td>Butter</td>                <td>Sweet Powder</td>        <td>Strawberry</td>        <td>Milk</td>                <td>Egg</td>         <td>-</td>
+<tr><td>Seafood Pizza</td>                <td>56</td>           <td>Oven</td>                                <td>Flour</td>                <td>Cheese</td>                <td>Ketchup</td>        <td>Shrimp</td>                <td>Squid</td>                <td>&nbsp;</td> <td>-</td>
+<tr><td>Pizza</td>                        <td>60</td>                <td>Oven</td>                                <td>Flour</td>                <td>Cheese</td>                <td>Ketchup</td>        <td>Eggplant</td>        <td>Green Pepper</td>        <td>&nbsp;</td> <td>-</td>
+<tr><td>Doria</td>                        <td>84</td>                <td>Oven</td>                                <td>Rice</td>                <td>Cheese</td>                <td>Milk</td>                <td>Onion</td>                <td>&nbsp;</td>                <td>&nbsp;</td> <td>-</td>
+<tr><td>Gratin</td>                        <td>85</td>                <td>Oven</td>                                <td>Flour</td>                <td>Cheese</td>                <td>Milk</td>                <td>Onion</td>                <td>&nbsp;</td>                <td>&nbsp;</td> <td>-</td>
+<!-- Steamer -->
+<tr class="feed">       <td>Dumplings</td>                      <td>2</td>                                      <td>Steamer</td>                <td>Rice Flour</td>     <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +200, RP +500, Sleep Resist 70%</td>
+<tr class="feed">       <td>Chinese Manju</td>                  <td>15</td>                                     <td>Steamer</td>                <td>Flour</td>          <td>Bamboo Sprout</td>  <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +1260, RP +300, Dark Resist 5%, Poision Resist 70%</td>
+<tr class="feed">       <td>Pound Cake</td>                     <td>23</td>                                     <td>Steamer</td>                <td>Flour</td>          <td>Egg</td>            <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +2580, RP +500, Paralysis Resist 70%</td>
+<tr class="feed">       <td>Flan</td>                           <td>29</td>                                     <td>Steamer</td>                <td>Egg</td>            <td>Milk</td>           <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +3360, RP +600, Fatigue Resist 75%, Sick Resist 75%</td>
+<tr class="feed">       <td>Steamed Bread</td>                  <td>32</td>                                     <td>Steamer</td>                <td>Flour</td>          <td>Egg</td>            <td>Milk</td>           <td>&nbsp;</td>         <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +3720, RP +800, Seal Resist 75%</td>
+<tr class="feed">       <td>Chocolate Sponge</td>               <td>35</td>                                     <td>Steamer</td>                <td>Flour</td>          <td>Chocolate</td>      <td>Egg</td>            <td>Milk</td>           <td>&nbsp;</td>         <td>&nbsp;</td><td>HP +4200, RP +800, Sleep Resist 100%</td>
+<tr class="feed"><td>Cheese Bread</td><td>44</td><td>Steamer</td><td>Flour</td><td>Cheese</td><td>Egg</td><td>Milk</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr class="feed"><td>Pumpkin Flan</td><td>48</td><td>Steamer</td><td>Egg</td><td>Milk</td><td>Pumpkin</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr class="feed"><td>Curry Manju</td><td>57</td><td>Steamer</td><td>Flour</td><td>Curry</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr class="feed"><td>Meat Dumpling</td><td>82</td><td>Steamer</td><td>Flour</td><td>Shrimp</td><td>Onion</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<tr class="feed"><td>Steamed Gyoza</td><td>90</td><td>Steamer</td><td>Flour</td><td>Onion</td><td>Cabbage</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td>
+<!-- -->
+</table>
+<br/>
+
+
+<h2 id="My_Barn">My Barn</h2>
+<p>Ive found that the advantage of acquiring a barn buddy earlier in the game is:
+they will become stronger quicker as you take care of them on a daily basis.<br/>
+My well-taken care of Scorpion can defeat Typhoon (on his bridge) with virtually no damage taken.
+<br/><br/>
+Not all monsters will attack outright.</p>
+<table border="0" cellpadding="2" cellspacing="0" id="barn">
+<td class="cent" colspan="8"><b>Must-have monsters to befriend and their products.</b></td><tr/>
+<td class="cent" colspan="8">4 animals per room.  5 rooms per barn.</td><tr/>
+<th onclick="sort('barn',0)">Monster</th>   <th onclick="sort('barn',1)">Location</th>               <th onclick="sort('barn',2)">Tame after<br/>you reach level &dagger;</th>  <th>Produces</th>                       <th>Product Boosts</th>                                                                                                         <th>My views on fighting</th>                                                           <th>Ride?</th>                  <th>My notes</th></tr>
+                <td>Antok the Ant</td>                          <td>Selphia Plains</td>                                                         <td>5</td>                      <td>[every day] Insect Carapace</td>    <td>DEF +1, Psn Res 15%</td>                                                                                                    <td>Slow, but decent, non-magical, close-range attacks.</td>                            <td class="y">yes</td>          <td>Great to give to the other monsters to make them better immune to poison attacks. Owning this Ant also takes care of 2 Requests early on in the game.</td></tr>
+                <td>Moo the Buffamoo</td>                       <td>Selphia Plains East</td>                                                    <td>10</td>                     <td>[every day] Milk (S,M,L)</td>       <td>HP</td>                                                                                                                     <td>rarely attacks, but feed her good items anyway just in case.</td>                   <td class="y">yes</td>          <td>A cow with horns? Free milk for cooking, or drinking.</td> <tr/>
+                <td>Excede the Buffaloo</td>                    <td>Delirium Lava Ruins</td>                                                    <td>50</td>                     <td>[every day] Bull's Horn</td>        <td>ATK +7, DEF +1</td>                                                                                                         <td>Decent non-magical attack by rushing at their enemy.</td>                           <td class="y">yes</td>          <td>A bull with horns.</td> <tr/>
+                <td>Mamas the Mamadoodle</td>                   <td>Cluck-Cluck Nest</td>                                                       <td>55</td>                     <td>[every day] Egg (S,M,L)</td>        <td>HP and RP </td>                                                                                                             <td>Decent, non-magical, close-range attacks</td>                                       <td class="n">sadly no</td>     <td>Who doesnt want a giant chicken in their barn? Free egg for cooking.</td><tr/>
+                <td>Atlas the Hercules</td>                     <td>Maya Road</td>                                                              <td>70</td>                     <td>[every 3 days] Rigid Horn</td>      <td>ATK +15, Crit +1%</td>                                                                                                      <td>Slow, but decent, non-magical, close-range attacks.</td>                            <td class="y">yes</td>          <td>Rigid Horn better than Insect Horn.  Great to give to the other monsters to make their physical attacks do critical damage.</td></tr>
+                <td>Prince the Hornet Queen</td>                <td>Maya Road</td>                                                              <td>70</td>                     <td>[every day] Honey</td>              <td>RP +23</td>                                                                                                                 <td>Decent, non-magical, distance attacks.</td>                                         <td class="n">no</td>           <td>Amber loves Honey.</td> <tr/>
+                <td>Green the fairy</td>                        <td>Maya Road (lake) *</td>                                                     <td>100</td>                    <td>-nothing-</td>                      <td>-nothing-</td>                                                                                                              <td>Good, distance wind magic attack. Can do close-range non-magical too.</td>          <td class="n">no</td>           <td>(* Can follow if freed in Idra Cave). Cannot heal.</td></tr>
+                <td>Keira the Killer Ant</td>                   <td>Yokmir Cave</td>                                                            <td>30</td>                     <td>[every day] Pretty Carapace</td>    <td>DEF +3, Seal Res 5%, Par Res 25%</td>                                                                                       <td>Good, non-magical, close-range attacks</td>                                         <td class="n">no</td>           <td>Good to give Produce to the other monsters to make them better immune to paralysis and seal attacks.</td><tr/>
+                <td>Venom the Scorpion</td>                     <td>Delirium Lava Ruins</td>                                                    <td>50</td>                     <td>[every day] Scorpion Tail</td>      <td>ATK +5, Psn Atk 8%</td>                                                                                                     <td>Great, non-magical, close-range poison attacks</td>                                 <td class="n">no</td>           <td>Upgrade weapons with poison.  Great to give to the other monsters so they can poison the enemy.</td></tr>
+                <td>Death the Death Stalker</td>                <td>Sechs Territory (cave)</td>                                                 <td>95</td>                     <td>[every X days] Scorpion Tail</td>   <td>ATK +5, Psn Atk 8%</td>                                                                                                     <td>Great, non-magical, close-range poison attacks</td>                                 <td class="n">no</td>           <td>Upgrade weapons with poison.  Great to give to the other monsters so they can poison the enemy.</td></tr>
+                <td>Blue the fairy</td>                         <td>Sechs Territory</td>                                                        <td>85</td>                     <td>-nothing-</td>                      <td>-nothing-</td>                                                                                                              <td>Good, distance water magic attack. Can do close-range non-magical too.</td>         <td class="n">no</td>           <td><b>Heals (but rarely?)</b> Found one screen south of cave, exiting a gate.</td></tr>
+                <td>Winter the Flower Crystal</td>              <td>Sechs Territory</td>                                                        <td>95</td>                     <td>[every 3 days] Strong Vine</td>     <td>M.ATK +12, Seal Atk 10%</td>                                                                                                <td>Decent distance fighter that shoots five petals (rather than one-to-three)</td>     <td class="n">no</td>           <td>Strong Vine better than a Vine.  Great to give to the other monsters so they can seal enemy abilities.</td></tr>
+                <td>Tangle the Hell Spider</td>                 <td>Floating Empire East</td>                                                   <td>100</td>                    <td>[every day] Pretty Thread</td>      <td>M.ATK +16, Par Atk 25%</td>                                                                                                 <td>Decent, distance attacks that slow the enemy. Can do close-range too.</td>          <td class="n">no</td>           <td>Pretty Thread better than Spider's Thread.  Great to give to the other monsters so they can paralyze the enemy.</td></tr>
+                <td>Light the Thunderbird</td>                  <td>Floating Empire South</td>                                                  <td>105</td>                    <td>[every day] Thunderbird Feather</td><td>INT +28</td>                                                                                                                <td></td>                                                               <td class="y">yes</td>          <td>Best type feather to get for free, but not the best feather to find.</td></tr>
+                <td>Trick the Tricky Muck</td>                  <td>Autumn Road</td>                                                            <td>50</td>                     <td>[every 3 days] Poison Powder</td>   <td>M.ATK +2, M.DEF +2, Psn Atk 5%</td>                                                                                         <td>Slow, non-magical, close-range poison attacks.</td>                                 <td class="y">yes</td>          <td>Upgrade weapons with poison. Good to give to the other monsters so they can poison the enemy.</td></tr>
+                <td>Red the fairy</td>                          <td>Autumn Road</td>                                                            <td>80</td>                     <td>-nothing-</td>                      <td>-nothing-</td>                                                                                                              <td>Good, distance fire magic attack. Can do close-range non-magical too.</td>          <td class="n">no</td>           <td>Found two screens right of the Revival Cave exiting a gate. Cannot heal.</td></tr>
+                <td>Fluffy the Shmooly</td>                     <td>Sercerezo Hill</td>                                                         <td>55</td>                     <td>[every day] Fur (S,M,L)<br/>        <td>(S) VIT+1, Diz Res 1%<br/>(M) DEF +5, M.DEF +3, Diz Res 10%<br/>(L) DEF +10, M.DEF +5, Diz Res 25%, Slp Atk 3%</td>         <td>Decent, non-magical, close-range attacks.</td>                                      <td class="y">yes</td>          <td>Fur better than a Wooley's Fur or Quality Puffy Fur.  Good to give to the other monsters to make them better immune to dizzy and sleep attacks.</td><tr/>
+                <td>Breeze the Typhoon</td>                     <td>Sercerezo Hill Bridge<br/>(during a typhoon)</td>                           <td>155</td>                    <td>-nothing-</td>                      <td>-nothing-</td>                                                                                                              <td>Aggressive; Does close-range Dark physical, and long-range magical attacks.</td>    <td class="y">yes</td>          <td><b>Heals only self</b>. Does long-range Dark and Wind magic attacks. Quite possibly the best monster to have on your side; and two Typhoons are better than one!</td></tr>
+                <td>Yellow the fairy</td>                       <td>Sercerezo Hill</td>                                                         <td>90</td>                     <td>-nothing-</td>                      <td>-nothing-</td>                                                                                                              <td>Good, distance earth magic attack. Can do close-range non-magical too.</td>         <td class="n">no</td>           <td>Found left of Idra Cave exiting a gate. (Look for a hidden Monarch Mushroom too.) Cannot heal.</td></tr>
+                <td>Gray the Daemon</td>                        <td>Idra Cave B2</td>                                                           <td>70</td>                     <td>?</td>                              <td>?</td>                                                                                                                      <td>Decent, non-magical, close-range attacker with mid-range dark attacks.</td>         <td class="n">no</td>           <td><b>Heals</b> A mini Typhoon.</td><tr/>
+                <td>Aren the Little Emperor</td>                <td>Leon Karnak</td>                                                            <td>135</td>                    <td>-nothing-</td>                      <td>-nothing-</td>                                                                                                              <td>Decent, long-range magic attack. Can do close-range non-magical too.</td>           <td class="y">yes</td>          <td><b>Heals</b> Light and Dark magic attacks, can paralyze at close distance.</td><tr/>
+                <td>Arcs the Arch-Daemon</td>                   <td>Leon Karnak</td>                                                            <td>135</td>                    <td>-nothing-</td>                      <td>-nothing-</td>                                                                                                              <td>Decent, non-magical, close-range attacker with mid-range dark attacks.</td>         <td class="y">yes</td>          <td><b>Heals</b> A smaller Typhoon.</td><tr/>
+                <td>Aotama the Onionger</td>                    <td>Runa Prana (first area)</td>                                                <td>200</td>                    <td>?</td>                              <td>?</td>                                                                                                                      <td>Slow, but decent ranged fire, water, earth, wind, and physical attacks.</td>        <td class="n">no</td>           <td>A giant, colorful onion ghost.</td><tr/>
+                <td>Agant the Ant Queen</td>                    <td>Rune Prana (fire area)</td>                                                 <td>175</td>                    <td>[every X days] Queen's Jaw</td>     <td>ATK +100, DEF +10, M.ATK +40, M.DEF +10</td>                                                                                <td>Decent, close-range attack that inflicts sleep and cold.</td>                       <td class="n">no</td>           <td>Queen's Jaw better than Dangerous Scissors</td><tr/>
+</table>
+<span class="footer">&dagger; Taming levels based on HARD difficulty.  Easier difficulties can expect a decrease of 10 levels or more.</span>
+<br/>
+<p><b>NOTE:</b> If and when you win over a pet that heals (ie: a Little Emperor), make sure they will heal by taking them into a battle.  There are some varients that will not heal themselves, even when close to death.
+Typhoon(s) try to find time in mid-battle to heal themselves, but because they are aggressive fighters, they sometimes they neglict their own health.
+<br/><br/>
+Traveler quotes about feeding:
+<ul>
+<li>"You can give your little monster friends steamed dishes every day.  This will eventually make them strong enough to be immune to any status ailment." -- Quiet Stefan
+<li>"I suggest giving homemade dishes as presents to your pets." -- Pretty Fiona
+<li>"Try feeding your pets Round Stone every day.  Soon they'll be so strong no attack will knock them back!" -- Loyal Shin
+<li>"Try feeding your pets juice or raw fish.  This will raise their Magic Attack power." -- Manly Judas.
+<li>"Give your pets dishes you cook in a pot and their HP will go up.  Today I'm gonna give them a lot of Union Stew" -- Crafty Stefan
+<li>"Giving sashimi to your pets can really raise their attack power." -- Upper Don Juan
+<li>"The other day, I gave Love Crystal to my pet Wooly on a whim. Now its attacks will absorb HP! That's so not cute!" -- Classy Lara
+</ul>
+</p><p>
+The monster expert is located two screens to the right of the Obsidian Mansion.
+<br/>
+Feed your pets one Scorpion Tail a day, and their attacks will eventually become poisonous.
+<br/>
+<a href="http://therunefactory.wikia.com/wiki/Monsters_%28RF4%29" target="_blank">monsters: stats, how to tame 'em, and more</a>
+<br/><br/>
+
+
+"The mushrooms blocking the road on Sercerezo Hill arent there at the beginning of the month." -- Yummy Ben.
+<br/>
+"If you're going to attempt the Sharance Maze, take more than just regular weapons.  Have spells and weapons with elemental affinities with you." -- Writer Jimmy
+<br/><br/>
+
+<h2 id="Character">Character</h2>
+<p>
+"If you're fatigued, your RP won't regenerate. Not only that, but even the slightest action drains a ton of RP. The best way to cure your fatigue is bedrest."
+<br/><br/>
+Venturing out of the castle for the first time:  As Forte explains, you're not really killing them.
+Weapons and tools have "Tamitaya" cast upon them, sending defeated monsters to the "Forest of Beginnings".
+Monsters enter our world through swirling vortexs called gates.  She will then give you a Claymore to fight with.
+<br/>
+Forte will ask you about your confidence in your skills.  Your answer determines the strength of the monsters you fight.
+You can change the difficulty later in the game.
+<br/>
+"When the enemy's strength overwhelms you, gaze upon the trophy in the castle basement." - a charm recited by Forte.
+<br/>
+Various roadblocks will be present for a time to prevent you from wandering too far and running into stronger monsters.
+<br/><br/>
+As tempting as it maybe, do not leave items you have picked up lying around the bedroom.  Butlers will throw out your mess.
+<br/>
+Use your bare fists to stun monsters, then you can pick them up and throw them.
+</p>
+Ways to increase your resistances:
+<ul>
+<li>Keep plenty bottles of wine around.  You can drink them to raise your Resistance to Sleep.  <i>Drink Responsibly.</i>
+<li>Object X, created from a failed Chemistry experiment, should be consumed prior to going to bed.
+<li>Enhance your weapons with status-inflicting items (ie: Strong Vine for Seal, Scorpion Tail for Poison, etc.)
+</ul>
+<br/><br/>
+
+</p>
+</body>
+</html>
