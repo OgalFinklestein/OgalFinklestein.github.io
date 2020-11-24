@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 1.1 Transitional//EN">
+<html lang="en">
+<head>
+<title>Zelda: Link Between Worlds count-down timer/clock</title>
+<meta name="robots" 		content="Follow, Index, NoArchive">
+<meta name="GoogleBot" 		content="Follow, Index, NoArchive">
+<meta name="revisit-after" 	content="2 days" />
+<meta name="keywords" 		content="Zelda, count-down, timer, clock Scott Birl, Ogal Finklestein, S.A. Birl, sbirl, birls, S. A. Birl, Ogal Finkelstein, Ogal Finklestien, Ogal Finkelstien, Ogle Finklestein">
+<meta name="description" 	content="Count-down clock for Zelda: Link Between Worlds. Written 2013-Oct-25 by S.A. Birl.">
+<meta name="author" 		content="Scott Birl">
+<meta name="distribution" 	content="Global" />
+<meta name="audience" 		content="all" />
+<meta name="language" 		content="English" />
+<meta name="MS.LOCALE" 		content="en-US" />
+
+<meta http-equiv="Pragma" 	content="no-cache">
+<!-- meta http-equiv="refresh" 	content="10800" -->
+
+<SCRIPT language="JavaScript" type="text/javascript">
+var RandomDays=31;
+var WaitPeriod=0;
+
+//RandomDays=parseInt((Math.random()*32));
+WaitPeriod=(86400*RandomDays);
+
+function FH(thisElement, Color)
+{
+        document.getElementById(thisElement).style.color=Color;
+}
+
+function DemoSwitch()
+{
+        WaitPeriod=(86400*RandomDays);
+//      WaitPeriod=(86400* parseInt((Math.random()*RandomDays)));
+        document.getElementById('Demo').style.textDecoration="none";
+        document.getElementById('Demo').innerHTML="Demo active";
+}
+
+function start(form)
+{
+        setTimeout("start()", 100);
+        var ToPpos       = 0; 		// Power.    pixels from top
+        var ToWpos       = 0; 		// Wisdom.   pixels from left
+        var ToCpos       = 0; 		// Courage.  pixels from left
+        var temp         = 0;
+        var WaitPeriodT  = "";
+
+        document.getElementById('WaitPeriod').innerHTML= parseInt( (WaitPeriod/1000) );
+
+
+
+
+        if (WaitPeriod > 0)
+        {
+                WaitPeriod-=10800;
+                WaitPeriod-=5;
+        //      WaitPeriod-=2;
+
+        	temp = WaitPeriod;
+
+        	var T= parseInt(temp/(86400*30.43));
+        	if (T > 0) { WaitPeriodT=T + "M "; }
+
+
+        	// We've calculated months, now use the decimal remainder get the number of days left
+        	temp %= (86400*30.43);
+        	T=parseInt(temp/86400);
+        	if (T > 0) { WaitPeriodT=WaitPeriodT + T + "d "; }
+
+        	// If we're waiting longer than 1 month, then make it 1 month
+        	if (WaitPeriod > (86400*30.43) )
+        	{
+        		ToPpos=31;
+        		ToWpos=31;
+        		ToCpos=31;
+        	}
+        	else if (temp > 0)
+        	{
+        		// should be days, ranging from 0 to 30-ish
+        		ToPpos=parseInt(temp/86400);
+        		ToWpos=parseInt(temp/86400);
+        		ToCpos=parseInt(temp/86400);
+        	}
+
+        	// We've calculated days, now use the decimal remainder get the number of hours left
+        	temp %= 86400;
+        	T=parseInt(temp/3600);
+        	if (T > 0) { WaitPeriodT=WaitPeriodT + T + "h "; }
+
+
+        	// We've calculated hours, now use the decimal remainder get the number of minutes left
+        	temp %= 3600;
+        	T=parseInt(temp/60);
+        	if (T > 0) { WaitPeriodT=WaitPeriodT + T + "m "; }
+
+        	// We've calculated minutes, now use the decimal remainder get the number of seconds left
+        	temp %= 60;
+        	T=temp;
+        	var temp2=temp; 	// capture the seconds for future use.
+        	if (T >= 0) { WaitPeriodT=WaitPeriodT + T + "s "; }
+
+
+
+
+
+/* The yellow triangles which updates every day. */
+        	// Move 6.66px per day
+        	var PN = parseInt(75+(ToPpos*6.66)); 					// moves at 2/3 speed
+        	document.getElementById('PP').innerHTML= "P top=" + PN + "px"; 		// debug
+        	document.getElementById('Power').style.top="" + PN + "px"; 		// move from bottom (275px) to top (75px)
+
+        	// Move 10px per day
+        	var WN = 300-(ToWpos*10);
+        	document.getElementById('WW').innerHTML= "W left=" + WN + "px"; 	// debug
+        	document.getElementById('Wisdom').style.left="" + WN + "px";  		// move from left (100px) to right (300px)
+
+        	var CN = 500+(ToCpos*10);
+        	document.getElementById('CC').innerHTML= "C left=" + CN + "px"; 	// debug
+        	document.getElementById('Courage').style.left="" + CN + "px"; 		// Move from right (700px) to left (500px)
+
+/* The "shadow" triangles update every second
+        	They start underneath the yellow triangles and move to the final position as if the wait was over */
+        	ToPpos=temp2; 	// temp2 is seconds
+        	ToWpos=temp2; 	// temp2 is seconds
+        	ToCpos=temp2; 	// temp2 is seconds
+
+
+// StoppingPoint=75px + ((difference of Yellow triange - StoppingPoint) over 60 seconds) times the number of seconds remining in this minute
+        	temp = parseInt( 75+((PN-75)/60)*ToPpos );
+        	document.getElementById('PPP').innerHTML= "Ps top=" + temp + "px"; 	// debug
+        	document.getElementById('Din').style.top="" + temp + "px"; 		// move from bottom (275px) to top (75px)
+
+        	temp = parseInt( 300+((WN-300)/60)*ToWpos );
+        	document.getElementById('WWW').innerHTML= "Ws left=" + temp + "px"; 	// debug
+        	document.getElementById('Nayru').style.left="" + temp + "px";  		// move from left (100px) to right (300px)
+
+        	temp = parseInt( 500-((500-CN)/60)*ToCpos );
+        	document.getElementById('CCC').innerHTML= "Cs left=" + temp + "px"; 	// debug
+        	document.getElementById('Farore').style.left="" + temp + "px"; 		// Move from right (700px) to left (500px)
+        }
+        else
+        {
+                document.getElementById('Demo').innerHTML="Again!";
+                document.getElementById('Demo').style.textDecoration="underline";
+        }
+
+        document.getElementById('WaitPeriodTotal').style.width="900px";
+        document.getElementById('TimeWidth').innerHTML=document.getElementById('WaitPeriodTotal').style.width;
+}
+</SCRIPT>
+
+<style>
+body            {background-color:#000; color:#FFF;}
+td,th           {white-space:nowrap;}
+/*#CurrentDate  {color:#0AF;}*/
+#debug          {color:#AAA; display:none;}
+#Demo 		{font-size:1.00em; cursor:pointer; border:solid 0px #AAA; }
+
+#Din            {font-size:300px; color:#111; z-index:0; position:absolute; top:  75px; left:400px;}
+#Nayru          {font-size:300px; color:#111; z-index:0; position:absolute; top: 275px; left:300px;}
+#Farore         {font-size:300px; color:#111; z-index:0; position:absolute; top: 275px; left:500px;}
+
+#P              {font-size:300px; color:#111; z-index:0; position:absolute; top:  75px; left:400px;}
+#W              {font-size:300px; color:#111; z-index:0; position:absolute; top: 275px; left:300px;}
+#C              {font-size:300px; color:#111; z-index:0; position:absolute; top: 275px; left:500px;}
+
+#Power          {font-size:300px; color:#FC0; z-index:3; position:absolute; top:  75px; left:400px;}
+#Wisdom         {font-size:300px; color:#FC0; z-index:2; position:absolute; top: 275px; left:300px;}
+#Courage        {font-size:300px; color:#FC0; z-index:1; position:absolute; top: 275px; left:500px;}
+
+#WaitPeriodTotal{border:solid 0px #333; width:0px;}
+</style>
+</head>
+
+<body onload="start()">
+<a href="~sbirl" style="font-size:8px">Home</a>
+<br/>
+
+<div style="border:double 0px #F00; height:550px; width:1100px;">
+<center><div id="WaitPeriodTotal" style="font-family:'Lucida Console'; font-size:30pt; color:#FF0; width:850px;"></div></center>
+<br/><br/>
+<!-- Power (Din) is at the top, Wisdom (Nayru) at the left, Courage (Farore) at the right -->
+<a href="http://www.zelda.com/link-between-worlds/" target="_blank">
+<span id="Wisdom"  onmouseover="FH('Wisdom', '#FC5')"   onmouseout="FH('Wisdom', '#FC0')"  title="Triforce of Wisdom">&#9650;</span>
+<span id="Power"   onmouseover="FH('Power', '#FC5')"    onmouseout="FH('Power', '#FC0')"   title="Triforce of Power">&#9650;</span>
+<span id="Courage" onmouseover="FH('Courage', '#FC5')"  onmouseout="FH('Courage', '#FC0')" title="Triforce of Courage">&#9650;</span>
+</a>
+
+<span id="Nayru"  onmouseover="FH('Wisdom', '#FC5')"   onmouseout="FH('Wisdom', '#FC0')"  title="Nayru, Goddess of Wisdom">&#x25B2;</span>
+<span id="Din"    onmouseover="FH('Power', '#FC5')"    onmouseout="FH('Power', '#FC0')"   title="Din, Goddess of Power">&#x25B2;</span>
+<span id="Farore" onmouseover="FH('Courage', '#FC5')"  onmouseout="FH('Courage', '#FC0')" title="Farore, Goddess of Courage">&#x25B2;</span>
+
+<div id="Demo" onclick="DemoSwitch()">Demo active</div>
+<font id="debug" style="font-size:8pt; position:absolute; top:600px;">
+<span id="WaitPeriod"></span> seconds left until <span id="ReleaseDate">EST (-0500)</span>. Currently: <span id="CurrentDate"></span>
+<br/><span id="WW" ></span> | <span id="PP" ></span> | <span id="CC" ></span>
+<br/><span id="WWW"></span> | <span id="PPP"></span> | <span id="CCC"></span>
+<br/><span id="TimeWidth"></span>|
+<br/>&#9650; &#9654; &#9658; &#9660; &#9664; &#9668;
+<br/><br/>
+</font>
+</div>
+
+</body>
+</html>
