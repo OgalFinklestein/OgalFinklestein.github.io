@@ -1,0 +1,320 @@
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>The Japanese 3DS including keyboard layout, as seen by an non-Japanese reading/writing/speaking American</title>
+<style>
+.c 					{border:solid 1px #0FA; color:#FA0; background-color:#9FA; font-size:20pt; }
+.cent 					{text-align:center; }
+.key 					{font-size:24pt; text-align:center; cursor:help; }
+.jpn 					{font-size:24pt; text-align:center; }
+.q 					{cursor:help; }
+.s 					{color:#FFF; background-color:#0FA; }
+#keyboard td 				{font-size:24pt; text-align:center; width:40px; white-space:nowrap; }
+#dictionary 				{max-width:50%; }
+#dictionary td:nth-child(odd) 		{font-size:24pt; }
+
+#eShop 					{max-width:60%; }
+#eShop td:nth-child(n+1):nth-child(-n+3) {font-size:24pt;}
+
+#eShop2 tr:first-child td 		{border:solid 1px #BBB; }
+#eShop2 tr:first-child 			{font-size:24pt; }
+#eShop2 tr:second-child td 		{color:#F00; }
+
+#MainScreen 				{max-width:50%}
+#MainScreen td:first-child 		{font-size:24pt;}
+#streetpass 				{max-width:50%; }
+#streetpass td:first-child 		{font-size:20pt; }
+td p					{font-size:14pt; text-align:center; color:#F00; }
+td p a					{font-size:05pt; text-align:center; color:#000; }
+th 					{border:solid 0px #FFF;}
+span 					{border:solid 1px #0FA; color:#EEE; background-color:#000;}
+table 					{background-color:#EeE;}
+</style>
+<script type="text/javascript" language="JavaScript">
+// Needed to duplicate for Astro
+function HideShow(thisElement)
+{
+	if (document.getElementById(thisElement).style.display != "none")
+	{
+		document.getElementById(thisElement).style.display="none";
+	}
+	else
+	{
+		document.getElementById(thisElement).style.display="block";
+	}
+}
+</script>
+</head>
+
+<body>
+<a href=".">.</a>
+<br/>
+2015-Jun-01.  2017-Mar-21.
+<br/><br/>
+Early in 2015 I bought a Japanese 3DS because I found out that there are some RPGs that were not released to the North American market ...
+(<i>I do curse Nintendo for region-locking the 3DS</i>) ... and I figured that I might be able to pick up a new language.
+However, I gotta complain: unlike Spanish or Italian that I studied in the past, I have 2 obsticles to overcome with
+Japanese: words and characters! Spanish and Italian use (mostly) the same characters as English, so I know what letters are
+what (the pronouncation is slightly different). But with Japanese, there's Hiragana, Katakana and Kanji characters!
+So I have A LOT to learn.  But Im also older in age, so I have A LOT to forget.
+<br/><br/>
+As any 3DS owner knows there is a virtual keyboard.  I accessed the keyboard from the Japanese eShop.
+Searching the Japanese eShop with English words and characters will yield you very little, if anything.
+So you're left with staring at
+
+<div style="position:relative; text-align:center"><img src="3DS_Japanese_virtual_keyboard.gif" style="width:300px" alt="The virtual Hiragana keyboard on the Nintendo 3DS.">
+<br/><i>The 3DS virtual Hiragana keyboard</i></div>
+<br/>
+
+Thus started my journey into <b>really</b> learning Japanese; and you're reading this from an <b>AMATEUR</b>'s prespective.
+The result, so far, is this webpage.  Although it was painful to scrutinize each character on the 3DS to its UNICODE
+equivalent (this website is written in HTML afterall), I started to see a pattern in the virtual keyboard with the a,i,u,e,o.
+Some of the UNICODE characters didnt match up at first; different fonts render the characters slightly differently, but I
+figured it out.  I hope I got these correct!
+<br/><br/>
+Comments, etc? email: sbirl@&lt;this URLs domain&gt;. If your email bounces, you got the domain wrong.  Try again.
+<br/><br/>
+
+(more information can be available if you leave your mouse pointer over top of a character, in the table below. -- I didnt do this for every character)
+<table border="1" cellspacing="0" cellpadding="5" id="keyboard">
+	<th colspan="12" class="s"><a href="http://unicode-table.com/en/#hiragana" target="_blank/conversion">Hiragana</a> (more natural words)</th>
+	<td rowspan="07" width="100" style="background-color:#000; border:solid 0px #000;">&nbsp;</td>
+	<td rowspan="07" width="100" style="background-color:#000; border:solid 0px #000;">&nbsp;</td>
+	<th colspan="12" class="s"><a href="http://unicode-table.com/en/#katakana" target="_blank/conversion">Katakana</a> (imported foreign words)</th> <tr/>
+
+<!--h--><td class="q" title="dakuten">&#12441;<p/><br/><a>12443</a></td>	<td>&#12431;<p/>wa<br/><a>12431</a></td><td>&#12425;<p/>ra<br/><a>12425</a></td>	<td>&#12420;<p/>ya<br/><a>12420</a></td><td>&#12414;<p/>ma<br/><a>12414</a></td>	<td>&#12399;<p/>ha<br/><a>12399</a></td>	<td>&#12394;<p/>na<br/><a>12394</a></td>	<td>&#12383;<p/>ta<br/><a>12383</a></td>	<td>&#12373;<p/>sa<br/><a>12373</a></td>	<td>&#12363;<p/>ka<br/><a>12363</a></td>	<td>&#12354;<p/>a<br/><a>12354</a></td>	<td class="q" title="backspace">&#28040;&#21435;</td>
+<!--k--><td class="q" title="dakuten">&#12441;<p/><br/><a>12443</a></td>	<td>&#12527;<p/>wa<br/><a>12527</a></td><td>&#12521;<p/>ra<br/><a>12521</a></td>	<td>&#12516;<p/>ya<br/><a>12516</a></td><td>&#12510;<p/>ma<br/><a>12510</a></td>	<td>&#12495;<p/>ha<br/><a>12495</a></td>	<td>&#12490;<p/>na<br/><a>12490</a></td>	<td>&#12479;<p/>ta<br/><a>12479</a></td>	<td>&#12469;<p/>sa<br/><a>12469</a></td>	<td>&#12459;<p/>ka<br/><a>12459</a></td>	<td>&#12450;<p/>a<br/><a>12450</a></td>	<td class="q" title="backspace">&#28040;&#21435;</td> <tr/>
+
+<!--h--><td class="q" title="handakuten">&#12442;<p/><br/><a>12444</a></td>	<td>&#12434;<p/>wo<br/><a>12434</a></td><td>&#12426;<p/>ri<br/><a>12426</a></td>	<td>&#12422;<p/>yu<br/><a>12422</a></td><td>&#12415;<p/>mi<br/><a>12415</a></td>	<td>&#12402;<p/>hi<br/><a>12402</a></td>	<td>&#12395;<p/>ni<br/><a>12395</a></td>	<td>&#12385;<p/>ti<br/><a>12385</a></td>	<td>&#12375;<p/>si<br/><a>12375</a></td>	<td>&#12365;<p/>ki<br/><a>12365</a></td>	<td>&#12356;<p/>i<br/><a>12356</a></td>	<td rowspan="2" class="q" title="ENTER/RETURN">&#08629;</td>
+<!--k--><td class="q" title="handakuten">&#12442;<p/><br/><a>12444</a></td>	<td>&#12530;<p/>wo<br/><a>12530</a></td><td>&#12522;<p/>ri<br/><a>12522</a></td>	<td>&#12518;<p/>yu<br/><a>12518</a></td><td>&#12511;<p/>mi<br/><a>12511</a></td>	<td>&#12498;<p/>hi<br/><a>12498</a></td>	<td>&#12491;<p/>ni<br/><a>12491</a></td>	<td>&#12481;<p/>ti<br/><a>12481</a></td>	<td>&#12471;<p/>si<br/><a>12471</a></td>	<td>&#12461;<p/>ki<br/><a>12461</a></td>	<td>&#12452;<p/>i<br/><a>12452</a></td>	<td rowspan="2" class="q" title="ENTER/RETURN">&#08629;</td> <tr/>
+
+<!--h--><td class="q" title="lowercase"><span>&#12073;&#23383;</span></td>	<td>&#12435;<p/>n<br/><a>12435</a></td>	<td>&#12427;<p/>ru<br/><a>12427</a></td>	<td>&#12424;<p/>yo<br/><a>12424</a></td><td>&#12416;<p/>mu<br/><a>12416</a></td>	<td>&#12405;<p/>hu<br/><a>12405</a></td>	<td>&#12396;<p/>nu<br/><a>12396</a></td>	<td>&#12388;<p/>tu<br/><a>12388</a></td>	<td>&#12377;<p/>tsu<br/><a>12377</a></td> 	<td>&#12367;<p/>ku<br/><a>12367</a></td>	<td>&#12358;<p/>u<br/><a>12358</a></td>
+<!--k--><td class="q" title="lowercase"><span>&#12073;&#23383;</span></td>	<td>&#12531;<p/>n<br/><a>12531</a></td>	<td>&#12523;<p/>ru<br/><a>12523</a></td>	<td>&#12519;<p/>yo<br/><a>12519</a></td><td>&#12512;<p/>mu<br/><a>12512</a></td>	<td>&#12501;<p/>hu<br/><a>12501</a></td>	<td>&#12492;<p/>nu<br/><a>12492</a></td>	<td>&#12484;<p/>tu<br/><a>12484</a></td>	<td>&#12473;<p/>tsu<br/><a>12473</a></td> 	<td>&#12463;<p/>ku<br/><a>12463</a></td>	<td>&#12454;<p/>u<br/><a>12454</a></td> <tr/>
+
+<!--h--><td class="s" title="kana">&#12363;&#12394;</td>			<td>&#12289;<p/><br/><a></a></td>	<td>&#12428;<p/>re<br/><a>12428</a></td>	<td>!</td>				<td>&#12417;<p/>me<br/><a>12417</a></td>	<td>&#12408;<p/>he<br/><a>12408</a></td>	<td>&#12397;<p/>ne<br/><a>12397</a></td>	<td>&#12390;<p/>te<br/><a>12390</a></td>	<td>&#12379;<p/>se<br/><a>12379</a></td>	<td>&#12369;<p/>ke<br/><a>12369</a></td>	<td>&#12360;<p/>e<br/><a>12360</a></td>	<td>&#12540;<p/><br/><a>12540</a></td>
+<!--k--><td>&#12363;&#12394;</td>						<td>&#12289;<p/><br/><a></a></td>	<td>&#12524;<p/>re<br/><a>12524</a></td>	<td>!</td>				<td>&#12513;<p/>me<br/><a>12513</a></td>	<td>&#12504;<p/>he<br/><a>12504</a></td>	<td>&#12493;<p/>ne<br/><a>12493</a></td>	<td>&#12486;<p/>te<br/><a>12486</a></td>	<td>&#12475;<p/>se<br/><a>12475</a></td>	<td>&#12465;<p/>ke<br/><a>12465</a></td>	<td>&#12456;<p/>e<br/><a>12456</a></td>	<td>&#12540;<p/><br/><a>12540</a></td> <tr/>
+
+<!--h--><td>&#12459;&#12490;</td>						<td>&#12290;<p/><br/><a></a></td>	<td>&#12429;<p/>ro<br/><a>12429</a></td>	<td>?</td>				<td>&#12418;<p/>mo<br/><a>12418</a></td>	<td>&#12411;<p/>ho<br/><a>12411</a></td>	<td>&#12398;<p/>no<br/><a>12398</a></td>	<td>&#12392;<p/>to<br/><a>12392</a></td>	<td>&#12381;<p/>so<br/><a>12381</a></td>	<td>&#12371;<p/>ko<br/><a>12371</a></td>	<td>&#12362;<p/>o<br/><a>12362</a></td>	<td class="q"><a title="blank">&#31354;&#30333;</a><p title="conversion" class="c"/>&#22793;&#25442;</td>
+<!--k--><td class="s" title="kana">&#12459;&#12490;</td>			<td>&#12290;<p/><br/><a></a></td>	<td>&#12525;<p/>ro<br/><a>12525</a></td>	<td>?</td>				<td>&#12514;<p/>mo<br/><a>12514</a></td>	<td>&#12507;<p/>ho<br/><a>12507</a></td>	<td>&#12494;<p/>no<br/><a>12494</a></td>	<td>&#12488;<p/>to<br/><a>12488</a></td>	<td>&#12477;<p/>so<br/><a>12477</a></td>	<td>&#12467;<p/>ko<br/><a>12467</a></td>	<td>&#12458;<p/>o<br/><a>12458</a></td>	<td class="q"><a title="blank">&#31354;&#30333;</a><p title="conversion" class="c"/>&#22793;&#25442;</td> <tr/>
+
+	<th colspan="12"><a href="http://www.guidetojapanese.org/learn/complete/hiragana" target="_blank/conversion">Hiragana guide</a></th>
+	<th colspan="12"><a href="http://www.guidetojapanese.org/learn/complete/katakana" target="_blank/conversion">Katakana guide</a></th><tr/>
+	<td colspan="26" style="background-color:#000; border:solid 0px #000; height:20px;">&nbsp;</td><tr/>
+
+
+
+<!-- Diacritics -->
+	<th colspan="26">Diacritics, the two accent marks: dakuten and handakuten &#12442;</th><tr/>
+	<th colspan="12" class="s">dakuten &#12441;</th>
+	<td rowspan="15" width="100" style="background-color:#000; border:solid 0px #000;">&nbsp;</td>
+	<td rowspan="15" width="100" style="background-color:#000; border:solid 0px #000;">&nbsp;</td>
+	<th colspan="12" class="s">dakuten &#12441;</th><tr/>
+<!--h--><td class="q" title="dakuten" class="s">&#12441;<p/><br/><a>12443</a></td><td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12400;<p/>ba<br/><a>12400</a></td>  <td>&nbsp;</td>  <td>&#12384;<p/>da<br/><a>12384</a></td>  <td>&#12374;<p/>za<br/><a>12374</a></td>  <td>&#12364;<p/>ga<br/><a>12364</a></td>  <td>&nbsp;</td>  <td title="backspace">&#28040;&#21435;</td>
+<!--k--><td class="q" title="dakuten" class="s">&#12441;<p/><br/><a>12443</a></td><td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12496;<p/>ba<br/><a>12496</a></td>  <td>&nbsp;</td>  <td>&#12480;<p/>da<br/><a>12480</a></td>  <td>&#12470;<p/>za<br/><a>12470</a></td>  <td>&#12460;<p/>ga<br/><a>12460</a></td>  <td>&nbsp;</td>  <td title="backspace">&#28040;&#21435;</td> <tr/>
+
+<!--h--><td class="q" title="handakuten">&#12442;<p/><br/><a>12444</a></td>	<td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12403;<p/>bi<br/><a>12403</a></td>  <td>&nbsp;</td>  <td>&#12386;<p/>di<br/><a>12386</a></td>  <td>&#12376;<p/>zi<br/><a>12376</a></td>  <td>&#12366;<p/>gi<br/><a>12366</a></td>  <td>&nbsp;</td>  <td rowspan="2" title="ENTER/RETURN">&#08629;</td>
+<!--k--><td class="q" title="handakuten">&#12442;<p/><br/><a>12444</a></td>	<td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12499;<p/>bi<br/><a>12499</a></td>  <td>&nbsp;</td>  <td>&#12482;<p/>di<br/><a>12482</a></td>  <td>&#12472;<p/>zi<br/><a>12472</a></td>  <td>&#12462;<p/>gi<br/><a>12462</a></td>  <td>&nbsp;</td>  <td rowspan="2" title="ENTER/RETURN">&#08629;</td> <tr/>
+
+<!--h--><td class="q" title="lowercase"><span>&#12073;&#23383;</span></td>	<td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12406;<p/>bu<br/><a>12406</a></td>  <td>&nbsp;</td>  <td>&#12389;<p/>du<br/><a>12389</a></td>  <td>&#12378;<p/>zu<br/><a>12378</a></td>  <td>&#12368;<p/>gu<br/><a>12368</a></td>  <td>&nbsp;</td>
+<!--k--><td class="q" title="lowercase"><span>&#12073;&#23383;</span></td>	<td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12502;<p/>bu<br/><a>12502</a></td>  <td>&nbsp;</td>  <td>&#12485;<p/>du<br/><a>12485</a></td>  <td>&#12474;<p/>zu<br/><a>12474</a></td>  <td>&#12464;<p/>gu<br/><a>12464</a></td>  <td>&nbsp;</td>  <tr/>
+
+<!--h--><td class="s" title="kana">&#12363;&#12394;</td>			<td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12409;<p/>be<br/><a>12409</a></td>  <td>&nbsp;</td>  <td>&#12391;<p/>de<br/><a>12391</a></td>  <td>&#12380;<p/>ze<br/><a>12380</a></td>  <td>&#12370;<p/>ge<br/><a>12370</a></td>  <td>&nbsp;</td>  <td>&#12540;<p/><br/><a>12540</a></td>
+<!--k--><td>&#12363;&#12394;</td>						<td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12505;<p/>be<br/><a>12505</a></td>  <td>&nbsp;</td>  <td>&#12487;<p/>de<br/><a>12487</a></td>  <td>&#12476;<p/>ze<br/><a>12476</a></td>  <td>&#12466;<p/>ge<br/><a>12466</a></td>  <td>&nbsp;</td>  <td>&#12540;<p/><br/><a>12540</a></td> <tr/>
+
+<!--h--><td>&#12459;&#12490;</td>						<td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12412;<p/>bo<br/><a>12412</a></td>  <td>&nbsp;</td>  <td>&#12393;<p/>do<br/><a>12393</a></td>  <td>&#12382;<p/>zo<br/><a>12382</a></td>  <td>&#12372;<p/>go<br/><a>12372</a></td>  <td>&nbsp;</td>  <td title="blank/conversion">&#31354;&#30333;<p title="conversion" class="c"/>&#22793;&#25442;</td>
+<!--k--><td class="s" title="kana">&#12459;&#12490;</td>			<td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12508;<p/>bo<br/><a>12508</a></td>  <td>&nbsp;</td>  <td>&#12489;<p/>do<br/><a>12489</a></td>  <td>&#12478;<p/>zo<br/><a>12478</a></td>  <td>&#12468;<p/>go<br/><a>12468</a></td>  <td>&nbsp;</td>  <td title="blank/conversion">&#31354;&#30333;<p title="conversion" class="c"/>&#22793;&#25442;</td> <tr/>
+
+	<th colspan="12" style="font-size:20px;">Example: To get Hiragana 'ga' &#12364;, type 'wa' &#12363; then type the dakuten &#12441;</th>
+	<th colspan="12" style="font-size:20px;">Example: To get Katakana 'ga' &#12460;, type 'wa' &#12459; then type the dakuten &#12441;</th><tr/>
+	<th colspan="26">&nbsp;</th><tr/>
+
+
+
+	<th colspan="12" class="s">handakuten &#12442;</th>
+	<th colspan="12" class="s">handakuten &#12442;</th><tr/>
+<!--h--><td class="q" title="dakuten">&#12441;<p/><br/><a>12443</a></td>		<td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12401;<p/>pa<br/><a>12401</a></td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td title="backspace">&#28040;&#21435;</td>
+<!--k--><td class="q" title="dakuten">&#12441;<p/><br/><a>12443</a></td>		<td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12497;<p/>pa<br/><a>12497</a></td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td title="backspace">&#28040;&#21435;</td> <tr/>
+
+<!--h--><td class="q" title="handakuten" class="s">&#12442;<p/><br/><a>12444</a></td>	<td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12404;<p/>pi<br/><a>12404</a></td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td rowspan="2" title="ENTER/RETURN">&#08629;</td>
+<!--k--><td class="q" title="handakuten" class="s">&#12442;<p/><br/><a>12444</a></td>	<td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12500;<p/>pi<br/><a>12500</a></td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td rowspan="2" title="ENTER/RETURN">&#08629;</td> <tr/>
+
+<!--h--><td class="q" title="lowercase"><span>&#12073;&#23383;</span></td>		<td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12407;<p/>pu<br/><a>12407</a></td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>
+<!--k--><td class="q" title="lowercase"><span>&#12073;&#23383;</span></td>		<td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12503;<p/>pu<br/><a>12503</a></td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <tr/>
+
+<!--h--><td class="s" title="kana">&#12363;&#12394;</td>				<td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12410;<p/>pe<br/><a>12410</a></td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12540;<p/><br/><a>12540</a></td>
+<!--k--><td>&#12363;&#12394;</td>							<td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12506;<p/>pe<br/><a>12506</a></td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12540;<p/><br/><a>12540</a></td> <tr/>
+
+<!--h--><td>&#12459;&#12490;</td>							<td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12413;<p/>po<br/><a>12413</a></td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td title="blank/conversion">&#31354;&#30333;<p title="conversion" class="c"/>&#22793;&#25442;</td>
+<!--k--><td class="s" title="kana">&#12459;&#12490;</td>				<td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12509;<p/>po<br/><a>12509</a></td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td title="blank/conversion">&#31354;&#30333;<p title="conversion" class="c"/>&#22793;&#25442;</td> <tr/>
+
+	<th colspan="12" style="font-size:20px;">Example: To get Hiragana 'pa' &#12401;, type 'ha' &#12399; then type the handakuten &#12442;</th>
+	<th colspan="12" style="font-size:20px;">Example: To get Katakana 'pa' &#12497;, type 'ha' &#12495; then type the handakuten &#12442;</th><tr/>
+	<th colspan="26">&nbsp;</th><tr/>
+
+
+	<th colspan="26">&#12073 "small". &#23383; "letters" or "handwriting" -- <span>&#12073;&#23383;</span> "lowercase characters" ??</th><tr/>
+<!--h--><td class="q" title="dakuten">&#12441;<p/><br/><a>12443</a></td>	<td>&#12430;<p/>wa<br/><a>12430</a></td>  <td>&nbsp;</td>  <td>&#12419;<p/>ya<br/><a>12419</a></td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12353;<p/>a<br/><a>12353</a></td>  <td title="backspace">&#28040;&#21435;</td>
+	<td rowspan="05" width="100" style="background-color:#000; border:solid 0px #000;">&nbsp;</td>
+	<td rowspan="05" width="100" style="background-color:#000; border:solid 0px #000;">&nbsp;</td>
+<!--k--><td class="q" title="dakuten">&#12441;<p/><br/><a>12443</a></td>	<td>&#12526;<p/>wa<br/><a>12526</a></td>  <td>&nbsp;</td>  <td>&#12515;<p/>ya<br/><a>12515</a></td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12449;<p/>a<br/><a>12449</a></td>  <td title="backspace">&#28040;&#21435;</td> <tr/>
+
+<!--h--><td class="q" title="handakuten">&#12442;<p/><br/><a>12444</a></td>	<td>&nbsp;</td>                           <td>&nbsp;</td>  <td>&#12421;<p/>yu<br/><a>12421</a></td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>	<td>&nbsp;</td>	<td>&nbsp;</td>	<td>&#12355;<p/>i<br/><a>12355</a></td>  <td rowspan="2" title="ENTER/RETURN">&#08629;</td>
+<!--k--><td class="q" title="handakuten">&#12442;<p/><br/><a>12444</a></td>	<td>&nbsp;</td>                           <td>&nbsp;</td>  <td>&#12517;<p/>yu<br/><a>12517</a></td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>	<td>&nbsp;</td>	<td>&nbsp;</td>	<td>&#12451;<p/>i<br/><a>12451</a></td>  <td rowspan="2" title="ENTER/RETURN">&#08629;</td> <tr/>
+
+<!--h--><td class="q" title="lowercase"><span>&#12073;&#23383;</span></td> 	<td>&nbsp;</td>                         <td>&nbsp;</td>  <td>&#12423;<p/>yo<br/><a>12423</a></td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12387;<p/>tu<br/><a>12387</a></td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12357;<p/>u<br/><a>12357</a></td>
+<!--k--><td class="q" title="lowercase"><span>&#12073;&#23383;</span></td> 	<td>&nbsp;</td>                         <td>&nbsp;</td>  <td>&#12519;<p/>yo<br/><a>12519</a></td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12483;<p/>tu<br/><a>12483</a></td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12453;<p/>u<br/><a>12453</a></td> <tr/>
+
+<!--h--><td class="s" title="kana">&#12363;&#12394;</td>			<td>&nbsp;</td>                           <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12359;<p/>e<br/><a>12359</a></td>  <td>&#12540;<p/><br/><a>12540</a></td>
+<!--k--><td>&#12363;&#12394;</td>						<td>&nbsp;</td>                           <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12455;<p/>e<br/><a>12455</a></td>  <td>&#12540;<p/><br/><a>12540</a></td> <tr/>
+
+<!--h--><td>&#12459;&#12490;</td>						<td>&nbsp;</td>                           <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12361;<p/>o<br/><a>12361</a></td>  <td title="blank/conversion">&#31354;&#30333;<p title="conversion" class="c"/>&#22793;&#25442;</td>
+<!--k--><td class="s" title="kana">&#12459;&#12490;</td>			<td>&nbsp;</td>                           <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&nbsp;</td>  <td>&#12457;<p/>o<br/><a>12457</a></td>  <td title="blank/conversion">&#31354;&#30333;<p title="conversion" class="c"/>&#22793;&#25442;</td> <tr/>
+</table>
+<br/><br/>
+
+So, again, let me re-iterate that I know almost <b>NOTHING</b> about Japanese, except watching subbed Anime and watching <a href="http://www3.nhk.or.jp/nhkworld/" target="_blank">NHK World</a> (Imagine-Nation, anyone?)<br/>
+That being said, I often rely on Google Translate to figure things out.  Apologies in advanced for any horrible translations that are in here.<br/>
+(<i>You'd think that working for a University that has a satellite campus <b>IN</b> Tokyo, that I would learn the language -- but no, there's too many (computer) languages stuffed in my head at the moment.  There's other excuses too for not learning Japanese.</i>)
+<br/><br/>
+
+<b>StreetPass Menu</b> <i onclick="HideShow('streetpass')" style="cursor:pointer;">(hide/show)</i>
+<table border="1" cellspacing="0" cellpadding="0" id="streetpass">
+	<td>Mii &#12434;&#00000;&#12427;</td>	<td>Mii Wo__Ru</td>	<td>&nbsp;</td><tr/>
+	<td>Mii &#12398;&#00000;&#00000;</td>	<td>Mii No____</td>	<td>&nbsp;</td><tr/>
+	<td>&#12418;&#00000;&#12427;</td>	<td>Mo__Ru</td>	<td>&nbsp;</td><tr/>
+	<td>&#12377;&#12428;&#12385;&#00000;&#12356; Mii &#12398;&#00000;&#00000;</td><td>SuReTi__i Mii No____</td><td>&nbsp;</td><tr/>
+	<td>&#00000;&#12358;&#12375;&#12398;</td><td>__uSiNo</td><td>&nbsp;</td><tr/>
+	<td>&#12354;&#12356;&#12373;&#12388;&#12398;&#00000;&#00000;</td><td>AiSaTsuNo ____</td><td>Greetings</td><tr/>
+	<td></td><td></td><td></td><tr/>
+	<!-- <td></td><td></td><td></td><tr/> -->
+</table>
+<br/><br/>
+
+<b>Main screen</b> (<i onclick="HideShow('MainScreen')" style="cursor:pointer;">hide/show</i>)
+<table border="1" cellspacing="0" cellpadding="0" id="MainScreen">
+<td>&#12501;&#12457;&#12523;&#12480;&#12434;&#12388;&#12367;&#12427;</td><td>huoruda wotukuru</td><td>Create Folder</td><tr/>
+</table>
+<br/><br/>
+
+<b>Searching for 3DS games in the Japanese eShop</b> <i onclick="HideShow('eShop')" style="cursor:pointer;">(hide/show)</i>
+<table border="1" cellspacing="0" cellpadding="2" id="eShop1">
+<thead><th>Keyboard set</th>		<th colspan="1">Press buttons in this order</th> 	<th>Should look like</th> 	<th>Translation</th> 	</thead><tr/>
+<td colspan="1" rowspan="2" class="key" title="katakana">カナ</td>
+	<td>
+		<table border="0" cellspacing="0" cellpadding="2" id="eShop2">
+		<td>フ</td><td>ア</td><td><span>⼩字</span></td><td>イ</td><td>ア</td> <tr/>
+		<th>fa</th><th></th><th></th><th>i</th><th></th><tr/>
+		</table>
+	</td>
+	<td class="cent">
+		<table border="0" cellspacing="0" cellpadding="2" id="eShop2">
+		<td>ファイア</td> <tr/>
+		<th>fa </th><tr/>
+		</table>
+	</td>
+	<td>Fire</td>
+	<tr/>
+
+	<td>
+		<table border="0" cellspacing="0" cellpadding="2" id="eShop2">
+		<td>エ</td><td>ム</td><td>フ</td><td>゛</td><td>レ</td><td>ム</td> <tr/>
+		<th>e</th><th>mu</th><th>bu</th><th></th><th>re</th><th>mu</th> <tr/>
+		</table>
+	</td>
+	<td>
+		<table border="0" cellspacing="0" cellpadding="2" id="eShop2">
+		<td>エムブレム</td> <tr/>
+		<th>emuburemu</th> <tr/>
+		</table>
+	</td>
+	<td>Emblem</td>
+<tr/>
+<td colspan="1" rowspan="1" class="key" title="katakana">カナ</td>
+	<td>
+		<table border="0" cellspacing="0" cellpadding="2" id="eShop2">
+		<td>ソ</td><td>ニ</td><td>フ</td><td>゜</td><td>ロ</td> <tr/>
+		<th>so</th><th>ni</th><th>pu</th><th></th><th>ro</th>
+		</table>
+	</td>
+	<td>
+		<table border="0" cellspacing="0" cellpadding="2" id="eShop2">
+		<td class="jpn">ソニプロ</td> <tr/>
+		<th>sonipuro</th>
+		</table>
+	</td>
+	<td>SoniPro</td>
+<tr/>
+
+</table>
+<br/><br/>
+
+<table border="1" cellspacing="0" cellpadding="2" id="eShop">
+<th>Character set</th>		<th colspan="1">Buttons in this order</th> 			<th>Should look like</th> 				<th>Translation</th> 				<tr/>
+<td>English</td> 		<td>Mario</td>							<td>Mario</td>						<td>Luigi (kidding!)</td> 			<tr/>
+<td title="katakana">カナ</td> 	<td>センラン</td>						<td>センラン</td>		<td>senran</td> 				<tr/>
+<td title="katakana">カナ</td> 	<td>カク゛ラ</td>						<td>カグラ</td>			<td>kagura</td> 				<tr/>
+<td title="">Mixed</td> 	<td>カミ<a class="c">変换</a>みやこ<a class="c">変换</a></td>	<td>神都</td> 						<td>Toshin Toshi 闘神都市 (Tournament of the Gods)</td>	<tr/>
+<td title="hiragana">かな</td> 	<td>せいそう</td> 						<td>&#12379;&#12356;&#12381;&#12358;</td> 		<td>Seisou (No Amazones)</td>			<tr/>
+<td title="katakana">カナ</td> 	<td>アマソ゛ネス</td> 						<td>&#12450;&#12510;&#12478;&#12493;&#12473;</td> 	<td>a ma zo ne su (<i>Amazones</i>) 		<tr/>
+<td title="katakana">カナ</td> 	<td>カ゛ール</td> 						<td>&#12460;&#12540;&#12523;</td> 			<td>ga ru (<i>Girl</i>)</td> 			<tr/>
+<td title="katakana">カナ</td> 	<td>カ゛ールス゛</td> 						<td>&#12460;&#12540;&#12523;&#12474;</td> 		<td>ga ru zu (<i>Girls</i>)</td> 		<tr/>
+<td title="katakana">カナ</td> 	<td>リス゛ム</td> 						<td>&#12522;&#12474;&#12512;</td> 			<td>ri zu mu (<i>rhythm</i>)</td> 		<tr/>
+<td title="katakana">カナ</td> 	<td>アト゛ヘ゛ンチャ</td> 					<td>&#12450;&#12489;&#12505;&#12531;&#12481;&#12515;</td><td>a do be n ti ya (<i>adventure</i>)</td> 	<tr/>
+<td title="katakana">カナ</td> 	<td>メニュー</td> 						<td>&#12513;&#12491;&#12517;&#12540;</td> 		<td>me ni yu (<i>menu</i>)</td> 		<tr/>
+<td title="katakana">カナ</td> 	<td>ハ゛ツ<span>⼩字</span>ツ゛</td> 				<td>&#12496;&#12483;&#12485;</td> 			<td>ba tu du (<i>badge</i>)</td> 		<tr/>
+
+<th>Character set</th>		<th colspan="1">Buttons in this order</th> 			<th>Should look like</th> 				<th>Translation</th> 				<tr/>
+<td title="Katakana</td> 	<td>センタ</td> 						<td>&#12475;&#12531;&#12479;</td> 			<td>se n ta (<i>center</i>)</td> 		<tr/>
+<td>Kanji</td> 			<td>セカイ</td> 	<td></td>	<td>se ka i (<i>world</i>) 世界</td> <tr/>
+<td title="katakana">カナ</td> 	<td>ラヒ゛リ</td> 						<td>&#12521;&#12499;&#12522;</td> 			<td>ra bi ri (<i>labyrinth</i>) 迷宮</td> 	<tr/>
+<td title="katakana">カナ</td> 	<td>セカイ<a class="c">変换</a></td> 			<td>世界</td> <td>Seikaiju (<i>world tree</i> -- Etrian) 世界樹</td> <tr/>
+<td title="katakana">カナ</td> 	<td>ルーフ゜</td> 						<td>&#12523;&#12540;&#12503;</td> 			<td>ru pu (<i>loop</i>)</td> 			<tr/>
+<td title="katakana">カナ</td> 	<td>ライン</td> 						<td>&#12521;&#12452;&#12531;</td> 			<td>ra i n (<i>line</i>)</td> 			<tr/>
+<td title="katakana">カナ</td> 	<td>レーシンク゛</td> 						<td>&#12524;&#12540;&#12471;&#12531;&#12464;</td> 	<td>re si n gu (<i>racing</i>)</td> 		<tr/>
+<td title="katakana">カナ</td> 	<td>ト゛ラコ゛ン</td> 						<td>&#12489;&#12521;&#12468;&#12531;</td> 		<td>do ra go n (<i>dragon</i>)</td> 		<tr/>
+<td title="katakana">カナ</td> 	<td>ホ゛ール</td> 						<td>&#12508;&#12540;&#12523;</td> 			<td>bo ru (<i>ball</i>)</td> 			<tr/>
+<td title="katakana">カナ</td> 	<td>アトリエ</td> 						<td>&#12450;&#12488;&#12522;&#12456;</td> 		<td>Atelier</td> 				<tr/>
+<td title="katakana">カナ</td> 	<td>ロロナ</td> 						<td>&#12525;&#12525;&#12490;</td> 			<td>Rorona</td> 				<tr/>
+<td title="hiragana">かな</td> 	<td>むろ <a class="c">変换</a> にいたら</td> 			<td>&#23460;&#12395;&#12356;&#12383;&#12425;</td> 	<td>(<i>behind closed doors</i>)</td> 		<tr/>
+<td title="katakana">カナ</td> 	<td>ソ゛ンヒ゛</td> 						<td>&#12478;&#12531;&#12499;</td> 			<td>zo n bi (<i>zombie</i>)</td> 		<tr/>
+<td title="katakana">カナ</td> 	<td>レシ゛エ<span>⼩字</span>ント゛</td> 			<td>&#12524;&#12472;&#12455;&#12531;&#12489;</td> 	<td>re je n do (<i>legend</i>)</td> 		<tr/>
+<td title="katakana">カナ</td> 	<td>レカ゛シー</td> 						<td>&#12524;&#12460;&#12471;&#12540;</td> 		<td>re ga shi (<i>legacy</i>)</td> 		<tr/>
+<td title="katakana">カナ</td> 	<td>フ゛レイフ゛リー</td> 					<td>&#12502;&#12524;&#12452;&#12502;&#12522;&#12540;</td> <td>bu re i bu ri (<i>bravely</i>)</td> 	<tr/>
+<tr/>
+<th colspan="4">Some of these characters require use of the built-in 3DS dictionary (below)</th>
+</table>
+<br/><br/>
+
+<b>Japanese 3DS Dictionary</b> which contains Kanji characters <i onclick="HideShow('dictionary')" style="cursor:pointer;">(hide/show)</i>
+<table border="1" cellspacing="0" cellpadding="5" id="dictionary">
+<th>To get</th>		<th>translation</th>		<th>Start typing</th>			<th>Typed character(s)</th><tr/>
+<td>神</td> 		<td>God (kami)</td> 		<td>&#12459;&#12511;</td> 		<td>ka mi</td> 		<tr/>
+<td>都</td> 		<td>city (miyako)</td> 		<td>みやこ<a class="c">変换</a></td> <td>mi ya ko</td> <tr/>
+<td>都</td> 		<td>(tournament)</td> 		<td>トナ</td> 		<td>to na</td> 		<tr/>
+<td>日本語</td> 	<td>Japanese (Nihongo)</td>	<td>&#12395;&#12411;&#12435;&#12372;</td><td>ni ho n go</td> 	<tr/>
+<td>日本</td>		<td>Japan (Nihon)</td>		<td>&#12395;</td>			<td>ni</td> 		<tr/>
+<td>学び</td>		<td>learn from (manabi)</td> 	<td>&#12414;&#12394;</td>		<td>ma na</td> 		<tr/>
+<td>女</td>		<td>woman (onna)</td>		<td>&#12362;&#12435;</td>		<td>o n</td> 		<tr/>
+<td>室</td> 		<td>room (muro)</td> 		<td>&#12416;&#12429;</td> 		<td>mu ro</td> 		<tr/>
+<td>世界</td> 		<td>world (sekai)</td> 		<td>セカイ<a class="c">変换</a></td> 	<td>se ka i</td> <tr/>
+<td>樹</td> 		<td>tree (ki)</td> 		<td></td> <td></td> <tr/>
+<tr/>
+</table>
+
+<br/><br/>
+
+
+<b>Japanese 3DS games requiring little or no translating needed</b> <i onclick="HideShow('games')" style="cursor:pointer;">(hide/show)</i>
+<table border="!" id="games">
+<th>JPN eShop name</th> 		<th>Translation</th>		<th>Demo?</th>	<th>Notes</th><tr/>
+<td>ループラインレーシング</td> 	<td>Loop Line Racing</td>	<td>Yes</td> 	<td>Proun+ in the USA eShop.  If you've played and liked 'SpeedX 3D', then this game is down your alley.  Controls are simple and I figured out the winning requirements quickly.</td><tr/>
+<td>Shifting World</td> 		<td>Shifting World</td> 	<td>Yes</td> 	<td>Yes it's been translated already but the game is in card format for the USA, not downloadable like it is for Japan.  Little translation needed in order to play the game.</td><tr/>
+</table>
+
+<!--
+<i onclick="HideShow('')" style="cursor:pointer;">(hide/show)</i>
+-->
+
+<br/><br/>
+</body>
+</html>

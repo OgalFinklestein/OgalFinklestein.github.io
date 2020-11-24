@@ -1,0 +1,752 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 1.1 Transitional//EN">
+<html lang="en">
+<head>
+<title>Papa Birl's Guide to Lord of Magna: Maiden Heaven</title>
+<meta name="robots"             content="Follow, Index, NoArchive">
+<meta name="keywords"           content="Lord of Magna, Birl, Ogal Finklestein">
+<meta name="description"        content="Papa Birl's Guide to Lord of Magna: Maiden Heaven 2018-Sep-17.">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Pragma"       content="no-cache">
+<meta http-equiv="refresh"      content="43200">
+<!-- <meta http-equiv="refresh"      content="05"> -->
+<style>
+li                                           { font-size:0.85em; }
+td                                           { white-space:nowrap; }
+
+#battle_icons tr:hover                       { background-color:#FFA;}
+#battle_icons th,td                          { font-size:1.00em; }
+
+#craft_table                                 { border-left:solid 2px #000; }
+#craft_table th,td                           { font-size:1.00em; }
+#craft_table td:hover                        { border:solid 2px #000; }
+#craft_table tr:hover                        { background-color:#FFA; }
+#craft_table tr:nth-child(1) td:nth-child(1n){ border-top:solid 2px #000; }
+#craft_table tr:nth-child(1n) td:nth-child(1){ border-right:solid 1px #AAA; }
+#craft_table tr:nth-child(1n) th:nth-child(1){ border-right:solid 1px #AAA; }
+#craft_table tr:nth-child(2n+1) td           { color:#666; }
+#craft_table tr:nth-child(2) th:nth-child(5) { border-right:solid 3px #000; }
+#craft_table tr:nth-child(10n) td            { border-bottom:solid 2px #000; }
+#craft_table th:nth-child(1)                 { text-decoration:underline; cursor:pointer; }
+#craft_table th:nth-child(2)                 { text-decoration:underline; cursor:pointer; border-right:solid 3px black; }
+#craft_table th:nth-child(3)                 { text-decoration:underline; cursor:pointer; }
+#craft_table th:nth-child(4)                 { text-decoration:underline; cursor:pointer; }
+#craft_table th:nth-child(5)                 { text-decoration:underline; cursor:pointer; }
+#craft_table td:nth-child(2)                 { border-right:solid 3px black; }
+#craft_table td:nth-child(5)                 { border-right:solid 3px black; }
+
+#item_drop   div:hover                       { background-color:#FFA;}
+
+.b           { background:linear-gradient(to left, rgba(200,200,225,0), rgba(200,200,255,1), rgba(200,200,255,0)); }
+.g           { background:linear-gradient(to left, rgba(200,255,200,0), rgba(200,255,200,1), rgba(200,255,200,0)); }
+.u           { background:linear-gradient(to left, rgba(200,200,200,0), rgba(200,200,200,1), rgba(200,200,200,0)); }
+.cent        { text-align:center; }
+.buff        { background-color:#00F; color:#FFF;}
+.debuff      { background-color:#F00; color:#FFF;}
+.note        { text-align:center; border-top:solid 2px #000; border-right:solid 3px #000; }
+.stick       { position:sticky; top:0; }
+
+.tri1        { width:20px; height:30px; background-color:#FFF; transform:rotate(045deg); position:relative; left:-7px; top:-13px;}
+.tri2        { width:20px; height:47px; background-color:#FFF; transform:rotate(045deg); }
+.rsq1        { width:20px; height:20px; background-color:#F00; color:#FFF; overflow:hidden; }
+.poison1     { width:07px; height:07px; background-color:#FFF; border:solid 1px #F00; position:relative; left:3px; top:-18px; }
+.poison2     { width:05px; height:05px; background-color:#FFF; border:solid 1px #F00; position:relative; left:-7px; top:7px; }
+.poison3     { width:03px; height:03px; background-color:#FFF; border:solid 1px #F00; position:relative; left:5px; top:5px; }
+.bsq1        { width:20px; height:20px; background-color:#00F; color:#FFF; overflow:hidden; }
+.revitalize1 { width:07px; height:07px; background-color:#FFF; border:solid 1px #00F; position:relative; left:03px; top:-17px; border-radius:50%; }
+.revitalize2 { width:05px; height:05px; background-color:#FFF; border:solid 1px #00F; position:relative; left:7px; top:7px; border-radius:50%; }
+.revitalize3 { width:03px; height:03px; background-color:#FFF; border:solid 1px #00F; position:relative; left:-5px; top:5px; border-radius:50%; }
+.subdue      { color:#FFF; position:relative; top:-30px; left:02px; transform:scale(1.00,1.00); font-family:sans-serif; text-shadow:0 0 1px #F00,0 0 1px #F00,0 0 1px #F00,0 0 1px #F00; }
+.enthuse     { color:#FFF; position:relative; top:-45px; left:02px; transform:scale(1.00,1.00); font-family:sans-serif; text-shadow:0 0 1px #00F,0 0 1px #00F,0 0 1px #00F,0 0 1px #00F; }
+.enfeeble    { color:#FFF; position:relative; top:-20px; left:-4px; transform:rotate(135deg) scale(1.50,1.50); text-shadow:0 0 1px #F00,0 0 1px #F00,0 0 1px #F00,0 0 1px #F00; }
+.fortify     { color:#FFF; position:relative; top:-35px; left:-4px; transform:rotate(135deg) scale(1.50,1.50); text-shadow:0 0 1px #00F,0 0 1px #00F,0 0 1px #00F,0 0 1px #00F; }
+.neglect     { background-color:#FFF; position:relative; top:-27px; left:3px; width:12px; height:12px; border-radius: 0 0 70% 70%; border:solid 1px #A00; }
+.neglect2    { background-color:#FFF; position:relative; top:2px; left:3px; width:1px; height:1px; border:solid 2px #F00;  }
+.nurture     { background-color:#FFF; position:relative; top:-41px; left:5px; width:12px; height:12px; border-radius: 0 0 70% 70%; border:solid 1px #00A; }
+.nurture2    { background-color:#FFF; position:relative; top:3px; left:3px; width:1px; height:1px; border:solid 2px #00F;  }
+.rattle      { color:#FFF; position:relative; top:-24px; left:05px; transform:rotate(045deg) scale(1.25,1.25); font-family:sans-serif; display:block; text-shadow:0 0 1px #F00,0 0 1px #F00,0 0 1px #F00,0 0 1px #F00; }
+.focus       { color:#FFF; position:relative; top:-40px; left:05px; transform:rotate(045deg) scale(1.25,1.25); font-family:sans-serif; display:block; text-shadow:0 0 1px #00F,0 0 1px #00F,0 0 1px #00F,0 0 1px #00F; }
+.torment     { color:#FFF; position:relative; top:-31px; left:09px; text-shadow:0 0 1px #F00,0 0 1px #F00,0 0 1px #F00,0 0 1px #F00; transform:scale(1.75,1.75); }
+.safeguard   { color:#FFF; position:relative; top:-47px; left:10px; text-shadow:0 0 1px #00F,0 0 1px #00F,0 0 1px #00F,0 0 1px #00F; transform:scale(1.75,1.75); }
+.slow        { color:#FFF; position:relative; top:-30px; left:06px; font-weight:900; text-shadow:0 0 1px #F00,0 0 1px #F00,0 0 1px #F00,0 0 1px #F00; }
+.sprint      { color:#FFF; position:relative; top:-45px; left:07px; font-weight:900; text-shadow:0 0 1px #00F,0 0 1px #00F,0 0 1px #00F,0 0 1px #00F; }
+.enervate    { color:#FFF; position:relative; top:-32px; left:02px; text-shadow:0 0 1px #F00,0 0 1px #F00,0 0 1px #F00,0 0 1px #F00; }
+.fear        { color:#FFF; position:relative; top:-30px; left:02px; }
+.curse       { color:#FFF; position:relative; top:-25px; left:-3px; transform:rotate(135deg) scale(1.50,1.50); text-shadow:0 0 1px #F00,0 0 1px #F00,0 0 1px #F00,0 0 1px #F00;}
+.bind        { color:#FFF; position:relative; top:-32px; left:06px; transform:scale(1.50,1.50); text-shadow:0 0 1px #F00,0 0 1px #F00,0 0 1px #F00,0 0 1px #F00;}
+.stupify1    { color:#FFF; position:relative; top:-40px; left:03px; transform:rotate(270deg) scale(1.80,1.00); font-family:sans-serif; text-shadow:0 0 1px #F00,0 0 1px #F00,0 0 1px #F00,0 0 1px #F00; font-size:7pt; }
+.stupify2    { color:#FFF; position:relative; top:-51px; left:-6px; transform:rotate(270deg) scale(1.80,1.00); font-family:sans-serif; text-shadow:0 0 1px #F00,0 0 1px #F00,0 0 1px #F00,0 0 1px #F00; font-size:7pt; }
+.death       { color:#FFF; position:relative; top:-27px; left:02px; transform:rotate(090deg) scale(1.00,1.75); text-shadow:0 0 1px #F00,0 0 1px #F00,0 0 1px #F00,0 0 1px #F00;}
+.hone        { color:#FFF; position:relative; top:-50px; left:01px; text-shadow:0 0 1px #00F,0 0 1px #00F,0 0 1px #00F,0 0 1px #00F; }
+.stimulate   { color:#FFF; position:relative; top:-48px; left:08px; transform:scale(1.75,1.75); text-shadow:0 0 1px #00F,0 0 1px #00F,0 0 1px #00F,0 0 1px #00F; }
+.endure      { color:#FFF; position:relative; top:-50px; left:05px; transform:scale(1.50,1.50); text-shadow:0 0 1px #00F,0 0 1px #00F,0 0 1px #00F,0 0 1px #00F; }
+.xsq1        { width:20px; height:20px; background-color:#00F; }
+.xsq2        { width:20px; height:10px; background-color:#F00; overflow:hidden; }
+.x-fortify   { color:#FFF; position:relative; top:03px; left:-6px; transform:rotate(135deg) scale(1.75,1.75); text-shadow:0 0 2px #00F,0 0 2px #00F,0 0 2px #F00,0 0 2px #F00; }
+.x-nurture   { background-color:#FFF; position:relative; top:-05px; left:4px; width:12px; height:12px; border-radius: 0 0 70% 70%; border:solid 1px #00A; }
+.x-nurture2  { background-color:#FFF; position:relative; top:3px; left:3px; width:1px; height:1px; border:solid 2px #00F;  }
+.x-focus     { color:#FFF; position:relative; top:-03px; left:05px; transform:rotate(045deg) scale(1.25,1.25); font-family:sans-serif; display:block; text-shadow:0 0 2px #F00,0 0 2px #F00,0 0 2px #00F,0 0 2px #00F; }
+.x-safeguard { color:#FFF; position:relative; top:-10px; left:10px; text-shadow:0 0 1px #00F,0 0 1px #00F,0 0 1px #F00,0 0 1px #F00; transform:scale(1.75,1.75); }
+
+.dtr   { display:table-row; }
+.dth   { font-size:1.00em; border-bottom:solid 1px #000; display:table-cell; font-weight:900; }
+.dtc1  { width:150px; font-size:1.00em; display:table-cell; border-bottom:solid 1px #DDD; }
+.dtc2  { width:600px; font-size:0.75em; display:table-cell; border-bottom:solid 1px #DDD; }
+</style>
+<script type="text/javascript" language="JavaScript">
+function countRows()
+{
+        var table = document.getElementById("craft_table");
+        var rows = table.getElementsByTagName("tr");
+        document.getElementById("trows").innerHTML="unique rows: " + (rows.length - 4)/2;
+}
+
+/*  https://www.w3schools.com/howto/howto_js_sort_table.asp  */
+function sortTable(n) {
+        var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+        table = document.getElementById("craft_table");
+
+        dir = "asc";
+var dbug=document.getElementById("jsd");
+
+        switching = true;
+        while (switching)
+        {
+                switching = false;
+                rows = table.getElementsByTagName("tr"); // working
+
+        // Start with i= 3rd row.  Something is making the 3rd row =3 and not =2.
+                for (i = 4; i < (rows.length - 1); i++)
+                {
+                        shouldSwitch = false;
+
+                        var x = rows[i].getElementsByTagName("td")[n];
+                        var y = rows[i+1].getElementsByTagName("td")[n];
+
+//dbug.innerHTML="rows: " + rows.length + ". x: " + rows[i].getElementsByTagName("td")[n];
+
+
+                        if (dir == "asc")
+                        {
+                                if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                                        shouldSwitch= true;
+                                        break;
+                                }
+                        }
+                        else if (dir == "desc") {
+                                if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                                        shouldSwitch= true;
+                                        break;
+                                }
+                        }
+
+                }
+
+                if (shouldSwitch) {
+                        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                        switching = true;
+                        switchcount ++;
+                }
+                else {
+                        if (switchcount == 0 && dir == "asc") {
+                                dir = "desc";
+                                switching = true;
+                        }
+                }
+        }
+}
+</script>
+</head>
+
+<body onload="countRows()">
+
+<h2 id="Battle">Battle</h2>
+<div style="font-size:1.00em;">
+<ul>
+<li>Buy Fear Potions (see its Debuff below), or equip 'Terror Procella' for Chapter 10 onwards.
+<li>Unless you have an 'AP Regen' equiped, your AP will build up *only* when you select Finish/End Turn, not when Guarding.
+<li>You gain CR (money) for every Fiend killed.  Leader Fiends will spawn off lesser fiends, thus giving you more CR.  If Generators are present, maximize your profit by letting them spawn more Leader Fiends.
+</ul>
+</div>
+<br/>
+
+<table border="1" cellpadding="5" cellspacing="0" id="battle_icons">
+<td colspan="5" class="cent">Those little icon/symbols above your head</td><tr/>
+<th class="debuff">&nbsp;</th><th class="debuff">Debuff</th><th>Effects</th><th class="buff">Buff</th><th class="buff">&nbsp;</th><tr/>
+        <td><div class="rsq1"><div class="tri1"></div></div><div class="poison1"><div class="poison2"><div class="poison3"></div></div></div></td>
+        <td>Poison</td>
+        <td class="cent">Health</td>
+        <td>Revitalize</td>
+        <td><div class="bsq1"><div class="tri2"></div></div><div class="revitalize1"><div class="revitalize2"><div class="revitalize3"></div></div></div></td>
+        <tr/>
+        <td><div class="rsq1"><div class="tri1"></div><div class="subdue">AP</div></div></td>
+        <td>Subdue</td>
+        <td class="cent">AP consumption</td>
+        <td>Enthuse</td><td><div class="bsq1"><div class="tri2"></div><div class="enthuse">AP</div></div></td>
+        <tr/>
+        <td><div class="rsq1"><div class="tri1"></div><div class="enfeeble">&dagger;</div></div></td>
+        <td>Enfeeble</td>
+        <td class="cent">Physical Attack</td>
+        <td>Fortify</td><td><div class="bsq1"><div class="tri2"></div><div class="fortify">&dagger;</div></div></td>
+        <tr/>
+        <td><div class="rsq1"><div class="tri1"></div><div class="neglect"><div class="neglect2"></div></div></div></td>
+        <td>Neglect</td>
+        <td class="cent">Physical Defense</td>
+        <td>Nurture</td><td><div class="bsq1"><div class="tri2"></div><div class="nurture"><div class="nurture2"></div></div></div></td>
+        <tr/>
+        <td><div class="rsq1"><div class="tri1"></div><div class="rattle">Z</div></div></td>
+        <td>Rattle</td>
+        <td class="cent">Elemental Attack</td>
+        <td>Focus</td><td><div class="bsq1"><div class="tri2"></div><div class="focus">Z</div></div></td>
+        <tr/>
+        <td><div class="rsq1"><div class="tri1"></div><div class="torment">&#10017;</div></div></td>
+        <td>Torment</td>
+        <td class="cent">Elemental Defense</td>
+        <td>Safeguard</td><td><div class="bsq1"><div class="tri2"></div><div class="safeguard">&#10017;</div></div></td>
+        <tr/>
+        <td><div class="rsq1"><div class="tri1"></div><div class="slow">))</span></div></td>
+        <td>Slow</td>
+        <td class="cent">Speed</td>
+        <td>Sprint</td><td><div class="bsq1"><div class="tri2"></div><div class="sprint">))</div></div></td>
+        <tr/>
+        <td><div class="rsq1"><div class="tri1"></div><div class="enervate">&#128167;</div></div></td>
+        <td>Enervate</td>
+        <td class="cent">Decreases AP recovery rate</td>
+        <td colspan="2">&nbsp;</td>
+        <tr/>
+        <td><div class="rsq1"><div class="tri1"></div><div class="fear">&#128128;</div></div></td>
+        <td>Fear</td>
+        <td class="cent">Prevent use of skills</td>
+        <td colspan="2">&nbsp;</td>
+        <tr/>
+        <td><div class="rsq1"><div class="tri1"></div><div class="curse">&#9939;</div></div></td>
+        <td>Curse</td>
+        <td class="cent">Prevents all actions except movement</td>
+        <td colspan="2">&nbsp;</td>
+        <tr/>
+        <td><div class="rsq1"><div class="tri1"></div><div class="bind">&#8856;</div></div></td>
+        <td>Bind</td>
+        <td class="cent">Prevents movement<br/>(but you can spin in a circle)</td>
+        <td colspan="2">&nbsp;</td>
+        <tr/>
+        <td><div class="rsq1"><div class="tri1"></div><div class="stupify1">M</div><div class="stupify2">M</div></div></td>
+        <td>Stupify</td>
+        <td class="cent">Forced to lose a turn</td>
+        <td colspan="2">&nbsp;</td>
+        <tr/>
+        <td><div class="rsq1"><div class="tri1"></div><div class="death">O~</div></div></td>
+        <td>Death</td>
+        <td class="cent">HP equals zer0</td>
+        <td colspan="2">&nbsp;</td>
+        <tr/>
+        <td colspan="2">&nbsp;</td>
+        <td class="cent">Critcal Hit 100%</td>
+        <td>Hone</td><td><div class="bsq1"><div class="tri2"></div><div class="hone">100<div></div></td>
+        <tr/>
+        <td colspan="2">&nbsp;</td>
+        <td class="cent">Increase Critcal Hit</td>
+        <td>Stimulate</td><td><div class="bsq1"><div class="tri2"></div><div class="stimulate">&#10022;</div></div></td>
+        <tr/>
+        <td colspan="2">&nbsp;</td>
+        <td class="cent">Revive target after one death</td>
+        <td>Endure</td><td><div class="bsq1"><div class="tri2"></div><div class="endure">6</div></div></td>
+        <tr/>
+        <td colspan="2">&nbsp;</td>
+        <td class="cent">Better Physical Attack</td>
+        <td>X-Fortify</td><td><div class="xsq1"><div class="xsq2"></div><div class="x-fortify">&dagger;</div></div></td>
+        <tr/>
+        <td colspan="2">&nbsp;</td>
+        <td class="cent">Better Physical Defense</td>
+        <td>X-Nurture</td><td><div class="xsq1"><div class="xsq2"></div><div class="x-nurture"><div class="x-nurture2"></div></div></div></td>
+        <tr/>
+        <td colspan="2">&nbsp;</td>
+        <td class="cent">Better Elemental Attack</td>
+        <td>X-Focus</td><td><div class="xsq1"><div class="xsq2"></div><div class="x-focus">Z</div></div></td>
+        <tr/>
+        <td colspan="2">&nbsp;</td>
+        <td class="cent">Better Elemental Defense</td>
+        <td>X-Safeguard</td><td><div class="xsq1"><div class="xsq2"></div><div class="x-safeguard">&#10017;</div></div></td>
+        <tr/>
+<td colspan="5" class="cent"><a href="http://lordofmagna.com/itinerary.html" target="_blank">http://lordofmagna.com/itinerary.html</a></td></tr>
+</table>
+<br/>
+
+
+
+<h2 id="Crafting">Skill Chips and Crafting</h2>
+<div id="jsd" style="border:solid 1px #000; padding:2px; display:none;"></div>
+<table border="0" cellpadding="3" cellspacing="0" id="craft_table">
+<thead class="stick">
+<td id="trows"></td><td style="text-align:right">Colors:</td><td class="b" style="text-align:center;">Good result</td><td class="u" style="text-align:center;">to test</td><td colspan="1" class="g" style="text-align:center;">Great result</td></tr>
+<th onclick="sortTable(0)" alt="sort">Material 1</th><th onclick="sortTable(1)" alt="sort">Material 2</th><th onclick="sortTable(2)" alt="sort">Result 1</th><th onclick="sortTable(3)" alt="sort">Result 2</th><th onclick="sortTable(4)" alt="sort">Result 3</th><td>sortable columns</td><tr/>
+<td colspan="5" class="note"><i>When attempting to craft an item with more than one result, always save your progress first.</i></td></thead><tr/>
+<tbody>
+<tr><td>Abyss Fragment</td>     <td>Heat Cluster</td>           <td class=" ">Magnetite Shard</td>      <td class=" ">Ruby Hairpin</td>         <td class=" ">Neuro Blast</td></tr>
+<tr><td>Heat Cluster</td>       <td>Abyss Fragment</td>         <td class=" ">Magnetite Shard</td>      <td class=" ">Ruby Hairpin</td>         <td class=" ">Neuro Blast</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Neuro Blast</td>            <td class=" ">Magnetite Shard</td>      <td class=" ">Heat Cluster</td>         <td class=" ">Power Charge</td></tr>
+<tr><td>Neuro Blast</td>        <td>Abyss Fragment</td>         <td class=" ">Magnetite Shard</td>      <td class=" ">Heat Cluster</td>         <td class=" ">Power Charge</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Power Charge</td>           <td class=" ">Raw Magnetite</td>        <td class=" ">Kobold's Pitchfork</td>   <td class=" ">Volcanic Blast</td></tr>
+<tr><td>Power Charge</td>       <td>Abyss Fragment</td>         <td class=" ">Raw Magnetite</td>        <td class=" ">Kobold's Pitchfork</td>   <td class=" ">Volcanic Blast</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Volcanic Blast</td>         <td class=" ">Raw Magnetite</td>        <td class=" ">Power Charge</td>         <td class="g">Lifestream</td>   <td class=" "><i>Allows one to cast Revitalize</i></td> </tr>
+<tr><td>Volcanic Blast</td>     <td>Abyss Fragment</td>         <td class=" ">Raw Magnetite</td>        <td class=" ">Power Charge</td>         <td class="g">Lifestream</td>   <td class=" "><i>Allows one to cast Revitalize</i></td> </tr>
+<tr><td>Abyss Fragment</td>     <td>Lifestream</td>             <td class=" ">Magnetite Ore</td>        <td class=" ">Garmr's Eye</td>          <td class=" ">Flame Wall</td></tr>
+<tr><td>Lifestream</td>         <td>Abyss Fragment</td>         <td class=" ">Magnetite Ore</td>        <td class=" ">Garmr's Eye</td>          <td class=" ">Flame Wall</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Flame Wall</td>             <td class=" ">Magnetite Ore</td>        <td class="g">Lifestream</td>           <td class="u">Atrophy</td>      <td class=" "><i>Lifesteam: Allows one to cast Revitalize</i></td> </tr>
+<tr><td>Flame Wall</td>         <td>Abyss Fragment</td>         <td class=" ">Magnetite Ore</td>        <td class="g">Lifestream</td>           <td class="u">Atrophy</td>      <td class=" "><i>Lifesteam: Allows one to cast Revitalize</i></td> </tr>
+<tr><td>Abyss Fragment</td>     <td>Atrophy</td>                <td class=" ">Pure Magnetite</td>       <td class=" ">Fenrir's Eye</td>         <td class=" ">Ignis Procella</td></tr>
+<tr><td>Atrophy</td>            <td>Abyss Fragment</td>         <td class=" ">Pure Magnetite</td>       <td class=" ">Fenrir's Eye</td>         <td class=" ">Ignis Procella</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Ignis Procella</td>         <td class=" ">Pure Magnetite</td>       <td class=" ">Gustav's Horn</td>        <td class=" ">Overheat</td></tr>
+<tr><td>Ignis Procella</td>     <td>Abyss Fragment</td>         <td class=" ">Pure Magnetite</td>       <td class=" ">Gustav's Horn</td>        <td class=" ">Overheat</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Overheat</td>               <td class=" ">Magnetite Gem</td>        <td class=" ">Alpha Engine</td>         <td class=" ">Flames of Gehenna</td></tr>
+<tr><td>Overheat</td>           <td>Abyss Fragment</td>         <td class=" ">Magnetite Gem</td>        <td class=" ">Alpha Engine</td>         <td class=" ">Flames of Gehenna</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Flames of Gehenna</td>      <td class=" ">Magnetite Gem</td>        <td class=" ">Overheat</td>             <td class=" ">Crimson Claw</td></tr>
+<tr><td>Flames of Gehenna</td>  <td>Abyss Fragment</td>         <td class=" ">Magnetite Gem</td>        <td class=" ">Overheat</td>             <td class=" ">Crimson Claw</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Frigid Breeze</td>          <td class=" ">Magnetite Shard</td>      <td class=" ">Purple Button</td>        <td class=" ">Crystal Clear</td></tr>
+<tr><td>Frigid Breeze</td>      <td>Abyss Fragment</td>         <td class=" ">Magnetite Shard</td>      <td class=" ">Purple Button</td>        <td class=" ">Crystal Clear</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Crystal Clear</td>          <td class=" ">Magnetite Shard</td>      <td class=" ">Frigid Breeze</td>        <td class=" ">Glaciei Porcella</td></tr>
+<tr><td>Crystal Clear</td>      <td>Abyss Fragment</td>         <td class=" ">Magnetite Shard</td>      <td class=" ">Frigid Breeze</td>        <td class=" ">Glaciei Porcella</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Glaciei Procella</td>       <td class=" ">Raw Magnetite</td>        <td class=" ">Yellow Button</td>        <td class=" ">Elemental Burst</td></tr>
+<tr><td>Glaciei Procella</td>   <td>Abyss Fragment</td>         <td class=" ">Raw Magnetite</td>        <td class=" ">Yellow Button</td>        <td class=" ">Elemental Burst</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Elemental Burst</td>        <td class=" ">Raw Magnetite</td>        <td class=" ">Glaciei Procella</td>     <td class=" ">Frozen Fist</td></tr>
+<tr><td>Elemental Burst</td>    <td>Abyss Fragment</td>         <td class=" ">Raw Magnetite</td>        <td class=" ">Glaciei Procella</td>     <td class=" ">Frozen Fist</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Frozen Fist</td>            <td class=" ">Magnetite Ore</td>        <td class=" ">Red Button</td>           <td class=" ">Frost Shield</td></tr>
+<tr><td>Frozen Fist</td>        <td>Abyss Fragment</td>         <td class=" ">Magnetite Ore</td>        <td class=" ">Red Button</td>           <td class=" ">Frost Shield</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Frost Shield</td>           <td class=" ">Magnetite Ore</td>        <td class=" ">Frozen Fist</td>          <td class=" ">Frost Solid</td></tr>
+<tr><td>Frost Shield</td>       <td>Abyss Fragment</td>         <td class=" ">Magnetite Ore</td>        <td class=" ">Frozen Fist</td>          <td class=" ">Frost Solid</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Frozen Solid</td>           <td class=" ">Pure Magnetite</td>       <td class=" ">Auguste's Horn</td>       <td class="g">Whoa, Whoa!</td></tr>
+<tr><td>Frozen Solid</td>       <td>Abyss Fragment</td>         <td class=" ">Pure Magnetite</td>       <td class=" ">Auguste's Horn</td>       <td class="g">Whoa, Whoa!</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Whoa, Whoa!</td>            <td class=" ">Pure Magnetite</td>       <td class=" ">Frozen Solid</td>         <td class="b">Sanctum</td></tr>
+<tr><td>Whoa, Whoa!</td>        <td>Abyss Fragment</td>         <td class=" ">Pure Magnetite</td>       <td class=" ">Frozen Solid</td>         <td class="b">Sanctum</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Sanctum</td>                <td class=" ">Magnetite Gem</td>        <td class=" ">Beta Engine</td>          <td class=" ">Cocytus</td></tr>
+<tr><td>Sanctum</td>            <td>Abyss Fragment</td>         <td class=" ">Magnetite Gem</td>        <td class=" ">Beta Engine</td>          <td class=" ">Cocytus</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Cocytus</td>                <td class=" ">Magnetite Gem</td>        <td class=" ">Sanctum</td>              <td class="u">Pale Claw</td></tr>
+<tr><td>Cocytus</td>            <td>Abyss Fragment</td>         <td class=" ">Magnetite Gem</td>        <td class=" ">Sanctum</td>              <td class="u">Pale Claw</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Tonitrūs Procella</td>      <td class=" ">Magnetite Shard</td>      <td class=" ">Emerald Barrette</td>     <td class="b">Purify</td></tr>
+<tr><td>Tonitrūs Procella</td>  <td>Abyss Fragment</td>         <td class=" ">Magnetite Shard</td>      <td class=" ">Emerald Barrette</td>     <td class="b">Purify</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Purify</td>                 <td class=" ">Magnetite Shard</td>      <td class=" ">Tonitrūs Procella</td>    <td class=" ">Toxic Blast</td></tr>
+<tr><td>Purify</td>             <td>Abyss Fragment</td>         <td class=" ">Magnetite Shard</td>      <td class=" ">Tonitrūs Procella</td>    <td class=" ">Toxic Blast</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Toxic Blast</td>            <td class=" ">Raw Magnetite</td>        <td class=" ">Golem Core</td>           <td class="b">Decompression</td></tr>
+<tr><td>Toxic Blast</td>        <td>Abyss Fragment</td>         <td class=" ">Raw Magnetite</td>        <td class=" ">Golem Core</td>           <td class="b">Decompression</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Decompression</td>          <td class=" ">Raw Magnetite</td>        <td class=" ">Toxic Blast</td>          <td class="b">Terror Procella</td><td class=" "><i>Using a Fear Bottle has a better success rate than Terror Procella</i></td> </tr>
+<tr><td>Decompression</td>      <td>Abyss Fragment</td>         <td class=" ">Raw Magnetite</td>        <td class=" ">Toxic Blast</td>          <td class="b">Terror Procella</td><td class=" "><i>Using a Fear Bottle has a better success rate than Terror Procella</i></td> </tr>
+<tr><td>Abyss Fragment</td>     <td>Terror Procella</td>        <td class=" ">Magnetite Ore</td>        <td class=" ">Amplifier I</td>          <td class=" ">Dismal Dirge</td></tr>
+<tr><td>Terror Procella</td>    <td>Abyss Fragment</td>         <td class=" ">Magnetite Ore</td>        <td class=" ">Amplifier I</td>          <td class=" ">Dismal Dirge</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Dismal Dirge</td>           <td class=" ">Magnetite Ore</td>        <td class=" ">Lunatic Stone</td>        <td class=" ">Provoke</td></tr>
+<tr><td>Dismal Dirge</td>       <td>Abyss Fragment</td>         <td class=" ">Magnetite Ore</td>        <td class=" ">Lunatic Stone</td>        <td class=" ">Provoke</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Provoke</td>                <td class=" ">Pure Magnetite</td>       <td class=" ">Glowstone</td>            <td class=" ">Tempest</td></tr>
+<tr><td>Provoke</td>            <td>Abyss Fragment</td>         <td class=" ">Pure Magnetite</td>       <td class=" ">Glowstone</td>            <td class=" ">Tempest</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Tempest</td>                <td class=" ">Pure Magnetite</td>       <td class=" ">Provoke</td>              <td class=" ">Ghastly Cry</td></tr>
+<tr><td>Tempest</td>            <td>Abyss Fragment</td>         <td class=" ">Pure Magnetite</td>       <td class=" ">Provoke</td>              <td class=" ">Ghastly Cry</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Ghastly Cry</td>            <td class=" ">Magnetite Gem</td>        <td class=" ">Mercedes' Horn</td>       <td class=" ">Claíomh Solais</td></tr>
+<tr><td>Ghastly Cry</td>        <td>Abyss Fragment</td>         <td class=" ">Magnetite Gem</td>        <td class=" ">Mercedes' Horn</td>       <td class=" ">Claíomh Solais</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Claíomh Solais</td>         <td class=" ">Magnetite Gem</td>        <td class=" ">Ghastly Cry</td>          <td class=" ">Dragon Scale</td></tr>
+<tr><td>Claíomh Solais</td>     <td>Abyss Fragment</td>         <td class=" ">Magnetite Gem</td>        <td class=" ">Ghastly Cry</td>          <td class=" ">Dragon Scale</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Fissure</td>                <td class=" ">Magnetite Shard</td>      <td class=" ">Bone Necklace</td>        <td class="b">Disruption</td></tr>
+<tr><td>Fissure</td>            <td>Abyss Fragment</td>         <td class=" ">Magnetite Shard</td>      <td class=" ">Bone Necklace</td>        <td class="b">Disruption</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Disruption</td>             <td class=" ">Magnetite Shard</td>      <td class=" ">Fissure</td>              <td class=" ">Earth Crusher</td></tr>
+<tr><td>Disruption</td>         <td>Abyss Fragment</td>         <td class=" ">Magnetite Shard</td>      <td class=" ">Fissure</td>              <td class=" ">Earth Crusher</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Earth Crusher</td>          <td class=" ">Raw Magnetite</td>        <td class=" ">Garmr's Eye</td>          <td class="g">Survival</td></tr>
+<tr><td>Earth Crusher</td>      <td>Abyss Fragment</td>         <td class=" ">Raw Magnetite</td>        <td class=" ">Garmr's Eye</td>          <td class="g">Survival</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Survival</td>               <td class=" ">Raw Magnetite</td>        <td class=" ">Earth Crusher</td>        <td class="g">Slowdown Field</td></tr>
+<tr><td>Survival</td>           <td>Abyss Fragment</td>         <td class=" ">Raw Magnetite</td>        <td class=" ">Earth Crusher</td>        <td class="g">Slowdown Field</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Slowdown Field</td>         <td class=" ">Magnetite Ore</td>        <td class=" ">Shiny Core</td>           <td class=" ">Gravity Field</td></tr>
+<tr><td>Slowdown Field</td>     <td>Abyss Fragment</td>         <td class=" ">Magnetite Ore</td>        <td class=" ">Shiny Core</td>           <td class=" ">Gravity Field</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Gravity Field</td>          <td class=" ">Magnetite Ore</td>        <td class="g">Slowdown Field</td>       <td class="u">Bleak Heart</td></tr>
+<tr><td>Gravity Field</td>      <td>Abyss Fragment</td>         <td class=" ">Magnetite Ore</td>        <td class="g">Slowdown Field</td>       <td class="u">Bleak Heart</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Bleak Heart</td>            <td class=" ">Pure Magnetite</td>       <td class=" ">Gold Barrette</td>        <td class="u">Bright Heart</td></tr>
+<tr><td>Bleak Heart</td>        <td>Abyss Fragment</td>         <td class=" ">Pure Magnetite</td>       <td class=" ">Gold Barrette</td>        <td class="u">Bright Heart</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Bright Heart</td>           <td class=" ">Pure Magnetite</td>       <td class="u">Bleak Heart</td>          <td class=" ">Meteor</td></tr>
+<tr><td>Bright Heart</td>       <td>Abyss Fragment</td>         <td class=" ">Pure Magnetite</td>       <td class="u">Bleak Heart</td>          <td class=" ">Meteor</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Meteor</td>                 <td class=" ">Magnetite Gem</td>        <td class=" ">Rutile Quartz</td>        <td class="u">Abyss</td></tr>
+<tr><td>Meteor</td>             <td>Abyss Fragment</td>         <td class=" ">Magnetite Gem</td>        <td class=" ">Rutile Quartz</td>        <td class="u">Abyss</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Abyss</td>                  <td class=" ">Magnetite Gem</td>        <td class=" ">Meteor</td>               <td class=" ">Fanatic Stone</td></tr>
+<tr><td>Abyss</td>              <td>Abyss Fragment</td>         <td class=" ">Magnetite Gem</td>        <td class=" ">Meteor</td>               <td class=" ">Fanatic Stone</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Mini Heal</td>              <td class=" ">Raw Magnetite</td>        <td class=" ">Mega Mixture</td>         <td class="b">Middling Heal</td></tr>
+<tr><td>Mini Heal</td>          <td>Abyss Fragment</td>         <td class=" ">Raw Magnetite</td>        <td class=" ">Mega Mixture</td>         <td class="b">Middling Heal</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Middling Heal</td>          <td class=" ">Pure Magnetite</td>       <td class=" ">Devil's Hoof</td>         <td class="g">Massive Heal</td></tr>
+<tr><td>Middling Heal</td>      <td>Abyss Fragment</td>         <td class=" ">Pure Magnetite</td>       <td class=" ">Devil's Hoof</td>         <td class="g">Massive Heal</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Massive Heal</td>           <td class=" ">Magnetite Gem</td>        <td class=" ">Fool's Medal</td>         <td class=" ">Innocent Wish</td></tr>
+<tr><td>Massive Heal</td>       <td>Abyss Fragment</td>         <td class=" ">Magnetite Gem</td>        <td class=" ">Fool's Medal</td>         <td class=" ">Innocent Wish</td></tr>
+<tr><td>Abyss Fragment</td>     <td>HP Boost +1</td>            <td class=" ">Magnetite Shard</td>      <td class=" ">Tin Mask</td>             <td class="b">HP Boost +2</td></tr>
+<tr><td>HP Boost +1</td>        <td>Abyss Fragment</td>         <td class=" ">Magnetite Shard</td>      <td class=" ">Tin Mask</td>             <td class="b">HP Boost +2</td></tr>
+<tr><td>Abyss Fragment</td>     <td>HP Boost +2</td>            <td class=" ">Magnetite Ore</td>        <td class=" ">Aluminum Mask</td>        <td class="b">HP Boost +3</td></tr>
+<tr><td>HP Boost +2</td>        <td>Abyss Fragment</td>         <td class=" ">Magnetite Ore</td>        <td class=" ">Aluminum Mask</td>        <td class="b">HP Boost +3</td></tr>
+<tr><td>Abyss Fragment</td>     <td>HP Boost +3</td>            <td class=" ">Pure Magnetite</td>       <td class=" ">Devil's Trident</td>      <td class="u">Merciful Heart</td></tr>
+<tr><td>HP Boost +3</td>        <td>Abyss Fragment</td>         <td class=" ">Pure Magnetite</td>       <td class=" ">Devil's Trident</td>      <td class="u">Merciful Heart</td></tr>
+<tr><td>Abyss Fragment</td>     <td>AP Regen +1</td>            <td class=" ">Pure Magnetite</td>       <td class=" ">Golem Core</td>           <td class="g">AP Regen +2</td><td class=" "><i>Adds 2 AP to the character every turn.  Can be used with AP Boost +1.</i></td> </tr>
+<tr><td>AP Regen +1</td>        <td>Abyss Fragment</td>         <td class=" ">Pure Magnetite</td>       <td class=" ">Golem Core</td>           <td class="g">AP Regen +2</td><td class=" "><i>Adds 2 AP to the character every turn.  Can be used with AP Boost +1.</i></td> </tr>
+<tr><td>Abyss Fragment</td>     <td>Move +1</td>                <td class=" ">Magnetite Ore</td>        <td class=" ">Glowstone</td>            <td class=" ">Move +2</td></tr>
+<tr><td>Move +1</td>            <td>Abyss Fragment</td>         <td class=" ">Magnetite Ore</td>        <td class=" ">Glowstone</td>            <td class=" ">Move +2</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Move +2</td>                <td class="u">Fleet-Footed</td>         <td class=" ">Move +1</td>              <td class="u">Move +3</td></tr>
+<tr><td>Move +2</td>            <td>Abyss Fragment</td>         <td class="u">Fleet-Footed</td>         <td class=" ">Move +1</td>              <td class="u">Move +3</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Move +3</td>                <td class="g">Slowdown Field</td>       <td class=" ">Move +2</td>              <td class="b">Range +2</td></tr>
+<tr><td>Move +3</td>            <td>Abyss Fragment</td>         <td class="g">Slowdown Field</td>       <td class=" ">Move +2</td>              <td class="b">Range +2</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Range +1</td>               <td class=" ">Raw Magnetite</td>        <td class=" ">Saint's Medal</td>        <td class="b">Range +2</td></tr>
+<tr><td>Range +1</td>           <td>Abyss Fragment</td>         <td class=" ">Raw Magnetite</td>        <td class=" ">Saint's Medal</td>        <td class="b">Range +2</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Range +2</td>               <td class=" ">Range +1</td>             <td class=" ">Hero's Medal</td>         <td class="g">Range +3</td></tr>
+<tr><td>Range +2</td>           <td>Abyss Fragment</td>         <td class=" ">Range +1</td>             <td class=" ">Hero's Medal</td>         <td class="g">Range +3</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Crystal Upsurge</td>        <td class=" ">Magnetite Ore</td>        <td class=" ">Brass Mask</td>           <td class="b">EXP Upsure</td></tr>
+<tr><td>Crystal Upsurge</td>    <td>Abyss Fragment</td>         <td class=" ">Magnetite Ore</td>        <td class=" ">Brass Mask</td>           <td class="b">EXP Upsure</td></tr>
+<tr><td>Abyss Fragment</td>     <td>Golem Core</td>             <td class="g">AP Boost +2</td>          <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> <td class=" "><i>Adds 2 AP to the character every turn.  Can be used with AP Boost +1.</i></td> </tr>
+<tr><td>Golem Core</td>         <td>Abyss Fragment</td>         <td class="g">AP Boost +2</td>          <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> <td class=" "><i>Adds 2 AP to the character every turn.  Can be used with AP Boost +1.</i></td> </tr>
+<tr><td>Golem Core</td>         <td>Raw Magnetite</td>          <td class=" ">Toxic Blast</td>          <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Raw Magnetite</td>      <td>Golem Core</td>             <td class=" ">Toxic Blast</td>          <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Golem Core</td>         <td>Pure Magnetite</td>         <td class="b">AP Regen +1</td>          <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Pure Magnetite</td>     <td>Golem Core</td>             <td class="b">AP Regen +1</td>          <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Gem</td>      <td>Mercedes' Horn</td>         <td class=" ">Ghastly Cry</td>          <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Mercedes' Horn</td>     <td>Magnetite Gem</td>          <td class=" ">Ghastly Cry</td>          <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Gem</td>      <td>Garmr's Eye</td>            <td class=" ">Poison Guard</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Garmr's Eye</td>        <td>Magnetite Gem</td>          <td class=" ">Poison Guard</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Gem</td>      <td>Fenrir's Eye</td>           <td class=" ">Slow Guard</td>           <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Fenrir's Eye</td>       <td>Magnetite Gem</td>          <td class=" ">Slow Guard</td>           <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Gem</td>      <td>Luminous Eye</td>           <td class=" ">Fear Guard</td>           <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Luminous Eye</td>       <td>Magnetite Gem</td>          <td class=" ">Fear Guard</td>           <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Gem</td>      <td>Crimson Eye</td>            <td class=" ">Stupify Guard</td>        <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Crimson Eye</td>        <td>Magnetite Gem</td>          <td class=" ">Stupify Guard</td>        <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Gem</td>      <td>Alpha Engine</td>           <td class=" ">Overheat</td>             <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Alpha Engine</td>       <td>Magnetite Gem</td>          <td class=" ">Overheat</td>             <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Gem</td>      <td>Beta Engine</td>            <td class="b">Sanctum</td>              <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Beta Engine</td>        <td>Magnetite Gem</td>          <td class="b">Sanctum</td>              <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Gem</td>      <td>Titanium Mask</td>          <td class=" ">Adrenaline</td>           <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Titanium Mask</td>      <td>Magnetite Gem</td>          <td class=" ">Adrenaline</td>           <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Gem</td>      <td>Fool's Medal</td>           <td class="g">Massive Heal</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Fool's Medal</td>       <td>Magnetite Gem</td>          <td class="g">Massive Heal</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Gem</td>      <td>Rutile Quartz</td>          <td class=" ">Meteor</td>               <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Rutile Quartz</td>      <td>Magnetite Gem</td>          <td class=" ">Meteor</td>               <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Gem</td>      <td>Pale Claw</td>              <td class="g">Revivify</td>             <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> <td class=" "><i>Similar to Yggdrasill's Tear, Revivify allows the caster to bring another character back to life.</i></td> </tr>
+<tr><td>Pale Claw</td>          <td>Magnetite Gem</td>          <td class="g">Revivify</td>             <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> <td class=" "><i>Similar to Yggdrasill's Tear, Revivify allows the caster to bring another character back to life.</i></td> </tr>
+<tr><td>HP Boost +1</td>        <td>Tin Mask</td>               <td class=" ">Improved Guard</td>       <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Tin Mask</td>           <td>HP Boost +1</td>            <td class=" ">Improved Guard</td>       <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Tonitrūs Procella</td>  <td>Magnetite Shard</td>        <td class="b">Purify</td>               <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Shard</td>    <td>Tonitrūs Procella</td>      <td class="b">Purify</td>               <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Overheat</td>           <td>Alpha Core</td>             <td class=" ">Flames of Gehenna</td>    <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Alpha Core</td>         <td>Overheat</td>               <td class=" ">Flames of Gehenna</td>    <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Ore</td>      <td>Garmr's Eye</td>            <td class="g">Lifestream</td>           <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td>       <td class=" "><i>Allows one to cast Revitalize</i></td> </tr>
+<tr><td>Garmr's Eye</td>        <td>Magnetite Ore</td>          <td class="g">Lifestream</td>           <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td>       <td class=" "><i>Allows one to cast Revitalize</i></td> </tr>
+<tr><td>Magnetite Ore</td>      <td>Red Button</td>             <td class=" ">Frozen Fist</td>          <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Red Button</td>         <td>Magnetite Ore</td>          <td class=" ">Frozen Fist</td>          <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Ore</td>      <td>Shiny Core</td>             <td class="g">Slowdown Field</td>       <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Shiny Core</td>         <td>Magnetite Ore</td>          <td class="g">Slowdown Field</td>       <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>AP Regen +1</td>        <td>Shiny Core</td>             <td class="b">Reduction</td>            <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Shiny Core</td>         <td>AP Regen +1</td>            <td class="b">Reduction</td>            <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Ore</td>      <td>Aluminum Mask</td>          <td class="b">HP Boost +2</td>          <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Aluminum Mask</td>      <td>Magnetite Ore</td>          <td class="b">HP Boost +2</td>          <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Ore</td>      <td>Brass Mask</td>             <td class="g">Crystal Upsurge</td>      <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> <td class=" "><i>Extra CR when defeating enemies only on whom this Skill Chip is equipped.</i></td> </tr>
+<tr><td>Brass Mask</td>         <td>Magnetite Ore</td>          <td class="g">Crystal Upsurge</td>      <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> <td class=" "><i>Extra CR when defeating enemies only on whom this Skill Chip is equipped.</i></td> </tr>
+<tr><td>Amplifier I</td>        <td>Magnetite Ore</td>          <td class="b">Terror Procella</td>      <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> <td class=" "><i>Using a Fear Bottle has a better success rate than Terror Procella</i></td> </tr>
+<tr><td>Magnetite Ore</td>      <td>Amplifier I</td>            <td class="b">Terror Procella</td>      <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> <td class=" "><i>Using a Fear Bottle has a better success rate than Terror Procella</i></td> </tr>
+<tr><td>Amplifier II</td>       <td>Meteor</td>                 <td class="u">Abyss</td>                <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Meteor</td>             <td>Amplifier II</td>           <td class="u">Abyss</td>                <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Lunatic Stone</td>      <td>Magnetite Ore</td>          <td class=" ">Dismal Dirge</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Ore</td>      <td>Lunatic Stone</td>          <td class=" ">Dismal Dirge</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Fanatic Stone</td>      <td>Move +2</td>                <td class="u">Move +3</td>              <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Move +2</td>            <td>Fanatic Stone</td>          <td class="u">Move +3</td>              <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Ore</td>      <td>Lifestream</td>             <td class=" ">Flame Wall</td>           <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Lifestream</td>         <td>Magnetite Ore</td>          <td class=" ">Flame Wall</td>           <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Ore</td>      <td>Frozen Fist</td>            <td class=" ">Frost Shield</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Frozen Fist</td>        <td>Magnetite Ore</td>          <td class=" ">Frost Shield</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Ore</td>      <td>Slowdown Field</td>         <td class=" ">Gravity Field</td>        <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Slowdown Field</td>     <td>Magnetite Ore</td>          <td class=" ">Gravity Field</td>        <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Ore</td>      <td>Attack Stance</td>          <td class=" ">Reckless Strike</td>      <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Attack Stance</td>      <td>Magnetite Ore</td>          <td class=" ">Reckless Strike</td>      <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Raw Magnetite</td>      <td>Kobold's Pitchfork</td>     <td class=" ">Power Charge</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Kobold's Pitchfork</td> <td>Raw Magnetite</td>          <td class=" ">Power Charge</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Raw Magnetite</td>      <td>Garmr's Eye</td>            <td class=" ">Earth Crusher</td>        <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Garmr's Eye</td>        <td>Raw Magnetite</td>          <td class=" ">Earth Crusher</td>        <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Raw Magnetite</td>      <td>Yellow Button</td>          <td class=" ">Glaciei Procella</td>     <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Yellow Button</td>      <td>Raw Magnetite</td>          <td class=" ">Glaciei Procella</td>     <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Raw Magnetite</td>      <td>Saint's Medal</td>          <td class=" ">Range +1</td>             <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Saint's Medal</td>      <td>Raw Magnetite</td>          <td class=" ">Range +1</td>             <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Raw Magnetite</td>      <td>Power Charge</td>           <td class=" ">Volcanic Blast</td>       <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Power Charge</td>       <td>Raw Magnetite</td>          <td class=" ">Volcanic Blast</td>       <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Raw Magnetite</td>      <td>Glaciei Procella</td>       <td class=" ">Elemental Burst</td>      <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Glaciei Procella</td>   <td>Raw Magnetite</td>          <td class=" ">Elemental Burst</td>      <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Raw Magnetite</td>      <td>Toxic Blast</td>            <td class="b">Decompression</td>        <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Toxic Blast</td>        <td>Raw Magnetite</td>          <td class="b">Decompression</td>        <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Raw Magnetite</td>      <td>Earth Crusher</td>          <td class="g">Survival</td>             <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Earth Crusher</td>      <td>Raw Magnetite</td>          <td class="g">Survival</td>             <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Shard</td>    <td>Ruby Hairpin</td>           <td class=" ">Heat Cluster</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Ruby Hairpin</td>       <td>Magnetite Shard</td>        <td class=" ">Heat Cluster</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Ruby Hairpin</td>       <td>Neuro Blast</td>            <td class=" ">Slash Master</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Neuro Blast</td>        <td>Ruby Hairpin</td>           <td class=" ">Slash Master</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Shard</td>    <td>Emerald Barrette</td>       <td class=" ">Tonitrūs Procella</td>    <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Emerald Barrette</td>   <td>Magnetite Shard</td>        <td class=" ">Tonitrūs Procella</td>    <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Shard</td>    <td>Purple Button</td>          <td class=" ">Frigid Breeze</td>        <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Purple Button</td>      <td>Magnetite Shard</td>        <td class=" ">Frigid Breeze</td>        <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Purple Button</td>      <td>Crystal Clear</td>          <td class=" ">Strike Master</td>        <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Crystal Clear</td>      <td>Purple Button</td>          <td class=" ">Strike Master</td>        <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Shard</td>    <td>Tin Mask</td>               <td class=" ">HP Boost +1</td>          <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Tin Mask</td>           <td>Magnetite Shard</td>        <td class=" ">HP Boost +1</td>          <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Shard</td>    <td>Aluminum Mask</td>          <td class="u">Fleet-Footed</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Aluminum Mask</td>      <td>Magnetite Shard</td>        <td class="u">Fleet-Footed</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Shard</td>    <td>Bone Necklace</td>          <td class=" ">Fissure</td>              <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Bone Necklace</td>      <td>Magnetite Shard</td>        <td class=" ">Fissure</td>              <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Disruption</td>         <td>Bone Necklace</td>          <td class=" ">Pierce Master</td>        <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Bone Necklace</td>      <td>Disruption</td>             <td class=" ">Pierce Master</td>        <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Demon Dog Collar</td>   <td>Provoke</td>                <td class=" ">Tempest</td>              <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Provoke</td>            <td>Demon Dog Collar</td>       <td class=" ">Tempest</td>              <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Shard</td>    <td>Heat Cluster</td>           <td class=" ">Neuro Blast</td>          <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Heat Cluster</td>       <td>Magnetite Shard</td>        <td class=" ">Neuro Blast</td>          <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Shard</td>    <td>Frigid Breeze</td>          <td class=" ">Crystal Clear</td>        <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Frigid Breeze</td>      <td>Magnetite Shard</td>        <td class=" ">Crystal Clear</td>        <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Pure Magnetite</td>     <td>Devil's Hoof</td>           <td class="b">Middling Heal</td>        <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Devil's Hoof</td>       <td>Pure Magnetite</td>         <td class="b">Middling Heal</td>        <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Pure Magnetite</td>     <td>Devil's Trident</td>        <td class="b">HP Boost +3</td>          <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Devil's Trident</td>    <td>Pure Magnetite</td>         <td class="b">HP Boost +3</td>          <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Pure Magnetite</td>     <td>Glowstone</td>              <td class=" ">Provoke</td>              <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Glowstone</td>          <td>Pure Magnetite</td>         <td class=" ">Provoke</td>              <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Pure Magnetite</td>     <td>Auguste's Horn</td>         <td class=" ">Frozen Solid</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Auguste's Horn</td>     <td>Pure Magnetite</td>         <td class=" ">Frozen Solid</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Pure Magnetite</td>     <td>Gold Barrette</td>          <td class="u">Bleak Heart</td>          <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Gold Barrette</td>      <td>Pure Magnetite</td>         <td class="u">Bleak Heart</td>          <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Pure Magnetite</td>     <td>Fenrir's Eye</td>           <td class="u">Atrophy</td>              <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Fenrir's Eye</td>       <td>Pure Magnetite</td>         <td class="u">Atrophy</td>              <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Pure Magnetite</td>     <td>Move +2</td>                <td class=" ">Divine Speed</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Move +2</td>            <td>Pure Magnetite</td>         <td class=" ">Divine Speed</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Glowstone</td>          <td>Magnetite Ore</td>          <td class=" ">Move +1</td>              <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Ore</td>      <td>Glowstone</td>              <td class=" ">Move +1</td>              <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Devil's Claw</td>       <td>Range +1</td>               <td class=" ">Stimulate</td>            <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Range +1</td>           <td>Devil's Claw</td>           <td class=" ">Stimulate</td>            <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Crimson Claw</td>       <td>Last Stand</td>             <td class=" ">Overdose</td>             <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Last Stand</td>         <td>Crimson Claw</td>           <td class=" ">Overdose</td>             <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Attack Boost</td>       <td>Silver Gauntlet</td>        <td class=" ">Attack Shift</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Silver Gauntlet</td>    <td>Attack Boost</td>           <td class=" ">Attack Shift</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Attack Boost</td>       <td>Attack Guard</td>           <td class=" ">Attack Stance</td>        <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Attack Guard</td>       <td>Attack Boost</td>           <td class=" ">Attack Stance</td>        <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Attack Shift</td>       <td>Elemental Shift</td>        <td class="g">Last Stand</td>           <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> <td class=" "><i>Increases ATK and DEF when health is critically low.</i></td> </tr>
+<tr><td>Elemental Shift</td>    <td>Attack Shift</td>           <td class="g">Last Stand</td>           <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> <td class=" "><i>Increases ATK and DEF when health is critically low.</i></td> </tr>
+<tr><td>Elemental Boost</td>    <td>Gold Gauntlet</td>          <td class=" ">Elemental Shift</td>      <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Gold Gauntlet</td>      <td>Elemental Boost</td>        <td class=" ">Elemental Shift</td>      <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Elemental Boost</td>    <td>Elemental Guard</td>        <td class=" ">Elemental Stance</td>     <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Elemental Guard</td>    <td>Elemental Boost</td>        <td class=" ">Elemental Stance</td>     <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Rose Quartz</td>        <td>Tension Boost</td>          <td class="b">Miracle Charm</td>        <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Tension Boost</td>      <td>Rose Quartz</td>            <td class="b">Miracle Charm</td>        <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Rutile Quartz</td>      <td>Magnetite Gem</td>          <td class=" ">Meteor</td>               <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Gem</td>      <td>Rutile Quartz</td>          <td class=" ">Meteor</td>               <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Hero's Medal</td>       <td>Range +1</td>               <td class="b">Range +2</td>             <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Range +1</td>           <td>Hero's Medal</td>           <td class="b">Range +2</td>             <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Beta Core</td>          <td>Move +1</td>                <td class=" ">Move +2</td>              <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Move +1</td>            <td>Beta Core</td>              <td class=" ">Move +2</td>              <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Topaz Button</td>       <td>Fleet-Footed</td>           <td class="b">First Strike</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> <td class=" "><i>Allows the user to act first in battle</i></td> </tr>
+<tr><td>Fleet-Footed</td>       <td>Topaz Button</td>           <td class="b">First Strike</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> <td class=" "><i>Allows the user to act first in battle</i></td> </tr>
+<tr><td>Flaming Horn</td>       <td>Crystal Upsurge</td>        <td class="b">Tension Boost</td>        <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Crystal Upsurge</td>    <td>Flaming Horn</td>           <td class="b">Tension Boost</td>        <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Fortify Bottle</td>     <td>Raw Magnetite</td>          <td class=" ">Attack Boost</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Raw Magnetite</td>      <td>Fortify Bottle</td>         <td class=" ">Attack Boost</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Focus Bottle</td>       <td>Raw Magnetite</td>          <td class=" ">Elemental Boost</td>      <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Raw Magetite</td>       <td>Focus Bottle</td>           <td class=" ">Elemental Boost</td>      <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Nurture Bottle</td>     <td>Raw Magnetite</td>          <td class=" ">Attack Guard</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Raw Magnetite</td>      <td>Nurture Bottle</td>         <td class=" ">Attack Guard</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Safeguard Bottle</td>   <td>Raw Magnetite</td>          <td class=" ">Elemental Guard</td>      <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Raw Magnetite</td>      <td>Safeguard Bottle</td>       <td class=" ">Elemental Guard</td>      <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Safeguard Bottle</td>   <td>Heat Cluster</td>           <td class=" ">Fireproof</td>            <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Heat Cluster</td>       <td>Safeguard Bottle</td>       <td class=" ">Fireproof</td>            <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Safeguard Bottle</td>   <td>Frigid Breeze</td>          <td class=" ">Iceproof</td>             <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Frigid Breeze</td>      <td>Safeguard Bottle</td>       <td class=" ">Iceproof</td>             <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Safeguard Bottle</td>   <td>Tonitrūs Procella</td>      <td class=" ">Smiteproof</td>           <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Tonitrūs Procella</td>  <td>Safeguard Bottle</td>       <td class=" ">Smiteproof</td>           <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Safeguard Bottle</td>   <td>Fissure</td>                <td class=" ">Quakeproof</td>           <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Fissure</td>            <td>Safeguard Bottle</td>       <td class=" ">Quakeproof</td>           <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Mega Mixture</td>       <td>Raw Magnetite</td>          <td class=" ">Mini Heal</td>            <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Raw Magnetite</td>      <td>Mega Mixture</td>           <td class=" ">Mini Heal</td>            <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Fissure</td>            <td>Magnetite Shard</td>        <td class="b">Disruption</td>           <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Magnetite Shard</td>    <td>Fissure</td>                <td class="b">Disruption</td>           <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Amethyst Brooch</td>    <td>Bleak Heart</td>            <td class="u">Bright Heart</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Bleak Heart</td>        <td>Amethyst Brooch</td>        <td class="u">Bright Heart</td>         <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> </tr>
+<tr><td>Middling Heal</td>      <td>Devil's Heart</td>          <td class="g">Revitalize</td>           <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> <td class=" "><i>Revitalize stays in effect constantly, and negates poison, only on whom this Skill Chip is equipped. Restores 5% of total health each turn.</i></td> </tr>
+<tr><td>Devil's Heart</td>      <td>Middling Heal</td>          <td class="g">Revitalize</td>           <td class=" ">&nbsp;</td>               <td class=" ">&nbsp;</td> <td class=" "><i>Revitalize stays in effect constantly, and negates poison, only on whom this Skill Chip is equipped. Restores 5% of total health each turn.</i></td> </tr>
+</tbody>
+</table>
+<br/><br/>
+
+<div>Nothing craftable (so far) for:
+<ul>
+<li>Mini/Middling/Massive/Master Mixtures
+<li>Antidote
+<li>Energy Drink
+<li>Medicine
+<li>Cold Medicine
+<li>Calming Medicine
+<li>Yggdrasill's Tear
+<li>Panacea
+<li>Revitalize/Focus Bottles
+<li>Poision/Enfeeble/Rattle/Neglect/Torment/Fear Bottles
+<li>Fortify Light
+<li>Heal Light
+<li>Remedy Light
+<li>Nurture
+<li>Safeguard
+<li>Revitalize
+<li>Rebirth
+<li>Foster
+<li>AP Regen +2
+<li>Adrenaline
+<li>Improved Guard
+<li>Pierce Master
+<li>Sprint Light
+<li>Slash Master
+<li>Strike Master
+<li>Slow Guard
+<li>Smiteproof
+<li>Pink Fruit
+<li>Jade Brooch
+<li>Mystery Capsule
+</ul>
+</div>
+<br/><br/>
+
+<h2 id="drops">Item Drops</h2>
+<div id="item_drop">
+<div class="dtr"><div class="dth">Item</div>                            <div class="dth">Fiend</div>                    <div class="dth">Location(s) and [Level]</div></div>
+<div class="dtr"><div class="dtc1">Ruby Hairpin</div>                   <div class="dtc1">Angelika</div>                <div class="dtc2">Town Coast I [13], Town Coast II [14], Tornesch Isle I [19], Nautta Isle I [19], Tornesch Isle II [20], Nautta Isle II [20], Campground I [47], Campground II [52]</div></div>
+<div class="dtr"><div class="dtc1">Emerald Barrette</div>               <div class="dtc1">Brigitta</div>                <div class="dtc2">Town Coast I [13], Town Coast II [14], Tornesch Isle I [19], Nautta Isle I [19], Tornesch Isle II [20], Nautta Isle II [20]</div></div>
+<div class="dtr"><div class="dtc1">Gold Barrette</div>                  <div class="dtc1">Camilla</div>                 <div class="dtc2">Campground I [47], Campground II [52]</div></div>
+<div class="dtr"><div class="dtc1">Kobold's Pitchfork</div>             <div class="dtc1">Kobold</div>                  <div class="dtc2">Lunéville Way III [27], Tornesch Isle III [27], Nautta Isle III [39], Heldt Base I [64], Heldt Base IV [94]</div></div>
+<div class="dtr"><div class="dtc1">Devil's Trident</div>                <div class="dtc1">Kobold</div>                  <div class="dtc2">Lunéville Way III [27], Tornesch Isle III [27], Nautta Isle III [39], Heldt Base I [64], Heldt Base IV [94]</div></div>
+<div class="dtr"><div class="dtc1">Purple Button</div>                  <div class="dtc1">Stitch</div>                  <div class="dtc2">Chapter 3, The Farm I [1], The Farm II [2], Alsace Plains I [4], Alsace Plains II [6], Ray Crystal Cave I [10], Lunéville Way I [10], Alsace Cave I [10], Ray Crystal Cave II [11], Lunéville Way II [11], Alsace Cave II [11], Town Coast I [13], Ray Crystal Cave III [39] </div> </div>
+<div class="dtr"><div class="dtc1">Yellow Button</div>                  <div class="dtc1">Bobbin</div>                  <div class="dtc2">Chapter 3, The Farm I [1], The Farm II [2], Alsace Plains I [4], Alsace Plains II [6], Ray Crystal Cave I [10], Lunéville Way I [10], Alsace Cave I [10], Ray Crystal Cave II [11], Lunéville Way II [11], Alsace Cave II [11], Town Coast I [13]</div> </div>
+<div class="dtr"><div class="dtc1">Topaz Button</div>                   <div class="dtc1"> </div>                       <div class="dtc2"></div></div>
+<div class="dtr"><div class="dtc1">Tin Mask ?</div>                     <div class="dtc1">Tin Solider</div>             <div class="dtc2">Chapters 1-2, The Farm I [1], The Farm II [2], Alsace Plains I [4], Alsace Plains II [6], Ray Crystal Cave I [10], Lunéville Way I [10], Alsace Cave I [10], Tornesch Isle I [19], Nautta Isle I [19], The Farm III [39], Ray Crystal Cave III [39], Campground I [47], Campground II [52]</div> </div>
+<div class="dtr"><div class="dtc1">Tin Mask</div>                       <div class="dtc1">Tin Sergeant</div>            <div class="dtc2">Chapters 1-2, The Farm I [1], The Farm II [2], Alsace Plains I [4], Alsace Plains II [6], Nautta Isle I [19] </div></div>
+<div class="dtr"><div class="dtc1"></div>                               <div class="dtc1">Tin Trooper</div>             <div class="dtc2">Ray Crystal Cave I [10], Lunéville Way I [10], Alsace Cave I [10], Tornesch Isle I [19]</div></div>
+<div class="dtr"><div class="dtc1"></div>                               <div class="dtc1">Tin Commander</div>           <div class="dtc2">The Farm III [39], Ray Crystal Cave III [39], Campground I [47], Campground II [52]</div></div>
+<div class="dtr"><div class="dtc1">Hero's Medal</div>                   <div class="dtc1">Mimic?</div>                  <div class="dtc2">The Farm II [2], Alsace Plains II [6], Ray Crystal Cave II [11], Lunéville Way II [11], Alsace Cave II [11], Town Coast II [14], Tornesch Isle II [20], Nautta Isle II [20]</div></div>
+<div class="dtr"><div class="dtc1">Rose Quartz</div>                    <div class="dtc1"> </div>                       <div class="dtc2"></div></div>
+<div class="dtr"><div class="dtc1">Rutile Quartz</div>                  <div class="dtc1"> </div>                       <div class="dtc2"></div></div>
+<div class="dtr"><div class="dtc1">Bone Necklace, Glowstone</div>       <div class="dtc1">Cerberus Puppy</div>          <div class="dtc2">Alsace Plains III [27], Town Coast III [27], Alsace Cave III [39], Heldt Base II [74], Heldt Base III [84]</div></div>
+<div class="dtr"><div class="dtc1">Bone Necklace, Glowstone</div>       <div class="dtc1">Cerberus</div>                <div class="dtc2">Alsace Plains III [27], Town Coast III [27], Alsace Cave III [39], Heldt Base II [74], Heldt Base III [84]</div></div>
+<div class="dtr"><div class="dtc1">Devil's Hoof</div>                   <div class="dtc1">Nightmare</div>               <div class="dtc2">Lunéville Way III [27], Tornesch Isle III [27], Nautta Isle III [39], Heldt Base I [64], Heldt Base IV [94]</div></div>
+<div class="dtr"><div class="dtc1">Alpha Engine</div>                   <div class="dtc1">Huginn</div>                  <div class="dtc2">Heldt Base I [64], Heldt Base III [84]</div></div>
+<div class="dtr"><div class="dtc1">Alpha Core</div>                     <div class="dtc1">Full Metal Golem</div>        <div class="dtc2">Heldt Base I [64], Heldt Base II [74], Heldt Base III [84]</div></div>
+
+<div class="dtr"><div class="dtc1"></div>                               <div class="dtc1">Ferdinand</div>               <div class="dtc2">The Farm III [39], Ray Crystal Cave III [39], Nautta Isle III [39], Alsace Cave III [39]</div></div>
+<div class="dtr"><div class="dtc1"></div>                               <div class="dtc1">Golem</div>                   <div class="dtc2">Ray Crystal Cave I [10], Lunéville Way I [10], Alsace Cave I [10], Ray Crystal Cave II [11], Lunéville Way II [11], Alsace Cave II [11], Heldt Base I [64]</div></div>
+<div class="dtr"><div class="dtc1"></div>                               <div class="dtc1">Chambray</div>                <div class="dtc2">Ray Crystal Cave III [39]</div></div>
+<div class="dtr"><div class="dtc1"></div>                               <div class="dtc1">Big Mimic</div>               <div class="dtc2">Lunéville Way III [27], Tornesch Isle III [27], Alsace Plains III [27], Town Coast III [27], Nautta Isle III [39], Alsace Cave III [39]</div></div>
+<div class="dtr"><div class="dtc1"></div>                               <div class="dtc1">Super Mimic</div>             <div class="dtc2">Heldt Base IV [94]</div></div>
+<div class="dtr"><div class="dtc1"></div>                               <div class="dtc1">Gottlieb</div>                <div class="dtc2">Lunéville Way III [27], Tornesch Isle III [27], Alsace Plains III [27], Town Coast III [27]</div></div>
+<div class="dtr"><div class="dtc1"></div>                               <div class="dtc1">Garmr</div>                   <div class="dtc2">Tornesch Isle I [19], Nautta Isle I [19], Tornesch Isle II [20], Nautta Isle II [20]</div></div>
+<div class="dtr"><div class="dtc1"></div>                               <div class="dtc1">Lunatic</div>                 <div class="dtc2">Heldt Base I [64], Heldt Base III [84]</div></div>
+<div class="dtr"><div class="dtc1"></div>                               <div class="dtc1">Fanatic</div>                 <div class="dtc2">Heldt Base II [74], Heldt Base IV [94]</div></div>
+<div class="dtr"><div class="dtc1"></div>                               <div class="dtc1">Muninn</div>                  <div class="dtc2">Heldt Base II [74], Heldt Base IV [94]</div></div>
+<div class="dtr"><div class="dtc1"></div>                               <div class="dtc1">Fenrir</div>                  <div class="dtc2">Heldt Base II [74], Heldt Base III [84]</div></div>
+<div class="dtr"><div class="dtc1"></div>                               <div class="dtc1">Gargoyle Vanguard</div>       <div class="dtc2">Town Coast I [13], Town Coast II [14]</div></div>
+<div class="dtr"><div class="dtc1"></div>                               <div class="dtc1">Gargoyle Warrior</div>        <div class="dtc2">Town Coast I [13], Town Coast II [14]</div></div>
+<div class="dtr"><div class="dtc1"></div>                               <div class="dtc1">Gargoyle Ancestor</div>       <div class="dtc2">Heldt Base IV [94]</div></div>
+<div class="dtr"><div class="dtc1"></div>                               <div class="dtc1">Auguste</div>                 <div class="dtc2">Campground I [47]</div></div>
+<div class="dtr"><div class="dtc1"></div>                               <div class="dtc1">Mercedes</div>                <div class="dtc2">Campground II [52]</div></div>
+</div>
+<br/><br/>
+
+<h2 id="new_game">Final Festival; Transfering to a new game.</h2>
+<div style="font-size:1.00em">
+Before heading out to the final festival, determine what you will keep, and sell the rest.
+<br/><br/>
+
+Here's what to sell before the final festival.  They cannot be carried over to a new game.
+<ul>
+<li>Rubber Bullets, Rock
+</ul>
+<br/>
+In New Game+ you keep
+<ul>
+<li>CR (Money)
+<li>up to a specific number of characters from the previous game.  This number depends on how many times you have beaten the game:
+        <ul>
+        <li>The first time beating the game, select up to 2 characters.
+        <li>The second time beating it, select up to 3 characters.
+        <li>...
+        <li>The seventh time beating it, select up to all 8 characters.
+        </ul>
+    The faerie "winner" from the previous game is automatically chosen, but can be removed.</li>
+        <ul>
+        <li>Abilities that require Tension: <i>Flower Storm, Hagelstruam, etc.</i> carry over regardless of the character(s) choosen or not choosen.
+        <li>Any Skill Chips already equiped to the chosen characters also carry over.
+        </ul>
+<li>Pink Fruit, Gold Figure
+<br/><br/>
+<li>up to 5 items from last game's inventory, not matter the quantity.  Valid choices could be:</li>
+        <b>ITEMS</b>
+        <ul>
+        <li>Mixtures: Mini, Middling, Mega, Massive and Master.</li>
+        <li>Amelia-made food (Veggie Sandwhich, Fried Chicken, Roast Beef, etc.</li>
+        <li>Bottles: Antidote, Energy Drink, Yggdrasill's Tear, Panacea, etc.</li>
+        <li>Bottles: Fortify, etc.</li>
+        <li>Bottles: Enfeeble, Fear, etc.</li>
+        <li>Flechettes, Soft Points, Armor Piercers</li>
+        <li>Napalm I, Liquid Nitrogen I, Flashbang I, Gravity Bomb I</li>
+        <li>Napalm II, Liquid Nitrogen II, Flashbang II, Gravity Bomb II</li>
+        <li>Salts: Chloride, Epsom, Ferrous, etc.</li>
+        </ul>
+        <b>SKILL CHIPS</b>
+        <ul>
+        <li>All Skill Chips <u>NOT</u> equipped on a character being brought over.</li>
+        </ul>
+        <b>MATERIALS</b>
+        <ul>
+        <li>Kobold's Pitchfork</li>
+        <li>Devil's Hoof and/or Trident</li>
+        <li>Ruby Hairpin</li>
+        <li>Emerald Barrette</li>
+        <li>Eyes (Fenrir's, Garmr's, Luminous)</li>
+        <li>Buttons (Purple, Red, Topaz, Yellow)</li>
+        <li>Beta Engine</li>
+        <li>Cores (Beta, Golem)</li>
+        <li>Masks (Brass, Tin, Aluminum, Titanium)</li>
+        <li>Medals (Saint, Hero)</li>
+        <li>Quartz (Rutile, Rose)</li>
+        <li>Gauntlets (Silver, Gold)</li>
+        <li>Claws (Devil's, Pale)</li>
+        <li>Amplifiers</li>
+        <li>Stones (Fanatic, Lunatic)</li>
+        <li>Bone Necklace and/or Demon Dog Collar</li>
+        <li>Glowstone</li>
+        <li>Brooch (Amethyst, Jade)</li>
+        <li>Magnetite Shard/Ore/Gem</li>
+        <li>Pure/Raw Magnetite</li>
+        <li>Abyss Fragment
+        </ul>
+Remember, that's up to 5 items.  99 Mini Mixtures counts as 1 item.  A tough decision.
+<br/>
+You should be selling more items and keeping less items.
+</ul>
+<br/><br/>
+
+"The Champ" (30-hit combo): Lottie's Ephemeral Bloom (at Level 95) in the upper-left section of Ray Crystal Cave (Chapter 3) against three Bobbins and their Stitches.
+<br/><br/>
+
+<a href=".">3DS</a>
+</div>
+<br/><br/>
+
+<!-- https://stackoverflow.com/questions/30711203/how-do-i-create-a-teardrop-in-html -->
+<!-- svg width="30%" viewbox="0 0 30 42" -->
+<svg height="15" viewbox="0 0 30 40">
+  <path fill="transparent" stroke="#000" stroke-width="0.5"
+        d="M15 3
+           Q16.5 6.8 25 18
+           A12.8 12.8 0 1 1 5 18
+           Q13.5 6.8 15 3z" />
+</svg>
+<br/>
+<svg height="15px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 100">
+  <path d="M49.015,0.803
+    c-0.133-1.071-1.896-1.071-2.029,0
+    C42.57,36.344,20,43.666,20,68.367
+    C20,83.627,32.816,96,48,96
+    s28-12.373,28-27.633
+    C76,43.666,53.43,36.344,49.015,0.803z
+    M44.751,40.09
+    c-0.297,1.095-0.615,2.223-0.942,3.386
+    c-2.007,7.123-4.281,15.195-4.281,24.537
+    c0,5.055-2.988,6.854-5.784,6.854
+    c-3.189,0-5.782-2.616-5.782-5.831
+    c0-11.034,5.315-18.243,10.005-24.604
+    c1.469-1.991,2.855-3.873,3.983-5.749
+    c0.516-0.856,1.903-0.82,2.533,0.029
+    C44.781,39.116,44.879,39.619,44.751,40.09z"/>
+</svg>
+<br/>
+<br/>
+</body>
+</html>
