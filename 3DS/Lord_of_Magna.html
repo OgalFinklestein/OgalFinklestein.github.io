@@ -44,7 +44,7 @@ td                                           { white-space:nowrap; }
 .buff        { background-color:#00F; color:#FFF;}
 .debuff      { background-color:#F00; color:#FFF;}
 .note        { text-align:center; border-top:solid 2px #000; border-right:solid 3px #000; }
-.stick       { position:sticky; top:0; }
+.stick       { position:sticky; top:0; background-color:#FFF; }
 
 .tri1        { width:20px; height:30px; background-color:#FFF; transform:rotate(045deg); position:relative; left:-7px; top:-13px;}
 .tri2        { width:20px; height:47px; background-color:#FFF; transform:rotate(045deg); }
@@ -279,7 +279,8 @@ var dbug=document.getElementById("jsd");
 <thead class="stick">
 <td id="trows"></td><td style="text-align:right">Colors:</td><td class="b" style="text-align:center;">Good result</td><td class="u" style="text-align:center;">to test</td><td colspan="1" class="g" style="text-align:center;">Great result</td></tr>
 <th onclick="sortTable(0)" alt="sort">Material 1</th><th onclick="sortTable(1)" alt="sort">Material 2</th><th onclick="sortTable(2)" alt="sort">Result 1</th><th onclick="sortTable(3)" alt="sort">Result 2</th><th onclick="sortTable(4)" alt="sort">Result 3</th><td>sortable columns</td><tr/>
-<td colspan="5" class="note"><i>When attempting to craft an item with more than one result, always save your progress first.</i></td></thead><tr/>
+<td colspan="5" class="note"><i>When attempting to craft an item with more than one result, always save your progress first.</i></td>
+</thead><tr/>
 <tbody>
 <tr><td>Abyss Fragment</td>     <td>Heat Cluster</td>           <td class=" ">Magnetite Shard</td>      <td class=" ">Ruby Hairpin</td>         <td class=" ">Neuro Blast</td></tr>
 <tr><td>Heat Cluster</td>       <td>Abyss Fragment</td>         <td class=" ">Magnetite Shard</td>      <td class=" ">Ruby Hairpin</td>         <td class=" ">Neuro Blast</td></tr>
